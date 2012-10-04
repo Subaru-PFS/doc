@@ -1,0 +1,221 @@
+\documentclass[a4paper,notitlepage]{article}
+\usepackage{pfsstyle}
+\title{[DRAFT] Services related on PFS Project (ver 1.pre)}
+\author{PFS Project}
+\date{2012/10/01}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Abstract}
+
+In this document, internet based services related on PFS Project are summarized 
+as of the day of release. 
+
+\section{New account registration}
+
+If you are new to PFS, you will need to request two accounts: 
+"SuMIRe/PFS pbworks wiki" (account name is email address) 
+and "pfs.ipmu.jp" (you need to select account name). 
+Please submit your account request to \tbd 
+with email address and preferred account name.
+
+\subsection{SuMIRe/PFS pbworks wiki}
+
+You can request access by yourself from \url{http://sumire.pbworks.com/}, 
+with your email address.
+
+Please choose your preferred password on registration. 
+After logging in, add your name into member list in the top page. 
+
+\subsection{pfs.ipmu.jp}
+
+You can use every services on this server with only one account
+\footnote{Except for some special services, such as git repository (using 
+ssh public key authentication).}.
+Normally, you can access only via Web (https). 
+
+Account information will be sent via email, please change your password 
+from initial one (in email) by following notification email 
+\footnote{Also, you can add/change your name (default to account name), 
+institution, and photo from web.}. 
+
+\section{SuMIRe/PFS pbworks wiki}
+
+"SuMIRe/PFS PBworks" is the only official wiki system for PFS. 
+
+\subsection{Login and ToC}
+
+After logging in at \url{http://sumire.pbworks.com/}, 
+you will get a project index page named 
+"Subaru Measurement of Images and Redshifts (SuMIRe)". 
+This page contains links to contents in the wiki, such as 
+
+\begin{itemize}
+  \item PFS Project Office (General links, including link to telecon indexes)
+  \item Documents (Link list to documents)
+  \item Meeting, conference, etc.  (Link list to meetings)
+  \item Mailing lists (List of avail lists)
+  \item PFS working groups (Member list)
+\end{itemize}
+
+\subsubsection{Page indexes}
+
+For some continuous meetings, index for each agenda/memo pages are avail.
+
+\begin{itemize}
+  \item Technical collaborators' weekly telecon \url{http://sumire.pbworks.com/PFS%20technical%20collaborators%27%20weekly%20telecon}
+  \item Systems Engineering group telecon \url{http://sumire.pbworks.com/System-engineer-group-telecon}
+  \item Manager group telecon \url{http://sumire.pbworks.com/Manager-group-telecon}
+\end{itemize}
+
+
+\subsubsection{Files}
+
+Also, you can find all files uploaded into this SuMIRe/PFS PBworks from 
+\url{http://sumire.pbworks.com/w/browse/#view=ViewAllFiles}.
+Some files are categorized into {\bf FOLDERS}, and you can get each list by 
+clicking FOLDER name at left side. 
+
+\subsection{Editing manual}
+
+You can find manual for editing PBworks at 
+\url{http://usermanual.pbworks.com/}. 
+
+
+\section{pfs.ipmu.jp - Web access}
+
+\subsection{Public Web Site -- "Fact Sheet"}
+
+This {\bf Fact Sheet} is public open web site (rather for professionals 
+not general public) for PFS. 
+You can access without any login from \url{http://pfs.ipmu.jp/factsheet/}.
+
+\subsection{Internal Web Site -- https}
+
+Every contents at \url{https://pfs.ipmu.jp/} are project only, and you will 
+be required to log in to view pages. 
+
+\subsubsection{Login and user account}
+
+Use your 'account name' (not email address) and 'password'.
+For your first time, please follow notification email to change your password 
+from an initial one (randomly created). 
+
+You can edir your account information from {\bf LDAP account manipulator} 
+service at \url{https://pfs.ipmu.jp/ldap-manip/}, 
+such as password, your real name, institution, and photo. 
+Also you can view list of all accounts from 
+
+\begin{itemize}
+  \item \url{https://pfs.ipmu.jp/ldap-manip/view_all.cgi} (List of existing accounts)
+  \item \url{https://pfs.ipmu.jp/ldap-manip/view_allphoto.cgi} (photo directory)
+\end{itemize}
+
+\subsubsection{ToC}
+
+When accessing to \url{https://pfs.ipmu.jp/}, you will get newest list of 
+contents in this server. 
+
+\paragraph{LDAP account manipulator}
+
+You can view your account setting, list of all avail accounts, and photo 
+directory. 
+Also, you can edit your account setting (real name, password, institution, 
+photo, etc.) from this service.
+
+\paragraph{Document server system}
+
+This is a document strage service.
+
+\paragraph{Issue tracker system (Bugzilla)}
+
+This is the issue tracker for the PFS project. 
+Please refer Bugzilla help page at 
+\url{http://www.bugzilla.org/docs/tip/en/html/}.
+
+\paragraph{Internal wiki (not official)}
+
+Internal wiki used for pfs.ipmu.jp server administration and scratch. 
+
+\paragraph{pfs.ipmu.jp internal ML}
+
+This internal ML uses mailman, and you will get list of avail lists. 
+It depends on settings per each list, you can view registered members, 
+view logs of past emails, and also register (or request to register) on 
+each list. 
+
+\paragraph{Photo archive}
+
+Photo archive for pfs.ipmu.jp, 
+please contact system administrator (\url{pfs@pfs.ipmu.jp}) to put new 
+set of photos. 
+
+\paragraph{Etherpad list}
+
+Etherpad is a web-based collaborative real-time editor, 
+which you can share (simple) text editor over network without submitting 
+nor reloading. 
+
+\paragraph{WebDAV Storage}
+
+This is WebDAV storage, which you can also upload files via clients 
+supporting WebDAV protocol (like cadaver). 
+You can upload/store/publish any project related files to this space, 
+including temporary file exchange. 
+
+\paragraph{Subversion repository and ViewVC}
+
+You can use subversion repositories, please contact organizers of each 
+repository for its operational rules. 
+
+Also, by accessing ViewVC, you can check logs of each repository. 
+
+\paragraph{Landfill services}
+
+Some landfill instances would avail. 
+(Note: landfill will be used for some testing purpose, but not a real 
+operated service.) 
+
+\paragraph{Server status viewer}
+
+For system administration use, you can view system status graph.
+
+\subsection{pfs.ipmu.jp -- git (ssh public key) access}
+
+Git repositories at pfs.ipmu.jp is mostly used for PFS software team.
+
+\subsubsection{Login}
+
+You need to register to gitolite repository manager, even if you have account 
+for \url{https://pfs.ipmu.jp/}. Please contact to git administration list 
+(email address \tbd) with your ssh public key.
+
+\subsubsection{Access to git repository}
+
+Access to pfs.ipmu.jp port 22 (ssh) with account 'gitolite' 
+using your ssh private key. 
+
+Normally, you will be better to configure as following. 
+First, add an entry into {\tt .ssh/config} file like 
+
+\begin{verbatim}
+host pfsgit
+  user gitolite
+  hostname pfs.ipmu.jp
+  port 22
+  identityfile ~/.ssh/id_rsa
+\end{verbatim}
+
+and, second access to git repository with 
+{\tt git clone ssh://pfsgit/"repository-name"}.
+
+\subsubsection{Repository policy}
+
+\tbd (Will be issued as ICD or SSN)
+
+
+
+\end{document}
+
