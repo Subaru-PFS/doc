@@ -11,14 +11,15 @@
 \section{Abstract}
 
 In this document, internet based services related on PFS Project are summarized 
-as of the day of release. 
+as of the day of release of this document. 
 
 \section{New account registration}
 
 If you are new to PFS, you will need to request several accounts: 
 "SuMIRe/PFS pbworks wiki" (account name is email address), 
 "pfs.ipmu.jp" (you need to select account name), 
-"PFS JIRA" (open registration). 
+"PFS JIRA" (open registration), and 
+"GitHub" (organization member for private repositories). 
 Submit your account request as following account policy and registration. 
 
 \subsection{Account policy}
@@ -29,12 +30,13 @@ or science team member.
 
 \subsubsection{Technical team member}
 
-You need at least to request an account to log in to https://pfs.ipmu.jp.
+You need at least to request an account to log in to \url{https://pfs.ipmu.jp}.
 In addition, if you work for software development, you can optionally 
 request a member privilege of GitHub: this is needed for you to access 
 to private repositories. 
 GitHub is also used for an issue tracking system for the development of 
-ICS (Instrument Control Software).
+ICS (Instrument Control Software). Software documentation (ics\_doc) 
+repository is also on GitHub as a private repository. 
 
 To make these requests, please ask the local site manager at your institute 
 to send the following information to \url{pfsprojectoffice@ipmu.jp}. 
@@ -52,13 +54,18 @@ there is one (mostly private) team per institute where the members have
 the admin privilege. 
 You can ask a member of the team in your institute to add yourself and 
 get the admin privilege to the repositories related to the development 
-activities at your institute.
+activities at your institute. Adding you to the team is as 'invitation', 
+and you will need to approve an invitation via email. 
 
 Meanwhile, JIRA is used as a management tool for the development of 
 the other PFS software packages than ICS, such as DRP (Data Reduction 
 Pipeline), ETS (Exposure Targeting Software) and SPT (Survey Planning 
 and Tracking software). PFS JIRA (https://pfspipe.ipmu.jp) is open to 
-the public, and register yourself to participate in the PFS JIRA.
+the public, but is operated in an integration of single sign on (SSO) with 
+other services (LDAP service of pfs.ipmu.jp), you need to use the same 
+account name and password. If you already have an account at pfs.ipmu.jp 
+and have not logged in to PFS JIRA before, you need to contact to 
+\url{jira@pfs.ipmu.jp} to activate your account in PFS JIRA.
 
 
 \subsubsection{Science team member}
@@ -69,8 +76,8 @@ for SuMIRe/PFS pbworks wiki.
 If you are interested in the PFS software development (DRP, ETS, and SPT), 
 access as follows: 
 \begin{itemize}
-  \item Git repositories are open to the public at https://github.com/Subaru-PFS
-  \item Register yourself to JIRA at https://pfspipe.ipmu.jp for the development of software packages.
+  \item Git repositories are open to the public at \url{https://github.com/Subaru-PFS}
+  \item Register yourself to JIRA at \url{https://pfspipe.ipmu.jp} for the development of software packages.
 \end{itemize}
 
 \subsection{List of registrations}
@@ -89,8 +96,6 @@ After logging in, add your name into member list in the top page.
 
 You can use services on this web server, with only one account for every 
 services.
-For some services on pfs.ipmu.jp (https), you will be requested to login 
-to services again, use the same account (username and password) again. 
 
 Once your request has granted, 
 account information will be sent via email, please change your password 
@@ -100,11 +105,21 @@ institution, and photo from web.}.
 
 If you need to reset your password, contact \url{pfs@pfs.ipmu.jp}. 
 
+\subsubsection{GitHub}
+
+PFS has its organization at GitHub as \url{https://github.com/Subaru-PFS}. 
+You need to be in one team of this organization for accessing private 
+repositories for ICS. 
+For full list of repositories, refer GitHub page at 
+\url{https://subaru-pfs.github.io/}.
+
 \subsubsection{PFS JIRA}
 
 PFS JIRA (\url{https://pfspipe.ipmu.jp/}) is open to the public, 
 so you can register by yourself. 
-
+If you have an account at pfs.ipmu.jp and have not logged in to PFS JIRA 
+before, contact \url{jira@pfs.ipmu.jp} to activate your account and use 
+the same user name and password as pfs.ipmu.jp. 
 
 \section{Services in detail}
 
@@ -151,11 +166,10 @@ You can find manual for editing PBworks at
 \url{http://usermanual.pbworks.com/}. 
 
 
-\subsection{Public Web Site at pfs.ipmu.jp -- "Fact Sheet"}
+\subsection{Public Web Site at pfs.ipmu.jp}
 
-This {\bf Fact Sheet} is public open web site (rather for professionals 
-not general public) for PFS. 
-You can access without any login from \url{http://pfs.ipmu.jp/factsheet/}.
+Public project information is at \url{http://pfs.ipmu.jp}, 
+such as list of meetings, list of publications, and instrument parameters. 
 
 \subsection{Internal Web Site -- pfs.ipmu.jp (https)}
 
@@ -204,7 +218,6 @@ contents in this server.
       \item Issue tracker system -- Bugzilla : 
         for help refer Bugzilla help page at 
         \url{http://www.bugzilla.org/docs/tip/en/html/}.
-      \item Atlassian JIRA (see sec.~\ref{sec:pfs-jira})
     \end{itemize}
   \item Temporal sharing services
     \begin{itemize}
@@ -230,17 +243,6 @@ contact system administrator (\url{pfs@pfs.ipmu.jp}) to put new
 set of photos, after uploading your phots to WebDAV. 
 
 
-\paragraph{Atlassian JIRA}
-\label{sec:pfs-jira}
-
-For help, refer help site at Atlassian 
-\url{https://www.atlassian.com/resources/support}.
-
-Due that license fee of this services is based on number of accounts, 
-limited users actually working on software development can be granted to 
-access on this service. 
-
-
 \paragraph{WebDAV Storage}
 \label{sec:pfs-webdav}
 
@@ -249,12 +251,8 @@ Linux and MacOS.
 You can upload/store/publish any project related files to this space, 
 including temporal file exchange. 
 
-\subsubsection{Subversion repository and ViewVC}
-
-You can use subversion repositories, please contact organizers of each 
-repository for its operational rules. 
-
-Also, by accessing ViewVC, you can check logs of each repository. 
+Please refer a page in the internal wiki (\url{https://pfs.ipmu.jp/wiki/System/webdav}) 
+for how to connect to WebDAV storage.
 
 \subsubsection{Landfill services}
 
@@ -262,40 +260,6 @@ Some landfill instances would avail.
 (Note: landfill will be used for some testing purpose, but not a real 
 operated service.) 
 
-
-\subsection{git repository at pfs.ipmu.jp}
-\label{sec:pfs-gitolite}
-
-Git repositories at pfs.ipmu.jp is mostly used for PFS software team.
-Please also refer repository policy issued by PFS software team. 
-
-
-\subsubsection{Login}
-
-You need to register to gitolite repository manager, even if you have account 
-for \url{https://pfs.ipmu.jp/}. Please contact to git administration list 
-(\url{git-admin@pfs.ipmu.jp}) with your ssh public key
-\footnote{Due to security reason, e.g. NIST SP 800-57, send RSA key with 
-2048 bits or larger. (As for now, ECDSA is not avail.)}.
-
-\subsubsection{Access to git repository}
-
-Access to pfs.ipmu.jp port 22 (ssh) with account 'gitolite' 
-using your ssh private key. 
-
-Normally, you will be better to configure as following. 
-First, add an entry into {\tt .ssh/config} file like 
-
-\begin{verbatim}
-host pfsgit
-  user gitolite
-  hostname pfs.ipmu.jp
-  port 22
-  identityfile ~/.ssh/id_rsa
-\end{verbatim}
-
-and, second access to git repository with 
-{\tt git clone ssh://pfsgit/"repository-name"}.
 
 \subsection{Fuze conference system}
 \label{sec:pfs-fuze}
@@ -309,12 +273,6 @@ For accessing on-line, you will need to install clients avail from
 You can check list of planned teleconferences from 
 \url{https://pfs.ipmu.jp/fuzelist/}. 
 
-\subsection{General public web site at IPMU}
-
-We have a web site for general public \url{http://sumire.ipmu.jp/en/2652}, 
-called as 'PFS Protal Site'.
-This leads you to PFS wiki, PFS server, and PFS www.
-It also includes PFS SPIE papers presented in Amsterdam in 2012 July.
 
 \end{document}
 
