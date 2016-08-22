@@ -3,6 +3,7 @@
 \usepackage{indentfirst}
 \usepackage{fancyhdr}
 \usepackage{url}
+\usepackage{longtable}
 \usepackage[colorlinks=true,linkcolor=blue,filecolor=blue,urlcolor=blue]{hyperref}
 \usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
 
@@ -61,7 +62,7 @@ PFS plays an important role as a survey instrument of the Subaru Telescope over 
 SPT governs the entire survey planning including the tiling of FoVs with multiple exposures in a series of observing nights. One of the tasks of this system is to track the survey progress and to update the survey planning based on the quality of the obtained spectra providing new targets to ETS. The information on the input catalogue and the obtained data quality used in updating the survey plan are taken from the database and the information on the tiling is also stored in the database server.
 
 \subsubsection{Exposure Targeting Software (ETS)\label{sec:survey_operation:ets}}
-ETS is a software to assign fibers to targets provided by SPT and return the optimized fiber configuration in each exposure to be used in the actual observation. 
+ETS is a software to assign fibers to targets provided by SPT and return the optimized fiber configuration in each exposure to be used in the actual observation. The package is currently developed by a group of Max Planck Institute for Astrophysics (MPA).
 
 \subsubsection{Data Reduction Pipeline (DRP)\label{sec:survey_operation:drp}}
 DRP conducts the reduction of the obtained 2-dimensional (2D) images into 1-dimensional (1D) spectra with wavelength and flux calibration (2D pipeline). The reduced 1D spectra are passed to a software in which various physical parameters, including redshift, line flux, line velocity, and so on, are extracted from the obtained spectra (1D pipeline). The measured physical quantities are also stored into the database and used in the data quality assurance.
@@ -75,6 +76,9 @@ ICS is a control system of the PFS hardwares to process fiber configurations (PF
 \end{center}
 \caption{The conceptual scheme of the connections between each system.\label{fig:pfs_software_connections}}
 \end{figure}
+
+\subsubsection{PFS datamodels\label{sec:survey_operation:datamodels}}
+TBW
 
 \subsubsection{Database (inputs from Naoki Yasuda?)\label{sec:survey_operation:database}}
 TBW
@@ -106,8 +110,8 @@ In a normal observing night, the following process can be run:
 \item Instrument replacement
 \item Startup of the PFS system
 \item Telescope pre-check and the PFS status check
-\item Telescope focus check
 \item Setting up the field with slewing telescope and field acquisition
+\item Focus check
 \item Cobra configuration including reconfiguration in the same field
 \item Starting telescope tracking
 \item Starting auto guiding system
@@ -137,8 +141,9 @@ The procedure of the startup mode is done in the following way:
 
 The items that DCs should check before pre-check are as follow:
 \begin{itemize}
-\item ...
-\item
+\item Popt2 and PFI are installed in the right position
+\item Connection of the cable C between PFI and tower connector
+\item Power cycle if necessary?
 \end{itemize}
 
 (TBW in details)\\
@@ -148,16 +153,38 @@ The items that DCs should check before pre-check are as follow:
 
 Once the day-time works of the instrument replacement are completed, the pre-check is needed to be done before the night operation starts. The health check of the PFS instruments are also done during the pre-check procedure. (TBW in details)\\
 
-
-\noindent \underline{\textbf{Telescope focus check:}}
-\vspace{5pt}
-
-The telescope focus check is done after the sun set and the dome opens. The focus check is done by using the image of bright point sources on the PFS AG camera (TBD). This process is also done occasionally during the observations. (TBW in details)\\
-
 \noindent \underline{\textbf{Setting up the field with slewing telescope and field acquisition:}}
 \vspace{5pt}
 
-TBW\\
+\textbf{Slewing telescope}: 
+(Slewing telescope is controlled in the telescope side not from PFS)
+
+\textbf{Field Acquisition}: 
+(Based on Shimono-san's document 20160421)
+IIC sends to AGCC commands to set the location (e.g., SetRegion) and start the sequence (e.g., StartSequence seq=1 count?=1). IIC acquires the telescope status and calculate errors. Then, IIC returns the following information to Gen2: 
+\begin{itemize}
+\item $\Delta x$ and $\Delta y$ (or $\Delta \alpha$ and $\Delta \delta$)
+\item $\Delta$ InR (rotator angle error)
+\end{itemize}
+
+(TBW in details)\\
+
+\noindent \underline{\textbf{Focus check:}}
+\vspace{5pt}
+
+The telescope focus check is done after the sun set and the dome opens. The focus check is done by using the image of bright point sources on the PFS AG camera (TBD). This process is also done occasionally during the observations. 
+
+(Based on Shimono-san's document 20160421)
+IIC sends to AGCC commands to set the location (e.g., SetRegion) and start the sequence (e.g., StartSequence). IIC sends to Monitor a command to start the sequence (e.g., StartFocusCheck seq=1 cam=X,Y,Z).
+
+The following status items are sent to MHS from AGCC:
+\begin{itemize}
+\item stat\_cam = xxx (status of the camera)
+\item fits\_cam = xxx (fits output?)
+\item status\_updated seq=X ... (callback function?)
+\end{itemize}
+
+In the Monitor side, status\_updated is executed by a trigger to calculate the focus value and the status including the values of each camera is returned. Then, Monitor send to IIC a command to move Hexapod with arguments ($Z$, $\theta_{X}$, $\theta_{Y}$). (TBW in details)\\
 
 \noindent \underline{\textbf{Cobra fiber configuration:}}
 \vspace{5pt}
@@ -253,7 +280,6 @@ As we mentioned in section \ref{sec:detail_ope_plan:overall}, each sub-sequence 
 \item The sequence running in Gen2 picks up the status value and execute the command
 \item Return to the 1st step (if necessary)
 \end{itemize}
-The detailed processing during the single exposure is described in the section \ref{sec:detail_ope_plan:single}.
 
 Another interface is between the status server called Subaru Telemetry System (STS) and the PFS internal Status Archival System (SAS). Various information on the instrument status is stored in SAS and some of them should also be stored in STS.
 
@@ -345,5 +371,81 @@ In this section, we describe possible troubles envisioned and the solutions duri
 \section{The operational process in FMOS}
 \subsection{}
 
+%%%%%%%%%%
+%% Acronyms %%
+%%%%%%%%%%
+\clearpage
+\section{List of PFS Acronyms}
+
+\begin{longtable}{lll}
+\hline
+Acronym	& Category &	Full Name \\
+\hline
+\endfirsthead
+\hline
+Acronym	& Category &	Full Name \\
+\hline
+\endhead
+\hline
+A\&G	& PFI	& Acquisition and Guiding \\
+AGC	& PFI	& Acquisition and Guidance Camera \\
+FIS	& PFI	& Fiducial Illumination System \\
+PFC	& PFI	& Prime Focus Corrector \\
+PFI	& PFI	& Prime Focus Instrument \\
+PFU	& PFI	& Prime Focus Unit \\
+WFC	 & PFI	& Subaru POpt2 Wide Field Corrector \\
+FOCCOS	& Fiber	& Fiber Optical Cable and Connector System \\
+SRB	& Fiber	& Strain Relief Box \\
+SM	& SpS	& Spectrograph Module \\
+ENU	& SpS	& Entrance Unit \\
+FCA	& SpS	& Fiber Cable Assembly \\
+FSA	& SpS	& Fiber Slit-Sub-Assembly \\
+FIA	& SpS	& Fiber Input sub-Assembly \\
+IIC	& SpS	& Internal Illumination Source \\
+FPS	& SpS	& Fiber Slit Positioning Sub-Assembly \\
+CMA	& SpS	& Collimator Mirror Assembly \\
+SHA	& SpS	& Shutter Assembly \\
+COA	& SpS	& Central Optical Assembly \\
+BDA	& SpS	& Blue Disperser Assembly \\
+RDA	& SpS	& Red Disperser Assembly \\
+OBA	& SpS	& Optical Bench Assembly \\
+BIA	& SpS	& Back-Illumination Assembly \\
+BCU	& SpS	& Blue Camera Unit \\
+CAA	& SpS	& Camera Assembly \\
+CRA	& SpS	& Cryostat Assembly \\
+FPA	& SpS	& Focal Plane Assembly \\
+RCU	& SpS	& Red Camera Unit \\
+CAA	& SpS	& Camera Assembly \\
+CRA	& SpS	& Cryostat Assembly \\
+FPA	& SpS	& Focal Plane Assembly \\
+NCU	& SpS	& NIR Camera Unit \\
+CAA	& SpS	& Camera Assembly \\
+CRA	& SpS	& Cryostat Assembly \\
+FPA	& SpS	& Focal Plane Assembly \\
+LCU	& SpS	& Local Control Unit \\
+VCCS	& SpS	& Vacuum and Cryogenic Control System \\
+VAC-SS	& SpS	& Vaccum control Sub-System \\
+FMCS	& SpS	& Focus Mechanism Control System \\
+DECS	& SpS	& Detector Control System \\
+RFCS	& SpS	& Racks for Control Systems \\
+SAIT	& SpS	& Spectrograph AIT Tools \\
+CAS	& SpS	& Visible (TBC) Camera Unit AIT Station \\
+CIT	& SpS	& CU Integration tool \\
+PGR	& SpS	& Parking Guiding rails \\
+COT	& SpS	& Camera Optics SA integration tool \\
+RIT	& SpS	& Rear dewar integration tool \\
+FIT	& SpS	& Focal Plane Assembly integration tool \\
+CAT	& SpS	& CU optical alignment tool \\
+FST	& SpS	& Fiber slit alignment tool \\
+ETS	& Software	& Exposure Targeting Software\\
+ICS	& Software	& Instrument Control Software \\
+MPS	& Software	& Movement Planning Software \\
+SPT	& Software	& Survey Planning \& Tracking\\
+IPMU & Institute & Institute for the Physics and Mathematics of the Universe\\
+NAOJ & Institute & National Astronomical Observatory of Japan\\
+PU	& Institute	& Princeton University\\
+LAM	& Institute & Laboratoire d'Astrophysique de Marseille\\
+MPA	& Institute & Max Planck Institute for Astrophysics\\
+\end{longtable}
 
 \end{document}
