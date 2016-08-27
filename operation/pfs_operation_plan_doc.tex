@@ -3,7 +3,6 @@
 \usepackage{indentfirst}
 \usepackage{fancyhdr}
 \usepackage{url}
-\usepackage{longtable}
 \usepackage[colorlinks=true,linkcolor=blue,filecolor=blue,urlcolor=blue]{hyperref}
 \usepackage[top=30truemm,bottom=30truemm,left=25truemm,right=25truemm]{geometry}
 
@@ -26,214 +25,322 @@
 %% Background %%
 %%%%%%%%%%%
 \section{Background}
-PFS is an open use instrument of the Subaru Telescope starting its commissioning from 2018 and the scientific operation from 2019. In this document, we describe the operational plan of PFS system during the commissioning phase and after the scientific operation starts. One of the aims of writing this document is not only to define the overall concept of the operation but also to check the possibility of the discontinuity between the operational concept and the telescope system in the Subaru Telescope (including Gen2 and archival system such as STARS/MSTARS) through conversations between the observatory and the PFS project team to mitigate the risk after the commissioning starts. Therefore, some descriptions in this document is of course subject to be updated in the future.
+PFS is an open use instrument of the Subaru Telescope starting its
+commissioning from 2018 and the scientific operation from 2019. In
+this document, we describe the operation concept of PFS system during
+the commissioning phase and after the scientific operation starts. One
+of the aims of writing this document is not only to define the overall
+concept of the operation but also to check the possibility of the
+discontinuity between the operational concept and the telescope system
+in the Subaru Telescope (including Gen2 and archival system such as
+STARS/MSTARS) through conversations between the observatory and the
+PFS project team to mitigate the risk after the commissioning
+starts. Therefore, some descriptions in this document is of course
+subject to be updated in the future.
 
-%%%%%%%%%%%%
-%% Basic Concept %%
-%%%%%%%%%%%%
-\section{Basic Concept}
-\subsection{PFS System Description\label{sec:pfs_system}}
-Here, we briefly summarize PFS instrument system, which is described in the technical documents in more detail. 
+\section{PFS System Description\label{sec:pfs_system}}
+Here, we briefly summarize PFS instrument system, which is described
+in the technical documents in more detail(e.g. \cite{tamura16}).
 
-PFS is a fiber-fed type spectrograph mounted on the prime focus of the Subaru Telescope. The distinctive features are a wide area of FoV of $\sim1.3$ deg$^{2}$, a large multiplicity of $\sim2400$ fibers, and a wide range of wavelength coverage from 380 nm to 1260 nm. 
+PFS is a fiber-fed type spectrograph mounted on the prime focus of the
+Subaru Telescope. The distinctive features are a wide area of FoV of
+$\sim1.3$ deg$^{2}$, a large multiplicity of $\sim2400$ fibers, and a
+wide range of wavelength coverage from 380 nm to 1260 nm. PFS
+comprises several instruments: Prime Focus Instrument (PFI), Fiber
+system, Spectrograph System (SpS), and Metrology Camera System
+(MCS). These components are driven independently and sparsely
+connected in software controlled on the Messaging Hub System (MHS). In
+the following subsections, a brief summary of each component is
+described.
 
-PFS comprises several instruments: Prime Focus Instrument (PFI), Fiber system, Spectrograph System (SpS), and Metrology Camera System (MCS). These components are driven independently and sparsely connected in software controlled on the Messaging Hub System (MHS). In the following subsections, a brief summary of each component is described.
+\subsection{Prime Focus Instrument (PFI)\label{sec:pfs_system:pfi}}
+At the Subaru prime focus, HSC has already been in science operation
+with the wide field of view and the reasonably flat focal plane
+provided by the new Wide-Field Corrector lens system (WFC). The WFC
+will be used for PFS as well. Mechanically, the new prime focus
+housing unit ``POpt2'' is integrated with WFC and accommodates the HSC
+instrument inside. When PFS is in operation, the HSC instrument will
+be taken out and our {\bf Prime Focus Instrument (PFI)} will be
+installed in POpt2.
 
-\subsubsection{Prime Focus Instrument (PFI)\label{sec:pfs_system:pfi}}
-TBW
-\subsubsection{Fiber system\label{sec:pfs_system:fib}}
-TBW
-\subsubsection{Spectrograph System (SpS)\label{sec:pfs_system:sps}}
-TBW
-\subsubsection{Metrology Camera System (MCS)\label{sec:pfs_system:mcs}}
-TBW
+PFI has been developed by the collaboration of California Institute of
+Technology (CIT) \& NASA Jet Propulsion Laboratory (JPL),
+Laborat\'{o}rio Nacional de Astrof\'{i}sica (LNA, in Brazil), and
+Academia Sinica Institute of Astronomy and Astrophysics (ASIAA, in
+Taiwan), accommodating key subcomponents such as the fiber positioner
+system, science \& fiducial fiber system, Acquisition \& Guide (AG)
+cameras, and calibration system\cite{wang16pfi}. The fiber positioner
+system consists of 42 modules each of which accommodates 57 ``Cobra''
+rotary actuators populated with science fibers. The tip of each
+science fiber is equipped with a plano-concave microlens to increase
+the focal ratio of the input beam to the fiber to
+2.8\cite{takato14}. The Cobra engineering model actuators have been
+assembled to a prototype module and tested. The results show
+satisfactory target convergence performance in the patrol field of
+each fiber\cite{fisher14}. These subcomponents will be integrated into
+PFI and be fully tested at ASIAA before delivery to
 
-\subsection{PFS Survey Operational Concept}
-PFS plays an important role as a survey instrument of the Subaru Telescope over the coming years, and thus the observational system should be considered to be optimized in the survey observation. As described in section \ref{sec:survey_operation:software}, PFS software system includes four different software packages, i.e., Survey Planning  \& Tracking software (SPT), Exposure Targeting Software (ETS), Data Reduction Pipeline (DRP), and Instrument Control System (ICS). These systems are ``loosely'' linked to each other with the data exchange via database server \& data archive system, as shown in Figure \ref{fig:pfs_survey_concept}.
+\subsection{Metrology Camera System (MCS)\label{sec:pfs_system:mcs}}
+
+{\bf Metrology Camera System (MCS)} is under development at
+ASIAA\cite{wang16mcs}. It will be installed at the Cassegrain focus of
+the telescope. Because the fiber positioners have no encoders, an
+external system is required to drive them to the proper position.  MCS
+corresponds to this external system which takes images of the science
+and fiducial fibers back-lit from the other side of prime focus, and
+then measures the fiber positions, enabling closed-loop operation of
+the positioners. MCS is capable of taking an image of all the back-lit
+science and fiducial fibers on the prime focus in one exposure. The
+fiber configuration time is significantly shorter than FMOS for which
+a small CCD camera needs to scan the field of view to measure all the
+fibers. The 380mm aperture system is designed to minimize the impacts
+of the dome seeing effect and small-scale figure errors of the WFC
+lens surface shapes.
+
+\subsection{Spectrograph System (SpS)\label{sec:pfs_system:sps}}
+{\bf Spectrograph System (SpS)} will be integrated at Laboratoire
+d'Astrophysique de Marseille (LAM)\cite{madec16}, with the fiber
+system delivered by LNA and the camera dewars \& detectors developed
+by Princeton University (PU)\cite{gunn16} and Johns Hopkins University
+(JHU)\cite{smee16, hart16}. The divergent beams from the science
+fibers on the pseudo slit are collimated and then split into blue, red
+and NIR channels by two dichroic mirrors. After this, the beam is
+dispersed by the VPH grating and spectral images are formed on the
+detectors. A grating exchange mechanism allows a higher dispersion VPH
+grism to be accommodated in the system and deliver medium resolution
+spectra in the red channel with no changes in the other parts of
+SpS. SpS consists of four spectrograph modules (SM) each of which is
+identically designed to deliver $\sim$600 spectral images on the
+detectors.
+
+\subsection{Fiber system\label{sec:pfs_system:fib}}
+{\bf Fiber system ``FOCCoS''} to be delivered by LNA\cite{cesar14}
+consists of three parts: Two short-fiber systems accommodated in PFI
+and SpS, and a long cable system between them routed on the
+telescope. The route of this long one is still being finalized, but
+the total fiber length will be approximately 65m. These three parts
+are connected together by two sets of fiber connectors. One is needed
+at the telescope top end to make POpt2 detachable from the telescope,
+and the other is in front of SpS to ease the delivery and integration
+of SpS at Subaru and to make the operation and maintenance activities
+independent of the other PFS subsystems.
+
+\section{PFS Operation Concept\label{sec:operation_concept}}
 
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[scale=0.5]{./figures/pfs_survey_operational_concept.pdf}
 \end{center}
-\caption{The conceptual design of the PFS survey operation including four software packages and database/data archive system. (to be updated)\label{fig:pfs_survey_concept}}
+\caption{A schematic diagram of PFS survey operation concept with the
+  four software packages and database/data archive system responsible
+  for key processes (to be updated).\label{fig:pfs_survey_concept}}
 \end{figure}
 
-\subsubsection{Survey Planning \& Tracking software (SPT)\label{sec:survey_operation:spt}}
-SPT governs the entire survey planning including the tiling of FoVs with multiple exposures in a series of observing nights. One of the tasks of this system is to track the survey progress and to update the survey planning based on the quality of the obtained spectra providing new targets to ETS. The information on the input catalogue and the obtained data quality used in updating the survey plan are taken from the database and the information on the tiling is also stored in the database server.
+For the operation of the PFS instrument and the large survey program
+it will carry out, coordination not only between the hardware and
+software but also between different software packages is crucial. Four
+software components are under development for this, with different
+sets of functions packaged and therefore designed to be only loosely
+coupled to each other. The detailed definitions of these four packages
+have been evolving as the instrument and survey operation concepts are
+being updated to maximally accommodate the distinct features of the
+planned survey for PFS SSP such as: (1) A much fainter limit than
+previous legacy surveys such as SDSS is pursued, exploiting the large
+light-gathering power of the Subaru Telescope, (2) given the wide
+variety of scientific goals, a wide variety of objects are targeted
+for observation and therefore a variety of definitions of success need
+to be encompassed, (3)
+%successively from FMOS but with a much shorter fiber reconfiguration time,
+PFS allows dynamic fiber reallocation even on an individual exposure
+basis, unlike the static integration in case of classical multi-slit
+and multi-fiber spectroscopy using machined plates. In addition, since
+PFS will be a facility instrument at the Subaru Telescope observatory
+and will be operated in the framework of general open-use observation,
+we are continually discussing all aspects of operations with the
+observatory and are trying to adapt our plans accordingly. Below an
+overview is given of the current operation concepts and the main
+bodies of the software definitions which is sketched out in Figure
+\ref{fig:pfs_survey_concept}.
+%Technical details are covered in another article\cite{shimono16}.
 
-\subsubsection{Exposure Targeting Software (ETS)\label{sec:survey_operation:ets}}
-ETS is a software to assign fibers to targets provided by SPT and return the optimized fiber configuration in each exposure to be used in the actual observation. The package is currently developed by a group of Max Planck Institute for Astrophysics (MPA).
+\subsection{Observation preparation\label{sec:operation_concept:preparation}}
 
-\subsubsection{Data Reduction Pipeline (DRP)\label{sec:survey_operation:drp}}
-DRP conducts the reduction of the obtained 2-dimensional (2D) images into 1-dimensional (1D) spectra with wavelength and flux calibration (2D pipeline). The reduced 1D spectra are passed to a software in which various physical parameters, including redshift, line flux, line velocity, and so on, are extracted from the obtained spectra (1D pipeline). The measured physical quantities are also stored into the database and used in the data quality assurance.
+The observation process starts with preparing an input target catalog
+which includes not only science targets but also stars for field
+acquisition, auto-guiding \& focusing, and flux calibration.  Then
+telescope pointings, position angles, and fiber allocations to science
+targets at each pointing are defined for a given time of observation
+(statements about the dot should be here). This planning task is
+performed by a software package called {\bf ``ETS'' (Exposure
+  Targeting Software)} being developed by Max-Planck-Institut f\"{u}r
+Astrophysik (MPA). This observation configuration is prepared by
+scientists at sites off the observatory, and the prepared
+configuration is then uploaded to a {\bf database} system. At the
+actual time of observation, which may be different from the one in the
+plan, the details in the mapping between the science targets and
+allocated fibers are recalculated before the fiber configuration
+starts. Observers should assign a fraction of fibers to observe blank
+sky regions and another fraction to observe flux calibration stars
+simultaneously with the science targets. The optimal numbers and
+distributions of these fibers for sky and calibration targets will be
+determined in the course of on-sky engineering observations.
 
-\subsubsection{Instrument Control System (ICS)\label{sec:survey_operation:software}}
-ICS is a control system of the PFS hardwares to process fiber configurations (PFI and MCS) and exposures (SpS). The communication between each sub-process is conducted via MHS. The relations between each component are shown in Figure \ref{fig:pfs_software_connections}. 
+\subsection{Instrument operation \& data acquisition\label{sec:operation_concept:instrument}}
 
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[scale=0.5]{./figures/software_connections.pdf}
 \end{center}
-\caption{The conceptual scheme of the connections between each system.\label{fig:pfs_software_connections}}
+\caption{A diagram showing the connections of software components
+  around MHS (Messaging Hub System) which is the key to organizing
+  distributed processes. \label{fig:pfs_software_connections}}
 \end{figure}
 
-\subsubsection{PFS datamodels\label{sec:survey_operation:datamodels}}
-TBW
+{\bf ``ICS'' (Instrument Control Software)} is the software package
+that orchestrates the PFS subsystems and subcomponents for instrument
+operation in coordination with the telescope system. The key component
+for the integration and coordination is a messaging hub system
+(MHS). Figure \ref{fig:pfs_software_connections} shows a schematic
+diagram of the distributed PFS software components and the telescope
+control system connected via MHS. As has been demonstrated in the SDSS
+operations at Apache Point Observatory, it efficiently organizes
+distributed processes providing uniform communication interfaces
+between subcomponents. MHS is being used for the operation of the
+CHARIS instrument\cite{charis} (a high contrast integral field
+spectrograph for studying disks and extrasolar planets around stars)
+which is now in the commissioning phase at the Subaru Telescope, so we
+will take advantages of this experience in advance of the PFS
+commissioning process.
 
-\subsubsection{Database (inputs from Naoki Yasuda?)\label{sec:survey_operation:database}}
-TBW
+Details of the telescope and PFS instrument operation will be
+explained later in \S~\ref{sec:detail_ope_plan}, but after various setup processes such
+as telescope pointing, instrument rotator rotation, focusing, and
+fiber configuration, auto-guiding starts and the spectrograph system
+starts taking exposures. The data format from each exposure are two 4K
+$\times$ 2K CCDs from the blue and red cameras, and one 4K $\times$ 4K
+H4RG detector from the NIR camera. At the end of each exposure, the
+data are read out and passed on to the Data Reduction Pipeline (DRP)
+for on-site data reduction, data quality assessment \& assurance, and
+data archival.
 
-%%%%%%%%%%%%%
-%% Queue operation %%
-%%%%%%%%%%%%%
-\subsection{PFS operation in queue mode}
-TBW (this can be in sec.3?)
+\subsection{Data reduction \& spectral calibration strategy\label{sec:operation_concept:reduction_calibration}}
 
+{\bf ``DRP'' (Data Reduction Pipeline)} comprises the ``2D'' part
+(2D-DRP) and the ``1D'' part (1D-DRP). The 2D-DRP, which is under
+development by PU, receives two-dimensional raw spectral FITS images
+read out from the detectors and produces one-dimensional,
+sky-subtracted, flux- and wavelength-calibrated spectra ready for
+scientific analyses. The 1D-DRP being developed by LAM then receives
+these 1D spectra and measures various parameters of spectroscopic
+features such as redshifts and emission line fluxes. After each
+exposure of the spectrograph detectors, the data will be processed by
+on-site DRP with calibration data sets taken in advance.
+%checked e.g. by look at the singal-to-noise ratios of bright stars
+%such as flux calibration stars and is uploaded to the database.
+1D-DRP is applied to the reduced and calibrated 1D spectra and
+measured parameters are added to the database. As successive exposures
+are taken for the same objects at different nights and observation
+runs, deeper and higher quality spectra will be produced from from
+full, batch processing of all available data.
 
+One important challenge for this project is to achieve the goal of sky
+subtraction accuracy (down to $\sim$0.5\% in the faint sky continuum
+between the lines). This means, given that we are not doing
+beam-switching operations, that the sky spectrum of an object fiber
+needs to be accurately modeled from the spectra of other fibers
+looking at the sky, and for this, the two-dimensional fiber PSF needs
+to be well characterized as functions of x and y on the detectors
+(corresponding to fibers and wavelengths approximately). In other
+words, the conditions during the calibration data acquisition need to
+closely mimic the observing conditions at night. We have the following
+plans for this:
+
+\begin{itemize}
+\item We have a calibration lamp system on top of PFI for both
+  flat-fielding and wavelength calibration. This lamp illuminates a
+  quasi-Lambertian (TBC) screen on the ceiling of the telescope
+  enclosure and the illumination reflects back to the telescope
+  primary mirror. In this way, the telescope pupil can be diffusely
+  illuminated for calibration mimicking the illumination by the sky in
+  real observations at night.
+\item Even if the pupil illumination is managed as above, differences
+  of the fiber status between observations and calibration may cause
+  some errors in the PSF modeling due to e.g. variation of Focal
+  Ratio Degradation (FRD) in the fibers. There are three cases where
+  such errors may be introduced: (1) Fiber moves (mainly twists) as
+  the Cobras move, (2) coils/uncoils of fiber bundles with the
+  rotation of the instrument by the rotator, and (3)
+  bending/unbending of the fiber cable due to telescope elevation
+  changes. We currently think that (1) has the most significant
+  impact, so the procedure is likely to take the calibration data for
+  every fiber configuration taken in a given night. Detailed studies
+  are underway. If (2) is also significant, the rotator angle should
+  also be reproduced in this data acquisition but the amount of
+  calibration data required could be huge and it may not be realistic
+  to take them all during a night. If (2) and/or (3) are significant,
+  we will plan to have another calibration lamp system to take data
+  in the daytime as functions of telescope elevation and rotator
+  angle and characterize the impacts.
+\item A significant number of fibers should be assigned as sky fibers
+  and should be roughly uniformly distributed over the focal
+  plane. The required number is still TBD, and will be clarified in
+  commissioning observations.
+\end{itemize}
+
+\subsection{Data quality assessment and assurance for long-term survey processing}
+
+The procedure of data quality assessment and assurance (QA) is still
+being actively discussed in detail, but we are aiming to accommodate a
+data QA on an object-by-object basis: Data quality assessment
+procedure and success criteria are set for each object so that, once a
+particular object is considered ``done'', the fiber(s) assigned to the
+object can be allocated to a different target and be reconfigured
+accordingly. Also, discussions of a data QA in a short time scale
+(much shorter than one night) are underway, for which ``on-site''
+(i.e. at the telescope) quick data reduction is needed in addition to
+``off-site'' full reduction. In particular for faint objects, one of
+the key processes is full analysis of sky fibers even in the quick
+on-site data QA to understand the noise characteristics and
+subsequently limiting fluxes as a function of wavelength. The database
+is then updated with such information, revisions are applied to the
+field definitions and/or fiber configurations accordingly, and
+observations are performed using such updated fields and fiber
+configurations. This routine is repeated until the survey is
+considered ``done''. {\bf ``SPT'' (Survey Planning and Tracking
+  software)} is the software package for the survey management
+responsible for data QA.
 
 %%%%%%%%%%%
 %% Detailed Plan %%
 %%%%%%%%%%%
-\section{Detailed Operational Plan\label{sec:detail_ope_plan}}
-%%%%%%%%%%%%%%%
-%% Operational sequence %%
-%%%%%%%%%%%%%%%
-\subsection{The operational sequence during a normal observing run \label{sec:detail_ope_plan:sequence}}
+\section{Telescope \& Instrument Operation Details\label{sec:detail_ope_plan}}
 
-%%%%%%%%%%%%%%%%%%%%%
-%% Operational sequence (Definition) %%
-%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Definition of operational sequence of PFS observation \label{sec:detail_ope_plan:definition}}
-In a normal observing night, the following process can be run:
+Below is a list of processes that are carried out in a typical
+observing ``night'', including the evening before and morning after
+the night.
 
 \begin{itemize}
-\item Instrument replacement
+\item Instrument exchange
 \item Startup of the PFS system
-\item Telescope pre-check and the PFS status check
-\item Setting up the field with slewing telescope and field acquisition
-\item Focus check
-\item Cobra configuration including reconfiguration in the same field
-\item Starting telescope tracking
-\item Starting auto guiding system
-\item Taking scientific exposures
-\item Taking calibration frames
+\item Telescope \& instrument pre-check
+\item Telescope pointing and field acquisition
+\item Start of the telescope and instrument rotator operation in the siderial tracking mode
+\item Focusing
+\item Fiber (re-)configuration
+\item Start of telesecope auto guiding
+\item ``Science'' exposures of sky
+\item ``Calibration'' exposures of domeflat and arc
 \item Shutdown of the PFS system
 \end{itemize}
 
-\noindent Here is the description of each process:\\
-
-\noindent \underline{\textbf{Instrument replacement:}}
-\vspace{5pt}
-
-In the beginning of the PFS observing runs, PFS instruments are placed to the right position on the telescope system. Since PFI shares the Popt2 unit with HSC, HSC unit should be replaced from the Popt2 if it is used before the PFS runs. The detailed sequence of this procedure will be described somewhere else.\\
-
-\noindent \underline{\textbf{Startup of the PFS system:}}
-\vspace{5pt}
-
-The procedure of the startup mode is done in the following way:
-
-\begin{itemize}
-\item Turn the power systems ON
-\item Initialize each sub-system
-\item Establish the communication between each sub-system via ICS
-\item Keep them stable and in stand-by state for the next process
-\end{itemize}
-
-The items that DCs should check before pre-check are as follow:
-\begin{itemize}
-\item Popt2 and PFI are installed in the right position
-\item Connection of the cable C between PFI and tower connector
-\item Power cycle if necessary?
-\end{itemize}
-
-(TBW in details)\\
-
-\noindent \underline{\textbf{Telescope pre-check and PFS status check:}}
-\vspace{5pt}
-
-Once the day-time works of the instrument replacement are completed, the pre-check is needed to be done before the night operation starts. The health check of the PFS instruments are also done during the pre-check procedure. (TBW in details)\\
-
-\noindent \underline{\textbf{Setting up the field with slewing telescope and field acquisition:}}
-\vspace{5pt}
-
-\textbf{Slewing telescope}: 
-(Slewing telescope is controlled in the telescope side not from PFS)
-
-\textbf{Field Acquisition}: 
-(Based on Shimono-san's document 20160421)
-IIC sends to AGCC commands to set the location (e.g., SetRegion) and start the sequence (e.g., StartSequence seq=1 count?=1). IIC acquires the telescope status and calculate errors. Then, IIC returns the following information to Gen2: 
-\begin{itemize}
-\item $\Delta x$ and $\Delta y$ (or $\Delta \alpha$ and $\Delta \delta$)
-\item $\Delta$ InR (rotator angle error)
-\end{itemize}
-
-(TBW in details)\\
-
-\noindent \underline{\textbf{Focus check:}}
-\vspace{5pt}
-
-The telescope focus check is done after the sun set and the dome opens. The focus check is done by using the image of bright point sources on the PFS AG camera (TBD). This process is also done occasionally during the observations. 
-
-(Based on Shimono-san's document 20160421)
-IIC sends to AGCC commands to set the location (e.g., SetRegion) and start the sequence (e.g., StartSequence). IIC sends to Monitor a command to start the sequence (e.g., StartFocusCheck seq=1 cam=X,Y,Z).
-
-The following status items are sent to MHS from AGCC:
-\begin{itemize}
-\item stat\_cam = xxx (status of the camera)
-\item fits\_cam = xxx (fits output?)
-\item status\_updated seq=X ... (callback function?)
-\end{itemize}
-
-In the Monitor side, status\_updated is executed by a trigger to calculate the focus value and the status including the values of each camera is returned. Then, Monitor send to IIC a command to move Hexapod with arguments ($Z$, $\theta_{X}$, $\theta_{Y}$). (TBW in details)\\
-
-\noindent \underline{\textbf{Cobra fiber configuration:}}
-\vspace{5pt}
-
-TBW\\
-
-\noindent \underline{\textbf{Starting telescope tracking:}}
-\vspace{5pt}
-
-TBW\\
-
-\noindent \underline{\textbf{Starting auto guiding system:}}
-\vspace{5pt}
-
-TBW\\
-
-\noindent \underline{\textbf{Taking scientific frames:}}
-\vspace{5pt}
-
-TBW\\
-
-\noindent \underline{\textbf{Taking calibration frames:}}
-\vspace{5pt}
-
-TBW\\
-
-\noindent \underline{\textbf{Shutdown of the PFS system:}}
-\vspace{5pt}
-
-This process is done under the PFS shutdown mode. The sequence of this process is as below:
-
-\begin{itemize}
-\item Stop the current procedure (probably calibration mode?) normally
-\item Check the system is in the safe state for shutdown process
-\item Turn the power systems OFF (especially PFI and MCS for removal from the telescope)
-\end{itemize}
-
-\noindent After the shutdown procedure is done, PFI and MCS is in the stand-by state for the removal from the telescope at the end of each observing run.\\
-
-%%%%%%%%%%%%%%%%%%%%
-%% Operational sequence (Overall) %%
-%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Overall operational sequence of PFS survey observation \label{sec:detail_ope_plan:overall}}
-
-In the actual observing run, the operation is done following the sequence of the processes described in section \ref{sec:detail_ope_plan:definition}. Figure \ref{fig:operation_sequence_overall1} shows the flow chart of the sequence in a typical observing run. Here we assume that the instrument is placed on the Telescope system, that means the starting point is the system startup. In Figure \ref{fig:operation_sequence_overall2}, we show the rough operational sequence in a typical normal observing night. 
-
-Once the startup of the PFS instruments is done, pre-check and PFS health check process is executed during the day-time. After this process is done and the sun sets, then the initial telescope focus check is made after opening the telescope dome. Then, the field set-up procedure slewing the telescope to the target field and the field acquisition procedure by using AG camera are executed. The fiber configuration process runs with the feedback from the acquired image of the back-illuminated fibers on MCS. Although we did not quantified how the movement of the telescope affects the accuracy of the fiber configuration, the fiber configuration process can run in parallel with the telescope slewing and field acquisition procedure if the effect is not significant. Then, the first exposure starts after starting telescope tracking and auto-guiding. 
-
-In most cases of the PFS survey observation, multiple exposures for the same targets and fiber configuration are assumed. In the current operation strategy, we redo the fiber configuration before the next exposure starts. Since the allowable range of the instrument rotator angle is limited ($\pm 60$ deg.), we need to rewind the rotator if the rotator angle hits the limit by 60 or 120 deg. (See \ref{appendix:documents:yabe}). Figure \ref{fig:operation_sequence_overall2} shows an example of the operation over night for a case that observations with multiple exposures in two different fields. In this case, we need to rewind the rotator two times in each field. Since the telescope focus should be varied during a night, we check the telescope focus and apply correction if needed. The frequency of the focus check is not clear at this moment, but we probably need to do a few focus checks during a night. The next sequence of the exposure starts after starting tracking and guiding.
+These are processed roughly sequentially in the order they appear, but
+some of them run in parallel and there are a set of those that are
+repeated e.g. every time when the telescope points to a different
+field. In what follows, some details of individual processes are
+described with such concurrent and iterative processing into
+account. These are also visualized and exemplified in the forms of
+flowchart and timing chart in Figures
+\ref{fig:operation_sequence_overall1} and \ref{fig:operation_sequence_overall2}.
 
 \begin{figure}[!htb]
 \begin{center}
@@ -249,14 +356,412 @@ In most cases of the PFS survey observation, multiple exposures for the same tar
 \caption{An example of the time sequence of the normal scientific operation. Here, we assume that moderately long exposures (several hours) are done in two different fields. \label{fig:operation_sequence_overall2}}
 \end{figure}
 
-At the end of the night, the calibration procedure is executed after the dome closed. If the PFS observation is continued in the next night, the PFS system may not be required to be in the shutdown mode but in the sleep mode (TBD) in stead.
-
 \begin{figure}[!htb]
 \begin{center}
 \includegraphics[scale=0.5]{./figures/PFS_Operational_Sequence_for_Single_Exposure_SPIE2016.pdf}
 \end{center}
 \caption{A schematic view of the operational sequence of instruments as a function of time. (To Be Updated) \label{fig:single_exposure_sequence1}}
 \end{figure}
+
+\subsection{Instrument exchange\label{sec:detail_ope_plan:instrument_exchange}}
+In the beginning of the PFS observing runs, the PFS instrument needs
+to be set up at the right place on the telescope system. While the
+spectrograph system and most of the fiber system are static, PFI and
+MCS need to be re-installed every time. Since PFI shares the POpt2
+unit with HSC, HSC unit should firstly be removed from the POpt2 if it
+is used before the PFS run, and then PFI is installed. Next, POpt2
+with PFI in is brought to the telescope top end and is installed on
+the telescope. Then the power, coolant, and network cables from the
+telescope side are connected to the bulkhead connector box located on
+the each side of the cable wrapper. The 4 fiber cables as a part of
+Cable C stored on top of PFI are also uncoiled and routed around POpt2
+for the fiber connector heads to be mated with those of Cable B
+parking on the side of the IR-side telescope spider. Note that the
+fiber connectors between Cable B and Cable A in front of SpS are rather
+permanently mated. Then the fiber connector monitoring system as a
+part of Cable B allows one to check the mating condition of the fiber
+connectors by showing simple diagnostics (TBD).
+
+Meanwhile, MCS is an assembly as an independent Cassegrain instrument,
+so it is attached directly to the Cassegrain port after another
+Cassegrain instrument is removed. The power, coolant, and network are
+automatically connected in this installation process.
+
+These instrument exchange processes should be described somewhere else
+TBD in detail.
+
+\subsection{Startup of the PFS system\label{sec:detail_ope_plan:startup}}
+
+The basic procedure of this startup is supposed to be the following.
+
+\begin{itemize}
+\item Power ON each sub-system
+\item Run an initialization process on each sub-system and confirm its
+  operation.
+\item Establish the communication between the sub-systems via ICS
+\item Leave them in a stand-by/ready state for the next process
+\end{itemize}
+
+Note that the spectrograph system is static (i.e. no need of something
+like instrument exchange), so it can be left in a ready status for a
+long time between PFS runs. Meanwhile, PFI and MCS are reinstalled at
+the beginning of every run. So they can be turned on at the stand-by
+positions for initialization and test/maintenance processes, but they
+are supposed to be turned off before the installation processes and
+the startup sequence is applied again after they get on the telescope.
+
+The details of each process in this startup procedure should be
+developed and written down with a step-by-step procedure. A
+preliminary one will be developed at a sub-system level by the time of
+its delivery to the observatory, and it will be further developed by
+the collaboration with the observatory staffs in the process of
+re-integration and commissioning at Subaru.
+
+\subsection{Telescope \& instrument pre-check\label{sec:detail_ope_plan:precheck}}
+Once the instrument exchange is completed, the pre-check is performed
+before the night operation starts. This pre-check covers the health
+and readiness check of not only the telescope system but also the PFS
+instrument. The pre-check of PFS should be developed in detail in the
+future by collaboration with the observatory staffs, but will likely
+be composed of a subset of subsystem check processes and those to
+check the system operation on the telescope.
+
+\subsection{Focusing\label{sec:detail_ope_plan:focusing}}
+There are three foci important for the PFS operation: The prime focus,
+MCS focus, and SpS focus. The prime focus is checked by the images of
+bright stars on the PFS AG cameras after the sun sets and the dome
+opens. There are six AG cameras surrounding the PFS science field of
+view where the fibers are populated. In front of each AG camera
+sensor, there is a setup by which the half area of camera sensor is
+covered by a slightly different optical path length from the other
+half, so that by looking at the stellar images and comparing those in
+one area with the other, one can determine which way the focus should
+be shifted. The focus is adjusted by the Hexapod which can change the
+distance from the telescope primary mirror to the assembly of WFC and
+PFI. We intend to implement this focus adjustment in parallel to
+running field acquisition and auto guiding. Although the focus likely
+varies during a night, we should be able to monitor its shift and apply
+correction when needed. The frequency of the focus check is not clear
+at this moment, but we will probably implement it when we reconfigure
+fibers which should happen reasonably frequently (see
+\S~\ref{subsec:fiber-reconfig}).
+
+Meanwhile, we assume the other two foci will have already been set to
+the optimal positions before the evening of a PFS observing night. The
+focus position of the detector in MCS will be optimized in the
+commissioning phase looking at the back-illuminated fibers at the
+prime focus. Opt-mechanically MCS is reasonably thermalized within a
+temperature range typically expected during a night, so we expect only
+occasionally to have to adjust the focus position. Note that the image
+quality on the MCS detector is quite insensitive to the distance
+between the prime focus and MCS as a bulk.
+
+The SpS focus will also be optimized in the integration and
+commissioning phase using the hexapod mechanism under the fiber slit
+assembly and the detector focus mechanism in each camera. This process
+can be done independent of the status of the other PFS subsystems and
+the telescope using the internal illumination source of SpS. Since SpS
+is located in the temperature-controlled Spectrograph Clean Room
+(SCR), once the focus is optimized, we expect only occasionally to
+have to check and adjust it again. One exception may be when the
+configuration of the red camera is changed to the medium-resolution
+mode from the low-resolution mode or vice versa in the middle of a
+night: Although the spectrograph has been designed in such a way that
+no focus adjustment is needed between these two setups with different
+gratings, we will have to confirm this in the commissioning phase.
+
+\subsection{Telescope pointing and field acquisition\label{sec:detail_ope_plan:acquisition}}
+The first step in actual observations is to point the telescope to the
+target field and set the instrument rotator to a requested angle.  In
+parallel, the Hexapod, ADC, and telescope primary mirror active
+support are adjusted by the telescope control system for this new
+field. Once the telescope and rotator stop slewing and start operating
+in the tracking mode, exposures of acquisition stars are taken by the
+AG cameras, errors in the telescope pointing and rotator angle are
+calculated, and feedback is sent to the telescope control system for
+corrections.  This process is iterated continuously until the errors
+are small enough to start auto-guiding. A focusing operation can be
+executed at some point in this course of field acquisition and
+auto-guiding.
+
+\subsection{Fiber (re-)configuration\label{sec:detail_ope_plan:fiber_configuration}}
+\label{subsec:fiber-reconfig}
+While the telescope is slewing, the fiber positioner system can start
+configuring the science fibers at least coarsely to the expected
+positions of the science targets on the focal plane. When the process
+of fiber configuration starts, SpS closes the shutters and starts
+reading out the detectors. It also turns on the LEDs to illuminate the
+surfaces of the shutters (the other sides from the cameras are
+illuminated, so there is no interference to the detector
+readouts). The diffuse reflection of the LED lights illuminates the
+collimator mirror and is focused by the collimator mirror back onto
+the fiber slit. In this way, the fiber tips at the prime focus are
+back-illuminated. Meanwhile, the fixed fiducial fibers are illuminated
+by the fiducial illuminator accommodated in PFI. MCS then takes images
+of the back-lit science and fiducial fibers, measures the current
+positions of them and calculate the errors from the requested
+positions of the science fibers. Based on this information the fiber
+positions are updated and the errors get smaller as successive
+iterations are applied. Once the telescope and rotator start operating
+in the sidereal tracking mode, the rotator operation and auto-guiding
+are temporarily stopped\footnote{When observations are carried out
+  using the prime focus, the prime focus instrument can be rotated,
+  but the Cassegrain instrument cannot be operated because the focus
+  is not in use. Accordingly, the MCS cannot be rotated synchronously
+  with PFI and therefore the images of back-illuminated fibers on MCS
+  are elongated if PFI is rotated and could worsen the centroiding
+  error.}  for fine positioning of the fibers (the telescope can still
+be moving in the tracking mode).
+%
+Apart from the time for telescope slewing and rotator operation, one
+iteration of fiber configuration is expected to take $\sim$10$-$15sec,
+including both the time of Cobra moves and exposure time of MCS. We
+expect $\sim$6 iterations will be required, so one fiber
+configuration will be completed in $\sim$90sec given several
+iterations are needed, but more studies are on-going to fully
+understand the timing budget.
+
+\begin{figure}
+  \begin{center}
+    \begin{tabular}{ccc} %% tabular useful for creating an array of images
+      \includegraphics[width=7.5cm]{./figures/cobra-sn.png} &
+      \includegraphics[width=7.5cm]{./figures/cobra-motormap.png} \\
+    \end{tabular}
+  \end{center}
+  \caption{ \label{fig:cobraperformance} On the left, the level of
+    convergence of Cobras to requested positions is plotted against
+    measure of the signal-to-noise ratio relative to a fiducial value,
+    which increases to the maximum at the fourth iterations and slowly
+    decreases at later iterations. These data were taken at the target
+    convergence tests on the engineering model Cobra positioners
+    module. On the right, the data points indicate the Cobra motor
+    speeds as a function of angular position. The relationship is
+    so-called a motor map. As two curves are shown in the graph, a
+    motor map can be updated as more data are collected.}
+\end{figure}
+
+Below are a few details to be highlighted regarding the fiber
+(re-)configuration process:
+
+\begin{itemize}
+\item The formulae to match the fiber positions on the focal plane
+  with the positions of astronomical objects on the sky will be
+  understood in advance and stored in the database. We expect not to
+  have to update them often, but we should confirm this by monitoring
+  the stability in a longer term (we will record the errors of fiber
+  positioning at each configuration process). We should likely request
+  engineering nights to confirm/update the formulae of coordinate
+  transformation because quite a few fiber configuration processes on
+  several fields will probably be required and therefore it will take
+  a while for data acquisition and subsequent analyses.
+\item It is not trivial to determine that the Cobras are aligned well
+  enough to the target positions. Actual criteria for convergence and
+  procedure of assessment are still under discussions, but we
+  consider that the concept of a signal-to-noise ratio can be useful
+  as a measure of optimality, rather than the residual distances of
+  the fibers from their targets. Starting from a situation in which
+  all the fibers are remote from their target positions (except for
+  chance coincidence), in the first few iterations, all the fibers get
+  closer to the targets, so the signal in terms of fluxes from the
+  objects to the fibers increases quickly. However, the gain of the
+  signal after each move of the Cobras gets smaller at later
+  iterations because most of the fibers are already reasonably close
+  to the targets, and then the gain becomes less than the loss due to
+  the loss of the observing time for integration on the
+  detectors. Therefore the number of iterations giving the optimal
+  signal-to-noise ratio must be somewhere in the middle
+  (Fig. \ref{fig:cobraperformance}). In reality, since the time for
+  one iteration is rather short in particular at later iterations,
+  some more iterations to pursue better positions of more fibers may
+  be worth at relatively small expenses of observing time, so we will
+  leave such flexibility in the choice.
+\item The response of each motor in the Cobra actuator to a drive
+  signal is known to depend on angular position
+  (Fig. \ref{fig:cobraperformance}). Characterizing this so-called
+  ``motor map'' and operating the Cobras taking it into account are
+  considered key to achieve efficient convergence.
+\item Although observation strategies and data quality success
+  criteria are different among the three main science areas in the
+  plan of PFS SSP survey\cite{takada14}, all are planning to acquire
+  data with no beam-switching to blank sky. (The instrument control
+  system will however accommodate the beam switching capability as an
+  option.)  This will maximize the on-source integration time over the
+  observing time and minimize the geometric constraints in the
+  allocation of science fibers to science targets\footnote{In
+    cross-beam switching observations, two fibers are assigned to one
+    science target and the telescope pointing is dithered between one
+    exposure and another so that in the first exposure one of the
+    fibers is placed on the target and the other observes blank sky,
+    and in the next exposure, they switch the role. This way, 100\% of
+    the exposure time can be used for on-source integration, but the
+    fibers can be significantly less flexibly allocated to targets.}.
+ \item Due to the large field of view, the differential atmospheric
+   refraction effect is severe over most of the sky. Accordingly, the
+   science fibers need to be reconfigured e.g. every $\sim$30 minutes
+   (TBC).
+%\item The instrument rotator operates over a restricted range between
+%  $-60$ deg to $+60$ deg. This is to minimize any variation of the
+%  fiber status by instrument rotation (possibly important for stable
+%  Point Spread Function (PSF) on the spectrograph detectors and
+%  therefore for good sky subtraction), exploiting the hexagonal
+%  symmetry on the PFS focal plane.
+\end{itemize}
+
+\subsection{Start of telescope auto guiding and ``science'' exposures\label{sec:detail_ope_plan:science_exposure}}
+
+Once the fiber configuration is complete, the rotator operation is
+restarted, the field acquisition process is redone and the
+auto-guiding operation is restarted. In parallel, SpS turns off the
+LEDs for science fiber back-illumination and PFI turns off the
+fiducial illuminator. Then SpS opens the shutters and starts exposing
+the detectors to the sky.
+
+\subsection{When should the fibers be reconfigured?}
+
+In most cases of the PFS survey observation, multiple exposures for
+the same targets and fiber configuration are expected, but we should
+likely repeat exposures with often updating the fiber configuration.
+There are a few reasons for this:
+
+\begin{itemize}
+\item Due to the large field of view, the differential atmospheric
+  refraction effect is severe over most of the sky. Accordingly, the
+  science fibers need to be reconfigured e.g. every $\sim$30 minutes
+  (TBC).
+\item In the current plan, the data quality assessment and assurance
+  are carried out on an individual object basis. So, even if the same
+  area of sky is integrated, the fiber configuration should partially
+  change from exposure to exposure as integrated data of some targets
+  show e.g. high enough signal-to-noise ratio.
+\end{itemize}
+
+\subsection{Rewinding the instrument rotator\label{sec:detail_ope_plan:rewind_rotator}}
+
+In the PFS operation, the range of instrument rotator angle is
+intentionally restricted by the software to that from $-60$ deg to
+$+60$ deg (mechanically it can rotate from $-270$ deg to $+270$ deg
+with no damage to the instrument). This is to minimize any variation
+of the fiber status by instrument rotation (possibly important for
+stable Point Spread Function (PSF) on the spectrograph detectors and
+therefore for good sky subtraction), exploiting the hexagonal symmetry
+on the PFS focal plane. This means that we need to rewind the rotator
+by 60 or 120 deg when the rotator angle hits the limit (see
+\ref{appendix:documents:yabe}). Figure
+\ref{fig:operation_sequence_overall2} shows an example of the
+operation over night for a case that observations with multiple
+exposures in two different fields. In this case, we need to rewind the
+rotator two times in each field.
+
+\subsection{Calibration exposures\label{sec:detail_ope_plan:calibration}}
+
+In the current plan, calibration exposures (i.e. domeflat frames and
+arc frames) are taken only at the beginning and end of a night
+(i.e. in the evening and morning) when the dome is closed and the
+telescope points to the zenith. The PFS instrument is equipped with
+its own calibration lamp system on top of PFI for flat-fielding and
+wavelength calibration. These lamps will be turned on, and exposures
+are taken. The mirror cover should be left open in this data
+acquisition for the light come into the instrument as similarly as
+possible to the case of observing the sky. Also, to reproduce the
+fiber status in the observing conditions as much as possible, we
+consider to configure the science fibers in the same way as observing
+the sky. We believe fine positioning is not needed, so a small number
+of iterative moves should be enough for the fiber configuration.
+However, if science exposures are taken with different fiber
+configurations during a night, subsequently a set of calibration
+frames for each configuration need to be taken as in the case of FMOS
+calibration data acquisition. As mentioned in
+\S~\ref{sec:operation_concept:reduction_calibration}, if we find additional variation
+for some reasons with the telescope elevation angle, time,
+environmental conditions, and so on, we may need to take calibration
+exposures more frequently. We will clarify needs in the engineering
+observations.
+
+\subsubsection{Time required to acquire calibration data}
+
+\begin{enumerate}
+\item Telescope slew to zenith (0.5 deg/s): 0 -- 360 sec. (typically 180 sec.?)
+\item Rotator move (1.5 deg/s): 0 -- 120 sec. (typically 60 sec.?)
+\item Start-up (flat/arc) lamps: 30 sec.?
+\item Exposure including readout: 15 sec.?
+\end{enumerate}
+
+\subsection{Shutdown of the PFS system\label{sec:detail_ope_plan:shutdown}}
+
+This process is to terminate the PFS operation. Overall there are two
+cases: One is when a PFS observing run finishes (so this shutdown is
+done at the last morning before instrument exchange where PFS is
+removed from the telescope), and the other is when one night of PFS
+observation finishes but the run still continues (i.e. PFS observation
+is scheduled also on the next night). In the latter case, the
+instrument should be turned into a stand-by or sleep mode (to be
+defined, though) rather than shutdown completely so that it can be
+restarted efficiently at the beginning of next night.
+
+The shutdown sequence is supposed to be roughly as follows, although
+many details should be developed through the collaboration with the
+observatory staffs.
+
+\begin{itemize}
+\item Stop the current procedure (probably calibration mode?) normally
+\item Check the system is in the safe state for shutdown process
+\item Turn the power systems OFF (especially PFI and MCS for removal from the telescope)
+\end{itemize}
+
+After the shutdown procedure is done, PFI and MCS should become ready
+for removal from the telescope in the day time.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Operational sequence during engineering  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Special operations for commissioning, engineering, maintenance purposes\label{sec:detail_ope_plan:engineering}}
+
+Operation details are to be written for individual processes like
+below needed in the commissioning phase.
+
+\begin{itemize}
+\item The xy and tilt alignment of the assembly of WFC and PFI against
+  the telescope primary mirror by using defocused images of a bright
+  star on the AG cameras
+\item Measuring the rotator center position relative to PFI focal plane using MCS
+\item Detailed characterization of PSF on the spectrograph detectors
+  by masking quite a few fibers under the Field Element dots and making a sparse distribution of spectra on the detectors
+\item Initial characterization of Cobras: Arm lengths, phi and theta axes, etc.
+\item First-pass distortion map using the AG camera images
+\item Raster scan for 2nd-pass distortion map and its fine tunes
+\item Making formulae of relative flux calibration from observation of bright $\sim$F stars
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%
+%% Connection with Tel system %%
+%%%%%%%%%%%%%%%%%%
+\section{Implementation plan (pretty much under development)}
+\subsection{Connection between PFS and the telescope systems}
+The coordination of the telescope and the instruments at the summit is
+done by Gen2 system. In the operation of PFS system in the normal
+observing mode, ICS is required to communicate with Gen2 to receive
+the telescope status and also send the status of the instrument and
+requests for the movement to the telescope. The communication between
+the PFS system (MHS) and the telescope (Gen2) is done via an interface
+called ``g2t'' by using ``g2cam'' library in Python.
+
+As we mentioned in section \ref{sec:detail_ope_plan}, each
+sub-sequence can be processed in parallel. Since any commands in g2cam
+can be triggered only by Gen2, the sequence should be done in the
+following way:
+\begin{itemize}
+\item Gen2 prepares a command for callback
+\item Once the event occurs, PFS pushes the status with what should be done by Gen2 (such as rotate InR by 120 deg.) and ends the command
+\item The sequence running in Gen2 picks up the status value and execute the command
+\item Return to the 1st step (if necessary)
+\end{itemize}
+The detailed processing during the single exposure is described in the section \ref{sec:detail_ope_plan:single}.
+
+Another interface is between the status server called Subaru Telemetry
+System (STS) and the PFS internal Status Archival System
+(SAS). Various information on the instrument status is stored in SAS
+and some of them should also be stored in STS.
 
 \begin{figure}[!htb]
 \begin{center}
@@ -265,23 +770,10 @@ At the end of the night, the calibration procedure is executed after the dome cl
 \caption{A schematic view of the communication between each sub-component during the operation. (To Be Updated)\label{fig:single_exposure_sequence2}}
 \end{figure}
 
-As described in \ref{sec:survey_operation:software}, the entire instrument operation is done with sequences associated with each instrumental component. Here we described the detailed processes of each sequence and their relation between each other.
+\subsection{Implementation of the Gen2 commands}
+\subsubsection{List of commands}
+\subsubsection{Example1}
 
-%%%%%%%%%%%%%%%%%%
-%% Connection with Tel system %%
-%%%%%%%%%%%%%%%%%%
-\subsection{Connection between PFS and the telescope systems}
-The coordination of the telescope and the instruments at the summit is done by Gen2 system. In the operation of PFS system in the normal observing mode, ICS is required to communicate with Gen2 to receive the telescope status and also send the status of the instrument and requests for the movement to the telescope. The communication between the PFS system (MHS) and the telescope (Gen2) is done via an interface called ``g2t'' by using ``g2cam'' library in Python.
-
-As we mentioned in section \ref{sec:detail_ope_plan:overall}, each sub-sequence can be processed in parallel. Since any commands in g2cam can be triggered only by Gen2, the sequence should be done in the following way:
-\begin{itemize}
-\item Gen2 prepares a command for callback
-\item Once the event occurs, PFS pushes the status with what should be done by Gen2 (such as rotate InR by 120 deg.) and ends the command
-\item The sequence running in Gen2 picks up the status value and execute the command
-\item Return to the 1st step (if necessary)
-\end{itemize}
-
-Another interface is between the status server called Subaru Telemetry System (STS) and the PFS internal Status Archival System (SAS). Various information on the instrument status is stored in SAS and some of them should also be stored in STS.
 
 %%%%%%
 %% QA %%
@@ -308,14 +800,38 @@ Some functions are already implemented on the current Gen2 system.\\
 \noindent \underline{\textbf{Autoguiding monitoring:}}
 \vspace{5pt}
 
-The variation of the positional accuracy of assigned fibers to objects is critical to the signal-to-noise ratio of the obtained spectra. The statistical positional errors of the fibers is monitored by the centroids of bright stars in the A/G cameras. Again, bright (point source-like) galaxies can be used for this purpose. Not only the statistics but also a monitoring system with GUI may be useful to observers.\\
+The variation of the positional accuracy of assigned fibers to objects
+is critical to the signal-to-noise ratio of the obtained spectra. The
+statistical positional errors of the fibers is monitored by the
+centroids of bright stars in the A/G cameras. Again, bright (point
+source-like) galaxies can be used for this purpose. Not only the
+statistics but also a monitoring system with GUI may be useful to
+observers.\\
 
 \noindent \underline{\textbf{Sky condition monitoring:}}
 \vspace{5pt}
 
-The weather condition including seeing and transparency at a given time during the observation is essential to the precise measurements of fluxes of the obtained spectra. Bright stars in the A/G cameras are used for the monitoring of the weather condition. If we have too few stars in the FoVs of the A/G cameras, we alternatively use bright galaxies (as point source-like as possible) for these purposes. FWHM of the object image at a given time is at lease required to quantify the seeing size. The difference between the obtained fluxes and the catalogue values is used for the monitoring the sky transparency. Here, we expect precise photometry in HSC or SDSS and other catalogues.
+The weather condition including seeing and transparency at a given
+time during the observation is essential to the precise measurements
+of fluxes of the obtained spectra. Bright stars in the A/G cameras are
+used for the monitoring of the weather condition. If we have too few
+stars in the FoVs of the A/G cameras, we alternatively use bright
+galaxies (as point source-like as possible) for these purposes. FWHM
+of the object image at a given time is at lease required to quantify
+the seeing size. The difference between the obtained fluxes and the
+catalogue values is used for the monitoring the sky
+transparency. Here, we expect precise photometry in HSC or SDSS and
+other catalogues.
 
-Another possibility to monitor the sky condition during the night is to measure the flux level of the obtained spectra of e.g. standard stars in each arm. In particular, monitoring the continuum level of blue arm gives us information on the effect of the moon light, and the flux level of the red and/or NIR arm could be useful to the variation of OH sky lines. At least an interface to show the summary of the quality of the obtained spectra is desirable on the summit system (TBD).\\
+Another possibility to monitor the sky condition during the night is
+to measure the flux level of the obtained spectra of e.g. standard
+stars in each arm. In particular, monitoring the continuum level of
+blue arm gives us information on the effect of the moon light, and the
+flux level of the red and/or NIR arm could be useful to the variation
+of OH sky lines. At least an interface to show the summary of the
+quality of the obtained spectra is desirable on the summit system
+(TBD).\\
+
 
 %%%%%%%%%%
 %% Off-site QA %%
@@ -323,21 +839,37 @@ Another possibility to monitor the sky condition during the night is to measure 
 \subsubsection{Off-site QA of the obtained data (also inputs from Robert Lupton?)}
 TBW
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Operational sequence during engineering  %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{The operational sequence during a commissioning, engineering, and other unusual (irregular?) observations \label{sec:detail_ope_plan:engineering}}
-TBW
+%%%%%%%%%%%%%
+%% Queue operation %%
+%%%%%%%%%%%%%
+\subsection{PFS operation in queue mode}
+TBW 
 
 %%%%%%%%%%%
 %% Possible trouble %
 %%%%%%%%%%%
-\subsection{Possible troubles during the operation}
-In this section, we describe possible troubles envisioned and the solutions during the operation.
-\subsubsection{Possible troubles in general}
-\subsubsection{Possible troubles during the system startup/shutdown, the pre-check, and the instrument health check}
-\subsubsection{Possible troubles during the scientific operation}
-\subsubsection{Possible troubles during the calibration operation}
+\section{Possible troubles during the operation and tips for them}
+In this section, we describe possible troubles envisioned and the
+solutions during the operation.
+\subsection{Possible troubles in general}
+\subsection{Possible troubles during the system startup/shutdown, the pre-check, and the instrument health check}
+\subsection{Possible troubles during the scientific operation}
+\subsection{Possible troubles during the calibration operation}
+
+\begin{thebibliography}{99}
+\bibitem{tamura16} Tamura, N., et al., ``Prime Focus Spectrograph (PFS) for the Subaru telescope: overview, recent progress, and future perspectives'', Proc. SPIE 9908, Ground-based and Airborne Instrumentation for Astronomy VI, 99081M (9 August 2016); doi: 10.1117/12.2232103
+\bibitem{wang16pfi} Wang, S., et al., ``The current status of prime focus instrument of Subaru prime focus spectrograph'', Proc. SPIE AS105PS, Ground-based and Airborne Instrumentation for Astronomy VI Posters, 990882 (9 August 2016); doi: 10.1117/12.2232044
+\bibitem{takato14} Takato, N., et al., ``Design and performance of a F/\verb|#|-conversion microlens for prime focus spectrograph at Subaru Telescope'', Proc. SPIE 9147, Ground-based and Airborne Instrumentation for Astronomy V, 914765 (31 July 2014); doi: 10.1117/12.2055051
+\bibitem{fisher14} Fisher, C., et al., ``Developing engineering model Cobra fiber positioners for the Subaru Telescope’s prime focus spectrometer'', Proc. SPIE 9151, Advances in Optical and Mechanical Technologies for Telescopes and Instrumentation, 91511Y (7 August 2014); doi: 10.1117/12.2054700
+\bibitem{wang16mcs} Wang, S.. et al., ``Metrology camera system of prime focus spectrograph for Suburu telescope'', Proc. SPIE AS105PS, Ground-based and Airborne Instrumentation for Astronomy VI Posters, 990881 (9 August 2016); doi: 10.1117/12.2232035
+\bibitem{madec16} Madec, F., et al., ``SUBARU prime focus spectrograph: integration, testing and performance for the first spectrograph'', Proc. SPIE AS105PS, Ground-based and Airborne Instrumentation for Astronomy VI Posters, 99088U (9 August 2016); doi: 10.1117/12.2233057
+\bibitem{gunn16} Gunn, J. E., et al., ``Detector and control system design and performance for the SuMIRe prime focus spectrograph (PFS) cameras'', Proc. SPIE AS105PS, Ground-based and Airborne Instrumentation for Astronomy VI Posters, 990893 (9 August 2016); doi: 10.1117/12.2233400
+\bibitem{smee16} Smee, S. A., et al., ``Visible camera cryostat design and performance for the SuMIRe Prime Focus Spectrograph (PFS)'', Proc. SPIE AS105PS, Ground-based and Airborne Instrumentation for Astronomy VI Posters, 99088Y (9 August 2016); doi: 10.1117/12.2233185
+\bibitem{hart16} Hart, M., et al., ``A novel reflectometer for relative reflectance measurements of CCDs'', Proc. SPIE 9915, High Energy, Optical, and Infrared Detectors for Astronomy VII, 99152D (27 July 2016); doi: 10.1117/12.2232943
+\bibitem{cesar16} de Oliveira, A. C., et al., ``Fiber optical cable and connector system (FOCCoS) for PFS/ Subaru'', Proc. SPIE 9151, Advances in Optical and Mechanical Technologies for Telescopes and Instrumentation, 91514G (28 July 2014); doi: 10.1117/12.2056888
+\bibitem{charis} Groff, T., et al., ``Laboratory testing and performance verification of the CHARIS integral field spectrograph'', Proc. SPIE 9908, Ground-based and Airborne Instrumentation for Astronomy VI, 99080O (9 August 2016); doi: 10.1117/12.2233447
+\bibitem{takada14} Takada, M., et al., ``Extragalactic science, cosmology, and Galactic archaeology with the Subaru Prime Focus Spectrograph'', Publications of the Astronomical Society of Japan, Volume 66, Issue 1, id.R1 (2014)
+\end{thebibliography}
 
 \clearpage
 \appendix
@@ -365,87 +897,19 @@ In this section, we describe possible troubles envisioned and the solutions duri
 \item \href{http://member.ipmu.jp/kiyoto.yabe/PFS/tmp/material_pfs_operation_dots_20160629.pdf}{material\_pfs\_operation\_dots\_20160629.pdf} (Effects of instrument rotator angle on dot coverage on the focal plane)
 \end{itemize}
 
+%%%%%%%%%%
+%% QA issues %%
+%%%%%%%%%%
+\section{Summit QA monitoring system}
+\subsection{List of things that we should monitor at summit}
+
+\subsection{Example of display at summit}
+
 %%%%%%%%%%%%%%
 %% Operation of FMOS %%
 %%%%%%%%%%%%%%
 \section{The operational process in FMOS}
 \subsection{}
 
-%%%%%%%%%%
-%% Acronyms %%
-%%%%%%%%%%
-\clearpage
-\section{List of PFS Acronyms}
-
-\begin{longtable}{lll}
-\hline
-Acronym	& Category &	Full Name \\
-\hline
-\endfirsthead
-\hline
-Acronym	& Category &	Full Name \\
-\hline
-\endhead
-\hline
-A\&G	& PFI	& Acquisition and Guiding \\
-AGC	& PFI	& Acquisition and Guidance Camera \\
-FIS	& PFI	& Fiducial Illumination System \\
-PFC	& PFI	& Prime Focus Corrector \\
-PFI	& PFI	& Prime Focus Instrument \\
-PFU	& PFI	& Prime Focus Unit \\
-WFC	 & PFI	& Subaru POpt2 Wide Field Corrector \\
-FOCCOS	& Fiber	& Fiber Optical Cable and Connector System \\
-SRB	& Fiber	& Strain Relief Box \\
-SM	& SpS	& Spectrograph Module \\
-ENU	& SpS	& Entrance Unit \\
-FCA	& SpS	& Fiber Cable Assembly \\
-FSA	& SpS	& Fiber Slit-Sub-Assembly \\
-FIA	& SpS	& Fiber Input sub-Assembly \\
-IIC	& SpS	& Internal Illumination Source \\
-FPS	& SpS	& Fiber Slit Positioning Sub-Assembly \\
-CMA	& SpS	& Collimator Mirror Assembly \\
-SHA	& SpS	& Shutter Assembly \\
-COA	& SpS	& Central Optical Assembly \\
-BDA	& SpS	& Blue Disperser Assembly \\
-RDA	& SpS	& Red Disperser Assembly \\
-OBA	& SpS	& Optical Bench Assembly \\
-BIA	& SpS	& Back-Illumination Assembly \\
-BCU	& SpS	& Blue Camera Unit \\
-CAA	& SpS	& Camera Assembly \\
-CRA	& SpS	& Cryostat Assembly \\
-FPA	& SpS	& Focal Plane Assembly \\
-RCU	& SpS	& Red Camera Unit \\
-CAA	& SpS	& Camera Assembly \\
-CRA	& SpS	& Cryostat Assembly \\
-FPA	& SpS	& Focal Plane Assembly \\
-NCU	& SpS	& NIR Camera Unit \\
-CAA	& SpS	& Camera Assembly \\
-CRA	& SpS	& Cryostat Assembly \\
-FPA	& SpS	& Focal Plane Assembly \\
-LCU	& SpS	& Local Control Unit \\
-VCCS	& SpS	& Vacuum and Cryogenic Control System \\
-VAC-SS	& SpS	& Vaccum control Sub-System \\
-FMCS	& SpS	& Focus Mechanism Control System \\
-DECS	& SpS	& Detector Control System \\
-RFCS	& SpS	& Racks for Control Systems \\
-SAIT	& SpS	& Spectrograph AIT Tools \\
-CAS	& SpS	& Visible (TBC) Camera Unit AIT Station \\
-CIT	& SpS	& CU Integration tool \\
-PGR	& SpS	& Parking Guiding rails \\
-COT	& SpS	& Camera Optics SA integration tool \\
-RIT	& SpS	& Rear dewar integration tool \\
-FIT	& SpS	& Focal Plane Assembly integration tool \\
-CAT	& SpS	& CU optical alignment tool \\
-FST	& SpS	& Fiber slit alignment tool \\
-ETS	& Software	& Exposure Targeting Software\\
-ICS	& Software	& Instrument Control Software \\
-MPS	& Software	& Movement Planning Software \\
-SPT	& Software	& Survey Planning \& Tracking\\
-IPMU & Institute & Institute for the Physics and Mathematics of the Universe\\
-NAOJ & Institute & National Astronomical Observatory of Japan\\
-PU	& Institute	& Princeton University\\
-LAM	& Institute & Laboratoire d'Astrophysique de Marseille\\
-MPA	& Institute & Max Planck Institute for Astrophysics\\
-\end{longtable}
 
 \end{document}
