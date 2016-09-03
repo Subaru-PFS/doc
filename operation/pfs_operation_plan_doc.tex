@@ -440,10 +440,12 @@ one area with the other, one can determine which way the focus should
 be shifted. The focus is adjusted by the Hexapod which can change the
 distance from the telescope primary mirror to the assembly of WFC and
 PFI. We intend to implement this focus adjustment in parallel to
-running field acquisition and auto guiding. Since the focus should
-vary during a night, we shoud monitor it and apply correction if
-needed. The frequency of the focus check is not clear at this moment,
-but we probably need to do a few focus checks during a night. 
+running field acquisition and auto guiding. Although the focus likely
+varies during a night, we shoud be able to monitor its shift and apply
+correction when needed. The frequency of the focus check is not clear
+at this moment, but we will probably implement it when we reconfigure
+fibers which should happen reasonably frequently (see
+\S~\ref{subsec:fiber-reconfig}).
 
 Meanwhile, we assume the other two foci will have already been set to
 the optimal positions before the evening of a PFS observing night. The
@@ -484,6 +486,7 @@ executed at some point in this course of field acquisition and
 auto-guiding.
 
 \subsection{Fiber (re-)configuration}
+\label{subsec:fiber-reconfig}
 While the telescope is slewing, the fiber positioner system can start
 configuring the science fibers at least coarsely to the expected
 positions of the science targets on the focal plane. When the process
