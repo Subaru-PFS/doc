@@ -12,7 +12,7 @@ Although code development work itself is somehow independent among packages in
 PFS project, such as ICS for instrument control, DRP for pipeline, etc., all of 
 these software packages are working on the same hardware which introduces many 
 relationships in various level coordination among packages like from 
-definitions and coordinations on sequence of PFS survey operation in quite 
+definitions and coordination on sequence of PFS survey operation in quite 
 high level, down to database for storing and recording instrument and/or 
 survey operation, or instrument configurations' management and its handling 
 with unified routine for loading. On this point of view, smoothly integrated 
@@ -27,7 +27,7 @@ management, and we use public GitHub repositories in 'Subaru-PFS' organization
 for code repository and review process (well known as pull request procedure). 
 pfspipe.ipmu.jp is operated under single sign on (SSO) infrastructure built for 
 pfs.ipmu.jp which hosts web based services mainly used for hardware development, 
-such as the document server, maillist hosting, and shell access to testing 
+such as the document server, mail list hosting, and shell access to testing 
 environment (SSO but requires key authentication).
 
 Within control software for instrument and hardware, we have two components 
@@ -35,12 +35,12 @@ which need to be care about information control: H4RG, and MLP1 interface.
 These two software modules are quite small and well isolated from other part 
 of instrument control software modules, and also their external interfaces 
 are possible to be kept simple, such that detector readout control software 
-for H4RG accepts required expsure time to output FITS images using optimized 
+for H4RG accepts required exposure time to output FITS images using optimized 
 electronics control configuration without customization, and MLP1 interface 
 requires outputs from AG cameras, which are error values from spot measurement 
 and raw image file, without any interaction back from MLP1 interface to other 
 instrument control part including AG camera control software. Although some of 
-coordinations on interactions and/or interfaces among software components would 
+coordination on interactions and/or interfaces among software components would 
 be affected by detailed design of two modules, but items/areas to be affected 
 (directly) is quite small fraction compared to the entire PFS instrument 
 control software, and also we assume that we can define clear boundary and 
@@ -91,6 +91,28 @@ Within one JIRA instance (or so called *site*), tickets are organized into
   tickets, sprint is used for time domain management of development activity 
   to be done in a certain period (duration). 
 
+Considering our project organization that each software package, such as ICS or 
+DRP, is mostly developed by an independent group, we may be possible to have one 
+project per each software package, not to be bothered by non-direct-ly related 
+modules. 
+We already have several projects for 2D DRP, which were made in quite early 
+phase of introducing JIRA to PFS software development. We may merge them into 
+one large project with components, but these are kept for now. 
+
+Datamodel (DAMD)
+======
+
+Datamodel provides a standardized representation of all data produced by PFS. 
+This contains definitions of:
+
+- Data file formats including FITS format
+- File name conventions such as instrument on-site generated files with path, 
+  archived observation data files, and pre-/post- processed data files. 
+
+
+2D DRP (multiple projects) - 2D Data reduction pipeline
+======
+
 For 2D DRP, we created projects without well understanding on how to use these 
 classifications, and we went to small management that we defined projects per 
 small categories and made several projects even within 2D pipeline project, 
@@ -98,14 +120,20 @@ such as PIPE2D for core 2D pipeline, SIM2D for simulated instrument to be used
 for (2D) pipeline development. We are better to have larger classification than 
 we currently have for 2D development, when we expand our usage of JIRA instance. 
 
-Considering our project organization that each software package, such as ICS or 
-DRP, is mostly developed by an independed group, we may be possible to have one 
-project per each software package, not to be bothered by non-direct-ly related 
-modules. 
+PIPE2D
+  The 2D data reduction pipeline. The 2D pipeline receives raw images 
+  read out from the detector and produces produces one-dimensional, 
+  sky-subtracted, flux- and wavelength-calibrated spectra ready for 
+  scientific analyses. 
+SIM2D
+  The 2D image simulator. This simulates raw images as might be produced 
+  by the spectrograph detectors based on ray-tracing of the optical 
+  model and incorportation of detector characteristics. 
 
-We already have projects for DRP (both 1D and 2D), and ETS.
+1D DRP - 1D Data reduction pipeline
+======
 
-SPT - Survey planning and tracking
+SPT (TBD) - Survey planning and tracking
 ======
 
 We have just started coordination and development on survey operation including 
@@ -114,10 +142,7 @@ we already released ETC - exposure time calculator as one package within SPT,
 which was developed over existing software release), and most of other parts 
 are under investigation. 
 
-For now, we will start with one new repository for operational database design 
-and its access codes at GitHub, and one project at JIRA.
-
-ICS - instrument control
+ICS (TBD) - instrument control
 ======
 
 ICS, which stand of instrument control software, is the most well developed 
@@ -133,6 +158,10 @@ one project in JIRA for ticketing. Within the project for ICS, we may have
 several components to specify which module to be related on (e.g. SpS, xCU, 
 or PFI). Also we will track our instrument (or so called actor in tron's 
 definition) configuration, planning, and strategy of sequencing using a 
-repository and ticketing.
+repository on GitHub and this ticketing project. 
 
+Project general (INFRA)
+======
+
+Project wide infrastructural discussions will go this project. 
 
