@@ -133,7 +133,7 @@ SIM2D
 1D DRP - 1D Data reduction pipeline
 ======
 
-SPT (TBD) - Survey planning and tracking
+SPT (SURVEY) - Survey planning and tracking
 ======
 
 We have just started coordination and development on survey operation including 
