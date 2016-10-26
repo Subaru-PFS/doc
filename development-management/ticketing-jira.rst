@@ -142,7 +142,7 @@ we already released ETC - exposure time calculator as one package within SPT,
 which was developed over existing software release), and most of other parts 
 are under investigation. 
 
-ICS (TBD) - instrument control
+ICS (INSTRM) - instrument control
 ======
 
 ICS, which stand of instrument control software, is the most well developed 
