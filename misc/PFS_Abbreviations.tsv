@@ -1,0 +1,157 @@
+Abbreviation	Category	Group	Unabbreviated words	Comments
+A&G	General	Observation	Acquisition and Guiding	
+ADC	Subaru	Instrument	Atmospheric Dispersion Corrector	A part of WFC
+AG	PFI	Observation	Auto Guide	
+AGC	PFI	Subcomponent	Acquisition and Guidance Camera	
+agcc	ICS	Actor	Acquisition and Guidance Camera Controller	
+AIT	PFS	General	Assembly and Integration Tests	
+APC	PFI	Subcomponent	Auxiliary Power/control Electronics	
+ASIAA	General	Organization	"Academia Sinica Institute of Astronomy and Astrophysics, Taiwan"	
+BBC	FOCCoS	Subcomponent	Big Black Cable	Protective tubes for optical fibers at Cable C and B
+BCB	PFI	Subcomponent	Bulkhead Connector Box	
+BCU	SpS	Subcomponent	Blue Camera Unit	
+bcu	ICS	Actor	Blue Camera Unit	
+BDA	SpS	Subcomponent	Blue Disperser Assembly	
+BIA	SpS	Subcomponent	Back-Illumination Assembly	
+CAA	SpS	Subcomponent	Camera Assembly	
+CAL	PFI	Subcomponent	Calibration Lamp	
+Caltech	General	Organization	"California Institute of Technology, USA"	
+CAS	SpS	Subcomponent	Visible (TBC) Camera Unit AIT Station	
+CAT	SpS	Subcomponent	CU optical Alignment Tool	
+CB2F	Subaru	Facility	Control Building 2nd Floor	The place at which main constrol system will be.
+CIT	SpS	Subcomponent	CU Integration Tool	
+CIT	General	Organization	"California Institute of Technology, USA"	
+CLA	FOCCoS	Subcomponent	Cell Assemblies	
+CMA	SpS	Subcomponent	Collimator Mirror Assembly	Tower Connector of Cable C
+COA	SpS	Subcomponent	Central Optical Assembly	
+COB	PFI	Subcomponent	Cobra Optical Bench	
+COBRA	PFI	Subcomponent	COBRA positioners	
+COT	SpS	Subcomponent	Camera Optics SA integration tool	
+CPPC	General	Organization	Chinese PFS Participant Consortium	
+CRA	SpS	Subcomponent	Cryostat Assembly	
+CWA	PFI	Subcomponent	Cable Wrapper Assembly	
+DAQtk	Subaru	Operation	Data Acquisition and Queue ToolKit (SOSS)	
+DB	FOCCoS	Subcomponent	Distribution Box	
+DEA	SpS	Subcomponent	Dewar Assembly	
+DECS	SpS	Subcomponent	Detector Control System	
+DPS	PFI	Subcomponent	DC Power Supply	For APC
+DRP	Software	General	Data Reduction Pipeline	
+emp	ICS	Actor	Environment Monitoring module using rasPi	
+ENU	SpS	Subcomponent	Entrance Unit	
+enu	ICS	Actor	Entrance Unit	
+ETC	PFI	Subcomponent	Electronics Thermal Control	
+ETC	SPT	misc	Exposure Time Calculator	
+ETH	PFI	Subcomponent	Ethernet Hub	For APC
+ETS	Software	General	Exposure Targeting Software	
+FAA	FOCCoS	Subcomponent	Fiber Arm Assembly	
+FCA	SpS	Subcomponent	Fiber Cable A Assembly	
+fcc	ICS	Actor	Field Center Camera	
+FEL	PFI	Subcomponent	Field Element	
+FEM	PFI	Subcomponent	Field Element Mounts	
+FFC	PFI	Subcomponent	FF Camera	
+FFF	PFI	Subcomponent	Fixed Fiducial Fibers	
+FIA	SpS	Subcomponent	Fiber Input sub-Assembly	
+FIS	PFI	Subcomponent	FF Illumination Source	
+FIS	PFI	Subcomponent	Fiducial Illumination System	
+FIT	SpS	Subcomponent	Focal Plane Assembly integration tool	
+FMCS	SpS	Subcomponent	Focus Mechanism Control System	
+fms	ICS	Actor	Fiber connection Monitoring System	
+FOCCoS	General	PFS Subsystem	Fiber Optical Cable and Connector System	
+FPA	SpS	Subcomponent	Focal Plane Assembly	
+FPS	ICS	Actor	Fiber Positioning Sequencer	
+FPSA	PFI	Subcomponent	FF Beam Spliter	
+FPSA	SpS	Subcomponent	Fiber Slit Positioning Sub-Assembly	
+FRD	FOCCoS	General	Focal Ratio Degradation	
+FSA	SpS/FOCCoS	Subcomponent	Fiber Slit Assembly	
+FST	SpS	Subcomponent	Fiber Slit alignment Tool	
+FUC	PFI	Subcomponent	Fixed Upper Components	
+fvc	ICS	Actor	Fiber Viewing Camera	
+Gen2	Subaru	Operation	Generation-2 observation control system	
+HSC	Subaru	Instrument	Hyper Suprime-Cam	
+ICD	General	Document	Interface Control Document	
+ICS	Software	General	Instrument Control Software	
+IIS	SpS	Subcomponent	Internal Illumination Source	Internal Illumination System?
+IPMU	General	Organization	"Kavli Institute for the Physics and Mathematics of the Universe, the University of Tokyo"	
+IR3	Subaru	Facility	IR-side 3rd floor in the dome building 	
+IR4	Subaru	Facility	IR-side 4th floor in the dome building 	The place at which SCR will be constructed.
+JHU	General	Organization	"Johns Hopkins University, USA"	
+JPL	General	Organization	"Jet Propulsion Laboratory, USA"	
+LAM	General	Organization	"Laboratoire d'Astrophysique de Marseille, France"	
+LCU	SpS	Subcomponent	Local Control Unit	
+LNA	General	Organization	"Laborat?rio Nacional de Astrof?sica, Brazil"	
+MAC	ICS	General	MLP1 AG Converter	
+MCPS	PFI	Subcomponent	Master Controller Power Supply	
+MCS	PFS	Subsystem	Metrology Camera System	
+MHS	ICS	General	Messaging Hub System	
+MLP1	Subaru	Operation	Mid-Level Processors 1	
+MP1	PFI	Subcomponent	Modular Plate 1	
+MP2	PFI	Subcomponent	Modular Plate 2	
+MP3	PFI	Subcomponent	Modular Plate 3	
+MPA	General	Organization	"Max-Planck-Institut fuer Astrophysik, Garching, Germany"	
+MPS	PFI	Software	Movement Planning Software	
+NAOJ	General	Organization	National Observatory of Japan	
+NCU	SpS	Subcomponent	NIR Camera Unit	
+ncu	ICS	Actor	NIR Camera Unit	
+OBA	SpS	Subcomponent	Optical Bench Assembly	
+OBCP	Subaru	Operation	Observation Control Processor	
+OCS	Subaru	Operation	Observation Control Software	
+OWS	Subaru	Operation	Observation Workstation	
+PBA	PFI	Subcomponent	Positioner Bench Assembly	
+PDE	PFI	Subcomponent	Positioner Driver Electronics	
+peb	ICS	Actor	PFI Electronic Box interface	
+PFC	PFI	Subcomponent	Prime Focus Corrector	
+PFI	PFS	Subsystem	Prime Focus Instrument	
+PFS	General	General	Prime Focus Spectrograph	
+PFU	PFI	Subcomponent	Prime Focus Unit	
+PGR	SpS	Subcomponent	Parking Guiding Rails	
+PMA	PFI	Subcomponent	Positioner Module Assembly	
+PMC	PFI	Subcomponent	Positioner Master Controller	
+PO	General	Organization	(PFS) Project Office	
+POF	PFI	Subcomponent	Positioner Frame	
+POpt2	Subaru	Instrument	Prime focus unit for Optical observation #2	
+PPS1	PFI	Subcomponent	Positioner Power Supply 1	
+PPS2	PFI	Subcomponent	Positioner Power Supply 2	
+PPS3	PFI	Subcomponent	Positioner Power Supply 3	
+PRA	PFI	Subcomponent	Parking Room Assembly	
+PRE	PFI	Subcomponent	Positioner Remote Electronics	
+PRE-A	PFI	Subcomponent	PRE Enclosure A	
+PRE-B	PFI	Subcomponent	PRE Enclosure B	
+PSC	PFI	Subcomponent	Power Switch Controller	For APC
+PSci	General	Organization	(PFS) Project Scientist	
+PSE	General	Organization	Project System Engineer	
+PU	General	Organization	"Princeton Univerisity, USA"	
+RCU	SpS	Subcomponent	Red Camera Unit	
+rcu	ICS	Actor	Red Camera Unit	
+RDA	SpS	Subcomponent	Red Disperser Assembly	
+RFCS	SpS	Subcomponent	Racks for Control Systems	
+RIT	SpS	Subcomponent	Rear dewar Integration Tool	
+RLA	PFI	Subcomponent	Rotating Lower Components	
+SAIT	SpS	Subcomponent	Spectrograph AIT Tools	
+SAS	ICS	General	Status Archive System	
+SBC	FOCCoS	Subcomponent	Small Black Cable	Protective tubes for optical fibers at Cable A
+SCP	PFI	Subcomponent	Shaft Coupler	
+SCR	Subaru	Facility	Spectrograph Clean Room	
+SHA	SpS	Subcomponent	Shutter Assembly	
+SM	SpS	Subcomponent	Spectrograph Module	
+SOCD	General	Document	Science and Operational Concept Document	
+SOSS	Subaru	Operation	Subaru Operations System Software	
+SpS	PFS	Subsystem	Spectrograph System	
+SPT	Software	General	Survey Planning & Tracking software	
+SRB	FOCCoS	Subcomponent	Strain Relief Box	
+SRM	FOCCoS	Subcomponent	SRB Modules	
+SSP	FOCCoS	Subcomponent	SRB Support Plate	
+SSP	Subaru	Observation	Subaru Strategic Program	
+STARS	Subaru	Archive	Subaru Telescope Archive System	
+STI	FOCCoS	Subcomponent	Segment Tubes Inside PFI	Cable C
+STO	FOCCoS	Subcomponent	Segment Tubes Outside PFI	Cable C
+STS	Subaru	Archive	Subaru Telemetry System	
+TCM	FOCCoS	Subcomponent	Tower Connector Male	Cable C
+TCS	Subaru	Operation	Telescope Control System	
+TEM	PFI	Subcomponent	Telemetry Monitor	For APC
+TSC	Subaru	Operation	Telescope Supervise Computer	
+TUE	Subaru	Facility	Top-End Unit Exchanger	
+UFC	PFI	Subcomponent	USB to Fiber Convertor	
+ULS	PFI	Subcomponent	Upper/Lower Link structure	
+VAC-SS	SpS	Subcomponent	Vaccum control Sub-System	
+VCCS	SpS	Subcomponent	Vacuum and Cryogenic Control System	
+WFC	Subaru	Instrument	Wide Field Corrector	
