@@ -13,120 +13,145 @@
 In this document, internet based services related on the PFS Project are summarized 
 as of the day of release of this document. 
 
-\section{New account registration}
+\section{Overview}
 
-If you are new to PFS, you will need to request several accounts: 
-"SuMIRe/PFS pbworks wiki" (account name is email address), 
-"pfs.ipmu.jp" (you need to pick account name), 
-"PFS JIRA" (open registration), and 
-"GitHub" (organization member for private repositories). 
-Submit your account request as following account policy and registration. 
+Below are a few tools and resources that are used in the PFS project. 
+You may need account(s) and access to some or all of them depending on your 
+roles and contributions to the project. 
 
-\subsection{Account policy}
-
-Issuing account will depend on your role in the PFS project --- 
-technical team member (from each collaborating institute and Subaru) 
-or science team member. 
-Refer following section.~\ref{sec:listofregist} for procedures to get accounts. 
-
-\subsubsection{Technical team member}
-
-You need at least to request an account to log in to 
-SuMIRe/PFS pbworks wiki and \url{https://pfs.ipmu.jp}.
-In addition, if you work for software development, you can optionally 
-request a member privilege of GitHub: this is needed for you to access 
-to private repositories. 
-GitHub is also used for an issue tracking system for the development of 
-ICS (Instrument Control Software). Software documentation (ics\_doc) 
-repository is also on GitHub as a private repository. 
-
-Meanwhile, JIRA is used as a management tool for the development of 
-the other PFS software packages than ICS, such as DRP (Data Reduction 
-Pipeline), ETS (Exposure Targeting Software) and SPT (Survey Planning 
-and Tracking software). PFS JIRA (https://pfspipe.ipmu.jp) is open to 
-the public, but is operated in an integration of single sign on (SSO) with 
-other services (LDAP service of pfs.ipmu.jp), you need to use the same 
-account name and password. If you already have an account at pfs.ipmu.jp 
-and have not logged in to PFS JIRA before, you need to contact to 
-\url{jira@pfs.ipmu.jp} to activate your account in PFS JIRA.
-
-
-\subsubsection{Science team member}
-
-If you don't have SuMIRe/PFS pbworks wiki account, first request an account 
-for SuMIRe/PFS pbworks wiki. 
-
-If you are interested in the PFS software development (DRP, ETS, and SPT), 
-access as follows: 
 \begin{itemize}
-  \item Git repositories are open to the public at \url{https://github.com/Subaru-PFS}
-  \item Register yourself to JIRA at \url{https://pfspipe.ipmu.jp} for the development of software packages.
+  \item SuMIRe/PFS PBworks wiki
+  \item Services at pfs.ipmu.jp
+  \item Software development
+    \begin{itemize}
+      \item PFS JIRA
+      \item GitHub Subaru-PFS organization
+      \item TravisCI
+    \end{itemize}
 \end{itemize}
 
-\subsection{List of registrations and their procedures}
-\label{sec:listofregist}
+A project management tool "Atlassian JIRA" is used for software development 
+of the PFS project for the issue ticketing. The contents on the PFS JIRA 
+are open to the public but registration through JIRA site account or a Single 
+Sign On integrated with other services at pfs.ipmu.jp is required for actions. 
 
-\subsubsection{SuMIRe/PFS pbworks wiki}
+The PFS project also has an organization at GitHub titled "Subaru-PFS" for 
+the software development, e.g. coding works, code reviews, and documentation. 
+The contents are open to the public except for those in the private 
+repositories. 
 
-You can request access by yourself from \url{http://sumire.pbworks.com/} 
-("Request access" button at right side), with your email address
-\footnote{You also can find "Forgot your passowrd?" link next to the "Log in" 
-button to reset your password.}.
+\section{Account policy and registration procedures}
 
-Please choose your preferred password on registration. 
-After logging in, add your name into member list in the top page. 
+First of all
+\footnote{If you belong to an institute in the PFS collaboration. Even if not, 
+you can access to (and register to some of) services for software development 
+which are open to the public.}, 
+you need an account for access to SuMIRe/PFS PBworks wiki page. 
+You can go to \url{http://sumire.pbworks.com/w/request-access} (Request access) 
+page and request an account. 
 
-\subsubsection{pfs.ipmu.jp (https) --- general}
+After you have access to this SuMIRe/PFS PBworks wiki, your needs of other 
+accounts and services depend on your role in the PFS project as explained 
+in section.~\ref{sec:technical_team} and section.~\ref{sec:science_team}. 
+If you already have some of accounts (other than SuMIRe/PFS PBworks wiki) 
+and plan to request some others, also read section.~\ref{sec:account_reg_tips}. 
 
-You can use services on this web server, with only one account for every 
-services.
+\subsection{Technical team member}
+\label{sec:technical_team}
 
-To open a new account, please ask the local site manager at your institute 
-to send the following information to \url{pfs@pfs.ipmu.jp}: 
+If you are committing to works for the instrument development as a member 
+in the technical team of the PFS project, you need to get an account to use 
+services of pfs.ipmu.jp (https) at least. Optionally you need access to 
+software development tools (like PFS JIRA or Subaru-PFS GitHub) if you work 
+on software development. Ask the local site manager at your institution 
+to send the following information to pfsprojectoffice at ipmu.jp.
+
 \begin{itemize}
-  \item Your contact email address.
-  \item Preferred account name for pfs.ipmu.jp.
-  \item Photo for photo directory at pfs.ipmu.jp. (JPEG, less than 50kB; width 
-    250--300pixel, height 250--350pixel)
+  \item Your contact email address
+  \item Preferred account name
+  \item Photo for photo directory at pfs.ipmu.jp
+    (JPEG, less than 50kB; width 250-300 pixels, height 250-350 pixels)
+  \item If you will work on software development (in any area of PFS software 
+    development) 
+    \begin{itemize}
+      \item Request of access to PFS JIRA
+      \item Your GitHub account
+    \end{itemize}
 \end{itemize}
 
-Once your request has granted, 
-account information will be sent via email, please change your password 
-from initial one (in email) by following notification email 
-\footnote{Also, you can add/change your name (default to account name), 
-institution, and photo from web.}. 
-If you need to reset your password, contact \url{pfs@pfs.ipmu.jp}. 
+Once your request is granted, the account information for pfs.ipmu.jp (https) 
+is emailed, so you must change your password from the initial one delivered 
+by the email. If you need to reset your password, contact pfs at pfs.ipmu.jp.
+
+\subsection{Science team member}
+\label{sec:science_team}
+
+If you are not working for the instrument development, you are categorized as 
+a science team member here, and usually you do not need any other account. 
+But depending on your roles and contributions to the studies of PFS science 
+cases and survey planning, you may need an account to use services at 
+pfs.ipmu.jp (https). In this case, refer section.~\ref{sec:technical_team}.
+
+If you plan to contribute on PFS software development, you should follow 
+the procedure as below: 
+
+\begin{itemize}
+  \item Contact a local site manager at your institute in the PFS technical 
+    team and formalize your commitment(s) to the software development.
+  \item Register to PFS JIRA 
+    (\url{https://pfspipe.ipmu.jp/jira/secure/Signup!default.jspa}), 
+    if you need to participate in discussions by filing tickets, sending 
+    comments, and so on.
+  \item Send your GitHub account name by email to github at pfs.ipmu.jp, if you 
+    need to push to git repositories for software coding works, code reviews, 
+    and documentations. 
+\end{itemize}
+
+\subsection{Notes and tips for the registration process}
+\label{sec:account_reg_tips}
+
+\begin{itemize}
+  \item If you already have a pfs.ipmu.jp account but cannot login to PFS JIRA, 
+    you should send an email to jira at pfs.ipmu.jp, instead of registration 
+    at signup page. 
+  \item You will receive email from GitHub but not from the PFS project for 
+    further registration procedures to GitHub organization. Registration 
+    process will not finish unless you follow these procedures. 
+    This registration to GitHub organization does not mean to subscribe 
+    activities of repositories, you need to subscribe repositories in 
+    interest by yourself if you want. 
+  \item PFS GitHub is open to the public, so you can read the contents and 
+    add comments except for those in the private repositories, but you cannot 
+    push to git repositories unless you follow the above procedure.
+  \item PFS JIRA is open to the public, so you can read the contents, but 
+    you cannot make any commitments therein unless you follow the above 
+    procedure.
+  \item In the PFS GitHub organization, there is one team per institute where 
+    the members are given admin privilege. So instead of sending email to 
+    github at pfs.ipmu.jp, you can also ask the members in your institute 
+    to add yourself with privilege given to repositories related to your 
+    institute. 
+\end{itemize}
+
+When you lost your account information: 
+
+\begin{description}
+  \item[SuMIRe/PFS PBworks wiki] 
+    Access \url{https://my.pbworks.com/?p=forgot} and follow an instruction 
+    shown.
+  \item[pfs.ipmu.jp (https)]
+    Send email to pfs at pfs.ipmu.jp from email address you registered.
+  \item[PFS JIRA]
+    If you have an account under single sign on at pfs.ipmu.jp (https), 
+    send email to pfs at pfs.ipmu.jp. Otherwise access 
+    \url{https://pfspipe.ipmu.jp/jira/secure/ForgotLoginDetails.jspa} 
+    and follow an instruction shown. 
+\end{description}
 
 
-\subsubsection{GitHub}
+\section{Details of the services}
 
-PFS has its organization at GitHub as \url{https://github.com/Subaru-PFS}. 
-You need to be in one team of this organization for accessing private 
-repositories for ICS. 
-For full list of repositories, refer GitHub page at 
-\url{https://subaru-pfs.github.io/}.
-
-In 'Subaru-PFS' organization at GitHub, 
-there is one (mostly private) team per institute where the members have 
-the admin privilege. 
-You need to send your GitHub account name to \url{github@pfs.ipmu.jp}, or 
-you can ask a member of the team in your institute to add yourself and 
-get the admin privilege to the repositories related to the development 
-activities at your institute. Adding you to the team is as 'invitation', 
-and you will need to approve an invitation via email. 
-
-
-\subsubsection{PFS JIRA}
-
-PFS JIRA (\url{https://pfspipe.ipmu.jp/}) is open to the public, 
-so you can register by yourself. 
-If you have an account at pfs.ipmu.jp and have not logged in to PFS JIRA 
-before, contact \url{jira@pfs.ipmu.jp} to activate your account and use 
-the same user name and password as pfs.ipmu.jp. 
-
-\section{Services in detail}
-
-\subsection{SuMIRe/PFS pbworks wiki}
+\subsection{SuMIRe/PFS PBworks wiki}
 
 "SuMIRe/PFS PBworks" is the only official wiki system for PFS. 
 
@@ -150,7 +175,6 @@ This page contains links to contents in the wiki, such as
 For some continuous meetings, index for each agenda/memo pages are avail.
 
 \begin{itemize}
-  \item Technical collaborators' weekly telecon \url{http://sumire.pbworks.com/PFS%20technical%20collaborators%27%20weekly%20telecon}
   \item Systems Engineering group telecon \url{http://sumire.pbworks.com/System-engineer-group-telecon}
   \item Manager group telecon \url{http://sumire.pbworks.com/Manager-group-telecon}
 \end{itemize}
@@ -264,10 +288,22 @@ Some landfill instances would avail.
 operated service.) 
 
 
-\subsection{Fuze conference system}
+\subsection{Online meeting}
+
+\subsubsection{Zoom system}
+
+PFS project uses Zoom system for teleconference. 
+For accessing on-line, you will need to install clients available from 
+\url{https://zoom.us/download}. 
+
+You can check list of planned teleconferences from 
+\url{https://calendar.google.com/calendar/embed?src=su0pbsaull17etlj62tet5anm0%40group.calendar.google.com&ctz=Asia/Tokyo}.
+
+
+\subsubsection{Fuze conference system}
 \label{sec:pfs-fuze}
 
-PFS project uses Fuze service for teleconference. 
+PFS project used Fuze service for teleconference. 
 You will get invitation for meetings by email, which has on-line (VoIP) 
 access URL and phone numbers with introductions to join. 
 For accessing on-line, you will need to install clients avail from 
@@ -275,6 +311,28 @@ For accessing on-line, you will need to install clients avail from
 
 You can check list of planned teleconferences from 
 \url{https://pfs.ipmu.jp/fuzelist/}. 
+
+
+\subsection{GitHub}
+
+PFS project uses Subaru-PFS organization at GitHub 
+as \url{https://github.com/Subaru-PFS}. 
+In 'Subaru-PFS' organization at GitHub, 
+there is one (mostly private) team per institute where the members have 
+the admin privilege
+(\url{https://github.com/orgs/Subaru-PFS/teams}). 
+You will need to be in one team of this organization 
+for push access to repositories. 
+
+
+\subsection{PFS JIRA}
+
+PFS JIRA (\url{https://pfspipe.ipmu.jp/jira/}) is open to the public, 
+so you can register by yourself. 
+If you have an account at pfs.ipmu.jp and have not logged in to PFS JIRA 
+before, contact \url{jira@pfs.ipmu.jp} to activate your account and use 
+the same user name and password as pfs.ipmu.jp. 
+
 
 
 \end{document}
