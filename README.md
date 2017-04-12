@@ -6,4 +6,4 @@ General project documents for the PFS project.
 * operation: operational plan documents
 
 * misc: miscellaneous documents
-** PFS_Abbreviations.tsv: abbreviation list
+ * PFS_Abbreviations.tsv: abbreviation list
