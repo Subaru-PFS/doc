@@ -1,103 +1,103 @@
 Abbreviation	Category	Sub-Category	Unabbreviated words	Comments
-A&G	General	Observation	Acquisition and Guiding	Process of observation. After pointing the telescope to a given field, the field center is acuired using one (or some) of star(s) in the field.
-ADC	Subaru	Instrument	Atmospheric Dispersion Corrector	A part of WFC comprised of two glasses. By offsetting them in y (gravitational) direction, atmospheric dispersion is corrected.
-AG	PFI	Observation	Auto Guide	Process of observation. While observing, the target field should tracked automatically using AG system.
-AGC	PFI	Subcomponent	Acquisition and Guidance Camera	6 cameras accommodated in the field-of-view edge for A&G and AG. An additional glass is accommodated in front of half area of camera sensor to have two focal position. ASIAA has a responsibility for their development.
+A&G	General	Observation	Acquisition and Guiding	Process of observation. After slewing the telescope to a given field, the field center is acuired using one (or some) of star(s) in the field.
+ADC	Subaru	Instrument	Atmospheric Dispersion Corrector	A part of WFC comprised of two glasses. By offsetting them in Y (gravitational) direction, atmospheric dispersion is corrected.
+AG	PFI	Observation	Auto Guide	Process of observation. While observing, the target field should be tracked automatically. By measureing centroid of star(s) on desiinated camera(s), tracking errors are calculated.
+AGC	PFI	Subcomponent	Acquisition and Guidance Camera	6 cameras are accommodated in the field-of-view edge for A&G and AG. An additional glass is accommodated in front of half area of camera sensor to have two focal position. ASIAA has a responsibility for their development.
 agcc	ICS	Actor	Acquisition and Guidance Camera Controller	Software module to control AGCs and measure centroid and FWHM of the spots. ASIAA has a responsibility for its development.
-AIT	PFS	General	Assembly and Integration Tests	After shipment from each laboratory, an instrument should be assembled, integrated (again) and tested at its commissioning process. Subaru call this process AIT.
+AIT	PFS	General	Assembly and Integration Tests	After shipment from each laboratory, an instrument should be assembled, integrated (again) and tested in its commissioning process. Subaru call this process AIT.
 APC	PFI	Subcomponent	Auxiliary Power/control Electronics	This box is accommodated on the side of PFI, and supplies power and network for PFI components. The box also provides telemetry. ASIAA has a responsibility for its development.
 ASIAA	General	Organization	"Academia Sinica Institute of Astronomy and Astrophysics, Taiwan"	PFS collaborator. ASIAA has responsibility for development of PFI and MCS.
-BBC	FOCCoS	Subcomponent	Big Black Cable	Protective tubes for optical fibers at Cable C and B. LNA has a responsibility for its development.
+BBC	FOCCoS	Subcomponent	Big Black Cable	Protective tubes for optical fibers at Cable C and B.
 BCB	PFI	Subcomponent	Bulkhead Connector Box	The PFI connector box accommodated to the cable wrapper (CWA). The power, network and coolant from Subaru are induced at this box. ASIAA has a responsibility for its development.
-BCU	SpS	Subcomponent	Blue Camera Unit	One of the three camera units of Spectrograph Modules which images the bluest spectra, ranging from 380 nm to 650 nm. LAM, JHU and WS have a responsibility for its development.
+BCU	SpS	Subcomponent	Blue Camera Unit	One of the three camera units of Spectrograph Modules which images the bluest spectra, ranging from 380 nm to 650 nm. LAM and JHU have a responsibility for its development.
 bcu	ICS	Actor	Blue Camera Unit	Software module to operate BCU, in particular vacuum, cooling down, and telemetry.
-BDA	SpS	Subcomponent	Blue Disperser Assembly	Spectrpgraph assembly for BCU with VPH grating. WS has a responsibility for development of mechanical parts, while JHU and PU has for grating itself.
+BDA	SpS	Subcomponent	Blue Disperser Assembly	Spectrpgraph assembly for BCU consisting of VPH grating and its holder.
 BIA	SpS	Subcomponent	Back-Illumination Assembly	Spectrpgraph assembly to illuminate science fibers from back side for their configuration. LAM has a responsibility for its development.
-CAA	SpS	Subcomponent	Camera Assembly	Spectrograph assembly collecting dispersed rays with lens and detectors. There are three kinds of CAA; blue, red and nir. WS has a responsibility for its development.
-CAL	PFI	Subcomponent	Calibration Lamp	On top of PFI, calibration lamps are accommodated to illuminate homogeneously the screen on the ceiling of the dome. Two arc lamps and one continuum lamp are attached. PU has a responsibility for its development.
-Caltech	General	Organization	"California Institute of Technology, USA"	PFS collaborator. It is also called CIT. Caltech has a responsibility for developing fiber positioners "Cobra".
+CAA	SpS	Subcomponent	Camera Assembly	Spectrograph assembly collecting dispersed rays with lens and detectors. There are three kinds of CAA; blue, red and nir.
+CAL	PFI	Subcomponent	Calibration Lamp	On the top of PFI, calibration lamps are accommodated to illuminate homogeneously the screen on the ceiling of the dome. Two arc lamps and one continuum lamp are attached. PU has a responsibility for its development.
+Caltech	General	Organization	California Institute of Technology, USA	PFS collaborator. It is also called CIT. Caltech has a responsibility for developing fiber positioners "Cobra".
 CAS	SpS	Subcomponent	Visible (TBC) Camera Unit AIT Station	Designated place to assemble optical components and dewar into the visible camera unit. LAM has a responsibility for developement.
 CAT	SpS	Subcomponent	CU optical Alignment Tool	Integration tool for Visible (TBC) Camera Unit AIT Station to align the optical components of the camera unit.
 CB2F	Subaru	Facility	Control Building 2nd Floor	The place at which main control infrastructure will be accommodated.
 CIT	SpS	Subcomponent	CU Integration Tool	A part of Visible (TBC) Camera Unit AIT Station to assemble the Spectrograph camera unit.
-CIT	General	Organization	"California Institute of Technology, USA"	PFS collaborator. It is also called Caltech. CIT has a responsibility for developing fiber positioners "Cobra".
+CIT	General	Organization	California Institute of Technology, USA	PFS collaborator. It is also called Caltech. CIT has a responsibility for developing fiber positioners "Cobra".
 CLA	PFI	Subcomponent	Cell Assemblies of Tower Connector of Cable C	Assembly of cable C. CLA consists of two MTP ferrules, and 11 cells are accommodated in one Tower Connector unit. LNA has a responsibility for developement.
-CMA	SpS	Subcomponent	Collimator Mirror Assembly	Spectrograph assembly. The light induced at the slit firstly passes CMA before being separated  into three bands. WS has a responsibility for its development.
+CMA	SpS	Subcomponent	Collimator Mirror Assembly	Spectrograph assembly. The light induced at the slit firstly passes CMA before being separated  into three bands.
 COA	SpS	Subcomponent	Central Optical Assembly	SpS assembly consisting of two dichroic mirrors. With two dichroic mirrors, COA separates incoming light to three bands (blue, red and near-infrared).
-COB	PFI	Subcomponent	Cobra Optical Bench	PFI component. Cobra modules for science fibers, fixed fiducial fibers and AGCs are accommodated on this bench. CIT has a responsibility for its development.
+COB	PFI	Subcomponent	Cobra Optical Bench	PFI component. Cobra modules for science fibers, fixed fiducial fibers and AG cameras are mounted on this bench. CIT has a responsibility for its development.
 COBRA	PFI	Subcomponent	COBRA positioners	Also written as "Cobra". Two-staged piezo motor by New Scale for fiber configuration. CIT has a responsibility for purchase. JPL has a responsibility for developing control electricity and software.
-COT	SpS	Subcomponent	Camera Optics SA integration tool	SpS assembly used at AIT. COT holds camera optics and integrates moves on the guide rails on integration bench LAM has a responsibility for its development.
+COT	SpS	Subcomponent	Camera Optics SA integration tool	SpS assembly used at AIT. COT holds camera optics and integrates moves on the guide rails on integration bench.
 CPPC	General	Organization	Chinese PFS Participant Consortium	PFS collaborator. As of May 2017, 6 institutes (Shanghai Jiao Tong University, National Astronomical Observatories of China, Tsinghua University, The University of Science and Technology of China, Xiamen University, and Peking University) join to this consortium.
-CRA	SpS	Subcomponent	Cryostat Assembly	Spectrograph assembly to provide vaccumed and cold chamber for camera and detectors. JHU and PU have a responsibility for its development.
+CRA	SpS	Subcomponent	Cryostat Assembly	Spectrograph assembly to provide vaccumed and cold chamber for camera and detectors.
 CWA	PFI	Subcomponent	Cable Wrapper Assembly	Rotating mechanism on the top pf PFI in order to route the power, network and coolant lines. ASIAA has a responsibility for its development.
 DB	FOCCoS	Subcomponent	Distribution Box	TBW.
 DEA	SpS	Subcomponent	Dewar Assembly	The same as Cryostat Assembly (CRA). [TBC]
 DECS	SpS	Subcomponent	Detector Control System	TBW.
-DPS	PFI	Subcomponent	DC Power Supply	The device in Auxiliary Power/Control Electronic (APC) box of PFI to convert AC power to DC power for other PFI devices. ASIAA has a responsibility for its development.
+DPS	PFI	Subcomponent	DC Power Supply	The device in Auxiliary Power/Control Electronic (APC) box of PFI to convert AC power to DC power for other PFI devices.
 DRP	Software	General	Data Reduction Pipeline	Software for data processing. There are two kinds of pipelines according to reduction stage. 2D-DRP, developed by PU, extracts spectra calibrated for both wavelength and flux. 1D-DRP by LAM measures spectral parameters such as redshift.
 emp	ICS	Actor	Environment Monitoring module using rasPi	Software to control telemetry system for Spectrograph Clean Room (SCR).
-ENU	SpS	Subcomponent	Entrance Unit	Spectrograph unit to capture the input signal from fibers and deliver to three camera units. ENU collimates the beam, separates into three channels, and disperse the beam on individual band.
+ENU	SpS	Subcomponent	Entrance Unit	Spectrograph unit to capture the input signal from fibers and deliver to three camera units. ENU collimates the beam, separates into three channels, and disperse the beam on individual band. LAM, WS and LNA have a responsibility for its development.
 enu	ICS	Actor	Entrance Unit	Software to control Spectrograph components other than Camera Units, such as BIA and slit. LAM has a responsibility for its development.
-ETC	PFI	Subcomponent	Electronics Thermal Control	PFI assembly consisting of heat exchangers and coolant lines in order to limit heat dissipation into the telecscope dome air.  ASIAA has a responsibility for its development.
+ETC	PFI	Subcomponent	Electronics Thermal Control	PFI assembly consisting of heat exchangers and coolant lines in order to limit heat dissipation into the telecscope dome air.
 ETC	SPT	misc	Exposure Time Calculator	Software to calculate exposure time at a given observational configuration. Based on C script by C. Hirata, a python emulator is provided. ETC also simulates resultant spectra.
 ETH	PFI	Subcomponent	Ethernet Hub	Ethernet Hub switch accommodated in Auxiliary Power/Control Electronics (APC) box.
 ETS	Software	General	Exposure Targeting Software	Software to allocate fibers to a provided target list. MPA has a responsibility for its development.
-FAA	FOCCoS	Subcomponent	Fiber Arm Assembly	Assembly for Cable C, PFI. FAA connects science fiber with microlens and fiber positioner Cobra. LNA has a responsibility for its development.
-FBS	PFI	Subcomponent	Fiducial Fiber Beam Spliter	An optics element for fiducial fiber illuminator. FBS is used to reflect LED light into fiducial fibers, and to transmit light from fiducial fibers to their viewing camera. 
-FCA	SpS	Subcomponent	Fiber Cable A Assembly	SpS assembly of fiber slit and connectors with Cable B. LNA and LAM have a responsibility for its development.
+FAA	PFI/FOCCoS	Subcomponent	Fiber Arm Assembly	Assembly for Cable C, PFI. FAA connects science fiber with microlens and fiber positioner Cobra.
+FBS	PFI	Subcomponent	Fiducial Fiber Beam Spliter	Optics element for fiducial fiber illuminator. FBS is used to reflect LED light into fiducial fibers, and to transmit light from fiducial fibers to their viewing camera. 
+FCA	SpS	Subcomponent	Fiber Cable A Assembly	SpS assembly of fiber slit and connectors with Cable B.
 fcc	ICS	Actor	Field Center Camera	Software to control field center camera of PFI. ASIAA has a responsibility for its development.
 FEL	PFI	Subcomponent	Field Element	PFI component. In order to have the similar optical path to HSC, a glass plate of 54 mm thick is accommodated at the bottom of PFI.
 FEM	PFI	Subcomponent	Field Element Mounts	PFI component to mount the field element (FEL) to the Cobra bench (COB). CIT has a responsibility for its development.
 FFC	PFI	Subcomponent	Fixed Fiducial Camera	PFI component to take image of targets acquired on fixed fiducial fibers. ASIAA has a responsibility for its development.
-FFF	PFI	Subcomponent	Fixed Fiducial Fibers	Fibers fixed on the Cobra bench (COB) used as a reference of fiber position. There are 96 FFF in total, 84 for science fibers, and 12 for AG cameras. LNA and CIT have a responsibility for their production.
+FFF	PFI	Subcomponent	Fixed Fiducial Fibers	Fibers fixed on the Cobra bench (COB) used as a reference of fiber position. There are 96 FFF in total, 84 for science fibers, and 12 for AG cameras.
 FIA	SpS	Subcomponent	Fiber Input sub-Assembly	FOCCoS assembly as a part of SpS to connect Cable A with Cable B. LNA has a responsibility for its development.
-FIS	PFI	Subcomponent	Fiducial Fiber Illumination Source	The system to back-illuminate fixed fiducial fibers. ASIAA has a responsibility for its development.
+FIS	PFI	Subcomponent	Fiducial Fiber Illumination Source	The system to back-illuminate fixed fiducial fibers.
 FIT	SpS	Subcomponent	Focal Plane Assembly integration tool	AIT tool of SpS Camera Assembly (CAA). FIT is used for integrating Focal Plane assembly into camera optics.
 FMCS	SpS	Subcomponent	Focus Mechanism Control System	TBW.
 fms	ICS	Actor	Fiber connection Monitoring System	FOCCoS software to illuminate monitoring fibers, to take their image, and judge the connection among Cable A, B and C.
-FOCCoS	General	PFS Subsystem	Fiber Optical Cable and Connector System	PFS instrument subsystem which delivers light from PFI at the prime focus to SpS  on the IR4 floor. LNA has a responsibility for FOCCoS  development.
-FPA	SpS	Subcomponent	Focal Plane Assembly	SpS assembly in camera unit. FPA consists of detectors and focusing mechanism. PU and  JHU have a responsibility for its development.
+FOCCoS	General	PFS Subsystem	Fiber Optical Cable and Connector System	PFS instrument subsystem which delivers light from PFI at the prime focus to SpS  on the IR4 floor. LNA has a responsibility for FOCCoS development.
+FPA	SpS	Subcomponent	Focal Plane Assembly	SpS assembly in camera unit. FPA consists of detectors and focusing mechanism.
 FPRD	General	Document	Functional Performance Requirements Document	One of the documents at Preliminary Design Review. FPRD describes all requirements for PFS instrument to sartisfy scientific requirements. For system-level requirements, the latest version is available on PBworks.
-FPS	ICS	Actor	Fiber Positioning Sequencer	PFI software to operate fiber configuration. FPS controls MCS exposure, derives fibers positions from measured centroids, and sends them with command to MPS to move fibers.
-FPSA	SpS	Subcomponent	Fiber Slit Positioning Sub-Assembly	SpS assembly to position fiber slit. FPSA consists of Hexapod to tilt and shift the Fiber Slit sub-Assembly (FSA). LAM has a responsibility for development.
-FSA	SpS/FOCCoS	Subcomponent	Fiber Slit Assembly	FOCCos assembly as a part of SpS. The slit accommodates about 600 fibers in a row. LNA has a responsibility for its development.
-FST	SpS	Subcomponent	Fiber Slit alignment Tool	SpS integration tool to align Fiber Slit Assembly (FSA). Dedicated collimator corrector and camera are used. LAM has a responsibility for its development.
+FPS	ICS	Actor	Fiber Positioning Sequencer	PFI software to operate fiber configuration. FPS controls MCS exposure, derives fibers positions from measured centroids, and sends them with command to MPS to move fibers. ASIAA has a responsibility for its development.
+FPSA	SpS	Subcomponent	Fiber Slit Positioning Sub-Assembly	SpS assembly to position fiber slit. FPSA consists of Hexapod to tilt and shift the Fiber Slit sub-Assembly (FSA).
+FSA	SpS/FOCCoS	Subcomponent	Fiber Slit Assembly	FOCCos assembly as a part of SpS. The slit accommodates about 600 fibers in a row.
+FST	SpS	Subcomponent	Fiber Slit alignment Tool	SpS integration tool to align Fiber Slit Assembly (FSA). Dedicated collimator corrector and camera are used.
 FUA	PFI	Subcomponent	Fixed Upper Assembly	One of the two main PFI structure. FUA is fixed to POpt2 and accommodates cable wrapper assembly,(CWA), modular plate for fiber cables (MP3), and calibration lamp and so on.
-fvc	ICS	Actor	Fiber Viewing Camera	PFI software to take images of fixed fiducial fibers. fvc also turn on/off LED to illuminate fixed fiducial fibers.
+fvc	ICS	Actor	Fiber Viewing Camera	PFI software to take images of fixed fiducial fibers. fvc also turn on/off LED to illuminate fixed fiducial fibers. ASIAA has a responsibility for its development.
 Gen2	Subaru	Operation	Generation-2 observation control system	Current observation control system (OCS) for Subaru. It launched in 2011.
 HSC	Subaru	Instrument	Hyper Suprime-Cam	Wide field (~1.5 degree in diameter) camera with more than 100 CCDs at Subaru prime focus. HSC SSP, which started in 2014, is sister survey of PFS in the SuMIRe project.
 ICD	General	Document	Interface Control Document	If there is an interface between different developer institutes, they discuss it using ICD.
 ICS	Software	General	Instrument Control Software	Software packages to operate PFS instrument. Individual actuators, which control smaller components, exchange command, status with each other via messaging hub systems (MHS).
-IIS	SpS	Subcomponent	Internal Illumination Source	Light source ofSpS to illuminate engineering fibers. LAM has a responsibility for its development.
-IPMU	General	Organization	"Kavli Institute for the Physics and Mathematics of the Universe, the University of Tokyo"	PFS collaborator (PI) taking initiative to proceed the project. IPMU also has a responsibility to develop softwares interfacing between PFS and Subaru, and execute system commissioning.
+IIS	SpS	Subcomponent	Internal Illumination Source	Light source ofSpS to illuminate engineering fibers.
+IPMU	General	Organization	Kavli Institute for the Physics and Mathematics of the Universe, the University of Tokyo	PFS collaborator (PI) taking initiative to proceed the project. IPMU also has a responsibility to develop softwares interfacing between PFS and Subaru, and execute system commissioning.
 IR3	Subaru	Facility	IR-side 3rd floor in the dome building 	The place on which the UPS, chillers for spectrgraph modules and the spectrograph clean room (SCR) will be accomodated.
 IR4	Subaru	Facility	IR-side 4th floor in the dome building 	The place on which the spectrgraph clean room (SCR) will be constructed.
-JHU	General	Organization	"Johns Hopkins University, USA"	PFS collaborator. JHU has a responsibility for development of Spectrographs System.
-JPL	General	Organization	"Jet Propulsion Laboratory, USA"	PFS collaborator. JPL has a responsibility for control system of Cobra positioners.
-LAM	General	Organization	"Laboratoire d'Astrophysique de Marseille, France"	PFS collaborator. LAM leads development of Spectrographs Systems (SpS), and has a responsibility for development of 1D-data reduction pipeline (DRP).
+JHU	General	Organization	Johns Hopkins University, USA	PFS collaborator. JHU has a responsibility for development of Spectrographs System.
+JPL	General	Organization	Jet Propulsion Laboratory, USA	PFS collaborator. JPL has a responsibility for control system of Cobra positioners.
+LAM	General	Organization	Laboratoire d'Astrophysique de Marseille, France	PFS collaborator. LAM leads development of Spectrographs Systems (SpS), and has a responsibility for development of 1D-data reduction pipeline (DRP).
 LCU	SpS	Subcomponent	Local Control Unit	Control system for Spectrograph Module (SM). Power  distribution units, network device and controllers are accommodated to dedicated rack. Each SM has one LCU. LAM, JHU and PU have a responsibility for its development.
-LNA	General	Organization	"Laborat?rio Nacional de Astrof?sica, Brazil"	PFS collaborator. LNA has a responsibility for development of Fiber Optical Cable and Connector System (FOCCoS).
-MAC	ICS	General	MLP1 AG Converter	Software as an interface between PFS Auto Guide Cameras (AGCs) and Subaru Mid-Level Processors 1 (MLP1). MAC calculates tracking error using information from AGCs and send them to MLP1. MAC also sends AGCs image to guide viewer after converting proper format.
+LNA	General	Organization	Laborato\'rio Nacional de Astrofi\'sica, Brazil	PFS collaborator. LNA has a responsibility for development of Fiber Optical Cable and Connector System (FOCCoS).
+MAC	ICS	General	MLP1 AG Converter	Software as an interface between PFS Auto Guide Cameras (AGCs) and Subaru Mid-Level Processors 1 (MLP1). MAC calculates tracking error using information from AGCs and send them to MLP1. MAC also sends AGCs image to guide viewer after converting proper format. IPMU has a responsibility for its development.
 MCPS	PFI	Subcomponent	Master Controller Power Supply	Device of Positioner Remote Electronics (PRE). MCPS supplies DC power to controller modules of Cobra positioners.
-MCS	PFS	Subsystem	Metrology Camera System	PFS instrument subsystem installed to the Cassegrain focus. MCS takes image of back-illuminated fibers, and measures their centroids.
+MCS	PFS	Subsystem	Metrology Camera System	PFS instrument subsystem installed to the Cassegrain focus. MCS takes image of back-illuminated fibers, and measures their centroids. ASIAA has a resiponsibility for ites development.
 MHS	ICS	General	Messaging Hub System	Server for various software modules (actors) to exchange their "messages" such as statuses, commands. MHS provides a client library for network communication, and analysis of messages. PFS uses "tron" from SDSS.
 MLP1	Subaru	Operation	Mid-Level Processors 1	Subaru computer system which controls the entire telescope drivers and sensors. Tracking error in azimuth and elevation axes, which is measured by PFS software MAC, is sent to MLP1.
-MP1	PFI	Subcomponent	Modular Plate 1	One of the three plate to route fiber cables inside of PFI, from tower connector at the top to focal plane at the bottom. MP1 is the bottom-most one. LNA has a responsibility for its development.
-MP2	PFI	Subcomponent	Modular Plate 2	One of the three plate to route fiber cables inside of PFI, from tower connector at the top to focal plane at the bottom. MP2 is the middle one. LNA has a responsibility for its development.
-MP3	PFI	Subcomponent	Modular Plate 3	One of the three plate to route fiber cables inside of PFI, from tower connector at the top to focal plane at the bottom. MP3 is the top-most one, and fixed to the cable wrapper. LNA has a responsibility for its development.
-MPA	General	Organization	"Max-Planck-Institut fuer Astrophysik, Garching, Germany"	PFS collaborator. MPA has a responsibility for developing software package Exposure Targeting Software (ETS).
+MP1	PFI	Subcomponent	Modular Plate 1	One of the three plate to route fiber cables inside of PFI, from tower connector at the top to focal plane at the bottom. MP1 is the bottom-most one.
+MP2	PFI	Subcomponent	Modular Plate 2	One of the three plate to route fiber cables inside of PFI, from tower connector at the top to focal plane at the bottom. MP2 is the middle one.
+MP3	PFI	Subcomponent	Modular Plate 3	One of the three plate to route fiber cables inside of PFI, from tower connector at the top to focal plane at the bottom. MP3 is the top-most one, and fixed to the cable wrapper.
+MPA	General	Organization	Max-Planck-Institut fuer Astrophysik, Garching, Germany	PFS collaborator. MPA has a responsibility for developing software package Exposure Targeting Software (ETS).
 MPS	PFI	Software	Movement Planning Software	Software to control Cobra positioners. MPS is operated by Fiber Positioning Sequencer (FPS). JPL has a responsibility for its development.
 NAOJ	General	Organization	National Observatory of Japan	PFS collaborator. Parent organization of Hawaii Observatory (Subaru).
 NCU	SpS	Subcomponent	NIR Camera Unit	One of the three camera units of Spectrograph Modules which image the reddest spectra, ranging from 940 nm to 1260 nm. LAM, JHU and WS have a responsibility for its development.
-ncu	ICS	Actor	NIR Camera Unit	Software module to operate NCU, in particular vacuum, cooling down, and telemetry.
+ncu	ICS	Actor	NIR Camera Unit	Software module to operate NCU, in particular vacuum, cooling down, and telemetry. JHU and PU have a responsibility for its development.
 OBA	SpS	Subcomponent	Optical Bench Assembly	Optical bench, where SpS components are mounted. OBA has air-suspension legs.
 OBCP	Subaru	Operation	Observation Control Processor	Computers to control Subaru instruments. In PFS case, ICS works as OBCP.
 OCS	Subaru	Operation	Observation Control System	OCS is used to operate observations, interfacing of users (operators and/or observers) and various computers controlling telescope and instruments. the command by a user transfered to other control systems. Current OCS is called "Gen2".
 OWS	Subaru	Operation	Observation Workstation	Computers at Subaru telescope (and remote observation room) to send commands to telescope and instruments via Gen2.
 PBA	PFI	Subcomponent	Positioner Bench Assembly	PFI assembly for mounting Cobra positioner and AG cameras. PBA also consists of field element and AG cameras and their mount structure.
 PDE	PFI	Subcomponent	Positioner Driver Electronics	Electronics board that drives one row of positioners (28 or 29) in a module. PDEs are assembled to Cobra module. JPL has a responsibility for its development.
-peb	ICS	Actor	PFI Electronic Box interface	Software to control power supply and telemetry system for PFI.
-PFI	PFS	Subsystem	Prime Focus Instrument	PFS instrument installed to the Subaru Prime Focus positioning fibers on astronomical objects. PFI has not only fibers and their positioners on the focal plane, but also a variety of cameras for field acquisition and guiding, viewing fiducal fibers and small region at field center.
+peb	ICS	Actor	PFI Electronic Box interface	Software to control power supply and telemetry system for PFI. ASIAA has a responsibility for its development.
+PFI	PFS	Subsystem	Prime Focus Instrument	PFS instrument installed to the Subaru Prime Focus positioning fibers on astronomical objects. PFI has not only fibers and their positioners on the focal plane, but also a variety of cameras for field acquisition and guiding, viewing fiducal fibers and small region at field center. ASIAA, CIT, JPL and LNA have a responsibility for its development.
 PFS	General	General	Prime Focus Spectrograph	This project.
 PFU	Subaru	Subcomponent	Prime Focus Unit	General name for Subaru-mounting modules for the instrument at prime focus. For PFS, POpt2 is the case.
 PGR	SpS	Subcomponent	Parking Guiding Rails	Guide rails used for SpS Camera Unit integration tool (CIT). 
@@ -114,19 +114,19 @@ PRE-B	PFI	Subcomponent	PRE Enclosure B	An enclosure for positioner remote electr
 PSC	PFI	Subcomponent	Power Switch Controller	Device to turn on and off powers of AG cameras and other PFI components. PSC is accommodated in the Auxiliary Power/control Electronics box (APC).
 PSci	General	Organization	(PFS) Project Scientist	Scientists who join PFS SSP survey. There are three main working groups: cosmology, galaxy evolution and AGN, and galaxy archaeology.
 PSE	General	Organization	(PFS) Project System Engineer	System Engineer for developing PFS instrument. Each developer institute has one or two PSE(s). They have bi-weekly teleconf. to discuss progress, issues and plans of development,
-PU	General	Organization	"Princeton Univerisity, USA"	PFS collaborator. PU is a one of the SpS and PFI development team with hardware aspect. For software development, PU has a responsibility for 2D-DRP and database.
+PU	General	Organization	Princeton Univerisity, USA	PFS collaborator. PU is a one of the SpS and PFI development team with hardware aspect. For software development, PU has a responsibility for 2D-DRP and database.
 RCU	SpS	Subcomponent	Red Camera Unit	One of the three camera units of Spectrograph Modules which images the spectra ranging from 630 nm to 970 nm. LAM, JHU and WS have a responsibility for its development.
-rcu	ICS	Actor	Red Camera Unit	Software module to operate RCU, in particular vacuum, cooling down, and telemetry.
-RDA	SpS	Subcomponent	Red Disperser Assembly	Spectrpgraph assembly for RCU with VPH grating. WS has a responsibility for development of mechanical parts, while JHU and PU has for grating itself.
+rcu	ICS	Actor	Red Camera Unit	Software module to operate RCU, in particular vacuum, cooling down, and telemetry. JHU and PU have a responsibility for its development.
+RDA	SpS	Subcomponent	Red Disperser Assembly	Spectrpgraph assembly for RCU with VPH grating and its holder. RDA also includes mechanism for exchange grating between Low-resolution and Mideum-resolution.
 RFCS	SpS	Subcomponent	Racks for Control Systems	Rack accommodating devices of SpS Local Control Unit (LCU). The rack is designed to have cooling system.
 RIT	SpS	Subcomponent	Rear dewar Integration Tool	AIT tool of SpS Camera Assembly (CAA). RIT is used for integrating cryostat (dewar) assembly (CAA).
 RLA	PFI	Subcomponent	Rotating Lower Components	One of the two main PFI structure mounted to instrument rotator. The main components of RLA are fibers and their positioners, AG cameras and field elements.
 SAIT	SpS	Subcomponent	Spectrograph AIT Tools	Dedicated tools for SpS integration. SAIT consists of tools for alignment, characterization and specified software. LAM has a responsibility for its development.
-SAS	ICS	General	Status Archive System	Software which collects all PFS instrument status, and sends some of them to Subaru Telemetry System. SAS will be designed to analyze status for error handling etc.
+SAS	ICS	General	Status Archive System	Software which collects all PFS instrument status, and sends some of them to Subaru Telemetry System. SAS will be designed to analyze status for error handling etc. IPMU has a responsibility for its development.
 SBC	FOCCoS/SpS	Subcomponent	Small Black Cable	Protective tubes for optical fibers at Cable A (This is equivalent to segmented tube?)
 SCP	PFI	Subcomponent	Shaft Coupler	Part of positioner module assembly to connect the shaft of Cobra positioner to fiber arm. SCP also provides hard stop on the second stage motion of Cobra.
 SCR	Subaru	Facility	Spectrograph Clean Room	Dedicated clean room on the IR4 floor for Spectrograph Modules. The temperature is controlled in the room.
-SHA	SpS	Subcomponent	Shutter Assembly	Assembly consisting of two shutters. Blue shutter is for blue channel, and red shutter is for red and nir channels. Red shutter works as screen for back illumination assembly. LAM has a responsibility for its development.
+SHA	SpS	Subcomponent	Shutter Assembly	Assembly consisting of two shutters. Blue shutter is for blue channel, and red shutter is for red and nir channels. Red shutter works as screen for back illumination assembly.
 SM	SpS	Subcomponent	Spectrograph Module	Whole module of spectrograph with three channels. There are identical 4 SMs, each of which takes ~600 fiber spectra.
 SOCD	General	Document	Science and Operational Concept Document	One of the documents at Preliminary Design Review. SOCD describes scientific motivations for developing PFS instrument and its operation modes.
 SOSS	Subaru	Operation	Subaru Operations Software System	First-generation software system for Subaru operation. SOSS provided user interface, scheduler, data archiving and so on. SOSS was replaced to Gen2 in 2011.
