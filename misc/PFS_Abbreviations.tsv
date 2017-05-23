@@ -6,7 +6,7 @@ AGC	PFI	Subcomponent	Acquisition and Guidance Camera	6 cameras are accommodated 
 agcc	ICS	Actor	Acquisition and Guidance Camera Controller	Software module to control AGCs and measure centroid and FWHM of the spots. ASIAA has a responsibility for its development.
 AIT	PFS	General	Assembly and Integration Tests	After shipment from each laboratory, an instrument should be assembled, integrated (again) and tested in its commissioning process. Subaru call this process AIT.
 APC	PFI	Subcomponent	Auxiliary Power/control Electronics	This box is accommodated on the side of PFI, and supplies power and network for PFI components. The box also provides telemetry. ASIAA has a responsibility for its development.
-ASIAA	General	Organization	"Academia Sinica Institute of Astronomy and Astrophysics, Taiwan"	PFS collaborator. ASIAA has responsibility for development of PFI and MCS.
+ASIAA	General	Organization	Academia Sinica Institute of Astronomy and Astrophysics, Taiwan	PFS collaborator. ASIAA has responsibility for development of PFI and MCS.
 BBC	FOCCoS	Subcomponent	Big Black Cable	Protective tubes for optical fibers at Cable C and B.
 BCB	PFI	Subcomponent	Bulkhead Connector Box	The PFI connector box accommodated to the cable wrapper (CWA). The power, network and coolant from Subaru are induced at this box. ASIAA has a responsibility for its development.
 BCU	SpS	Subcomponent	Blue Camera Unit	One of the three camera units of Spectrograph Modules which images the bluest spectra, ranging from 380 nm to 650 nm. LAM and JHU have a responsibility for its development.
