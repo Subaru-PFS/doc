@@ -30,6 +30,28 @@ Following list contains items to be written.
 
 For new user request, refer user account manual of the PFS web based services. 
 
+Add new JIRA project
+******
+
+To request
+======
+
+File a new JIRA ticket to the INFRA project with following information.
+
+- Long name of a new project, key (e.g. INFRA) of a new project, username of project lead, and description
+- Initial components
+
+Procedure to add new JIRA project
+======
+
+1. On list of projects page, add new and select "Basic software development"
+2. Set name, key, lead, and description of the project as specified in a request
+3. Go to the project page, set issue types to "Default issue type scheme", and delete one created by JIRA
+4. Set issue type screen to "Default issue type screen scheme", and delete ones created by JIRA (screen scheme, issue type screen scheme)
+5. Set workflow to "2-D pipeline workflow scheme", and delete one created by JIRA (from inactive section in workflow list)
+6. Add components if provided
+7. Add JIRA project to `About <https://pfspipe.ipmu.jp/about.html>`_ page.
+
 Add new GitHub repository
 ******
 
