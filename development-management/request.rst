@@ -38,7 +38,7 @@ To request
 
 File a new JIRA ticket to the INFRA project with following information.
 
-- Name of new repository (need to follow naming convention of PFS GitHub)
+- Name of new repository (need to follow `naming convention of PFS GitHub <https://pfspipe.ipmu.jp/repos.html>`_)
 - Short description of new repository
 - Responsible institution of the repository (coordination, development)
 - Corresponding JIRA project and component (request new if need)
