@@ -31,10 +31,10 @@ Following list contains items to be written.
 For new user request, refer user account manual of the PFS web based services. 
 
 Add new GitHub repository
-***
+******
 
 To request
-===
+======
 
 File a new JIRA ticket to the INFRA project with following information.
 
@@ -45,7 +45,7 @@ File a new JIRA ticket to the INFRA project with following information.
 - License (OSS license is required)
 
 Procedure to add new GitHub repository
-===
+======
 
 Following verification of supplied information per project requirements, such 
 as naming conventions, following procedures shall be performed by sysadmin. 
@@ -53,9 +53,9 @@ as naming conventions, following procedures shall be performed by sysadmin.
 1. Add new GitHub repository with specified repository name and description
 2. From Settings panel, do following configurations.
 
-  - Disable issues
-  - Mark a team in the organization as admin for operation. Write permission is default for all members in the organization
-  - Check slack integration (post activities) is configured
+  1. Disable issues
+  2. Mark a team in the organization as admin for operation. Write permission is default for all members in the organization
+  3. Check slack integration (post activities) is configured
 
 3. Add a line of new repository to `repos.html <https://pfspipe.ipmu.jp/repos.html>`_
 4. Create new JIRA project or component, if required.
