@@ -23,7 +23,7 @@ ToC
 
 Following list contains items to be written.
 
-- Add new JIRA project
+- `Add new JIRA project`_
 - Add new JIRA component
 - `Add new GitHub repository`_
 - Accept transfer of GitHub repository from user
