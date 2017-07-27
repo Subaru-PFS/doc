@@ -14,6 +14,7 @@ as of the day of release of this document.
   * `Technical team member`_
   * `Science team member`_
   * `Notes and tips for the registration process`_
+  * `When you lost your account information`_
 
 * `Details of the services`_
 
@@ -59,8 +60,8 @@ page and request an account.
 
 After you have access to this SuMIRe/PFS PBworks wiki, your needs of other 
 accounts and services depend on your role in the PFS project as explained 
-in `Technical team member`_ and `Science team member`_, 
-follow the instructions and request appropriate account(s). 
+in `Technical team member`_ and `Science team member`_. 
+Follow the instructions and request appropriate account(s). 
 If you already have some of the accounts and plan to request others, 
 please read `Notes and tips for the registration process`_.
 Note that the contents in the services for PFS software development are 
@@ -108,15 +109,14 @@ you should follow the procedure as follows:
 Notes and tips for the registration process
 ------
 
-* If you already have a pfs.ipmu.jp account but cannot login to PFS JIRA, you should send an email to jira at pfs.ipmu.jp, instead of registration at signup page. 
+* If you already have a pfs.ipmu.jp (https) account but cannot login to PFS JIRA, you should send an email to jira at pfs.ipmu.jp, instead of registration at signup page. 
 * You will receive email from GitHub but not from the PFS project for further registration procedures to GitHub organization. Registration process will not finish unless you follow these procedures. This registration to GitHub organization does not mean to subscribe activities of repositories, you need to subscribe repositories in interest by yourself if you want. 
 * PFS GitHub is open to the public, so you can read the contents and add comments except for those in the private repositories, but you cannot push to git repositories unless you follow the above procedure.
 * PFS JIRA is open to the public, so you can read the contents, but you cannot make any commitments therein unless you follow the above procedure.
 * In the PFS GitHub organization, there is one team per institute where the members are given admin privilege. So instead of sending email to github at pfs.ipmu.jp, you can also ask the members in your institute to add yourself with privilege given to repositories related to your institute. 
 
-======
-When you lost your account information: 
-======
+When you lost your account information
+------
 
 SuMIRe/PFS PBworks wiki
   Access `password reset <https://my.pbworks.com/?p=forgot>`_ and follow an instruction shown.
@@ -158,8 +158,8 @@ Page indexes
 
 For some continuous meetings, index for each agenda/memo pages are avail.
 
-* `Systems Engineering group telecon <http://sumire.pbworks.com/System-engineer-group-telecon>`_
-* `Manager group telecon <http://sumire.pbworks.com/Manager-group-telecon>`_
+* `Systems Engineering group telecon <http://sumire.pbworks.com/Systems-engineering-telecons>`_
+* `Manager group telecon <http://sumire.pbworks.com/Management-telecons>`_
 
 
 ======
@@ -191,7 +191,7 @@ Every contents at https://pfs.ipmu.jp/ are project only, and you will
 be required to log in to view pages. 
 
 If you have any issue on this site, contact administrator 
-at pfs@pfs.ipmu.jp . 
+at pfs at pfs.ipmu.jp . 
 
 ======
 Login and user account
@@ -201,7 +201,7 @@ Use your 'account name' (not email address) and 'password'.
 For your first time, please follow notification email to change your password 
 from an initial one (randomly created). 
 
-You can edir your account information from `LDAP account manipulator service <https://pfs.ipmu.jp/ldap-manip/>`_, 
+You can edit your account information from `LDAP account manipulator service <https://pfs.ipmu.jp/ldap-manip/>`_, 
 such as password, your real name, institution, and photo. 
 Also you can view list of all accounts from 
 
@@ -321,6 +321,6 @@ PFS JIRA
 `PFS JIRA site <https://pfspipe.ipmu.jp/jira/>`_ is open to the public, 
 so you can register by yourself. 
 If you have an account at pfs.ipmu.jp and have not logged in to PFS JIRA 
-before, contact jira@pfs.ipmu.jp to activate your account and use 
+before, contact jira at pfs.ipmu.jp to activate your account and use 
 the same user name and password as pfs.ipmu.jp. 
 
