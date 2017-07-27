@@ -212,7 +212,7 @@ Also you can view list of all accounts from
 ToC
 ======
 
-When accessing to `https://pfs.ipmu.jp/`_, you will get newest list of 
+When accessing to https://pfs.ipmu.jp/, you will get newest list of 
 contents in this server. 
 
 LDAP account manipulator
