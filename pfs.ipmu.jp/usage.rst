@@ -34,7 +34,7 @@ roles and contributions to the project.
 
 * SuMIRe/PFS PBworks wiki
 * Services at pfs.ipmu.jp
-* Software development
+* For software development
 
   * `PFS JIRA`_
   * `GitHub`_ Subaru-PFS organization
