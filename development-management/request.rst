@@ -59,6 +59,9 @@ To request
 ======
 
 File a new JIRA ticket to the INFRA project with following information.
+Once operation procedure finished, this ticket will be set 'IN REVIEW' with 
+a requestee as reviewer, a requestee SHALL check new repository and mark as 
+'DONE'. 
 
 - Name of new repository (need to follow `naming convention of PFS GitHub <https://pfspipe.ipmu.jp/repos.html>`_)
 - Short description of new repository
