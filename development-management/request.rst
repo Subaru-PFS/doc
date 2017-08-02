@@ -79,9 +79,10 @@ as naming conventions, following procedures shall be performed by sysadmin.
   2. Mark a team in the organization as admin for operation. Write permission is default for all members in the organization
   3. Check slack integration (post activities) is configured
 
-3. Add a line of new repository to `repos.html <https://pfspipe.ipmu.jp/repos.html>`_
+3. Add a line of new repository to `repos.html <https://pfspipe.ipmu.jp/repos.html>`_ and `about.html <https://pfspipe.ipmu.jp/about.html>`_.
 4. Create new JIRA project or component, if required.
 5. Check JIRA integration to load repository updates (branch, PR etc.).
+6. Modify github-slack integration to add repository to channel via `slack app management page <https://sumire-pfs.slack.com/apps/manage>`_.
 
 After all procedures performed, sysadmin is required to set the JIRA ticket as 
 IN REVIEW with setting requestee as a reviewer. 
