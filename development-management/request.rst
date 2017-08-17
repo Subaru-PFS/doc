@@ -59,6 +59,9 @@ To request
 ======
 
 File a new JIRA ticket to the INFRA project with following information.
+Once operation procedure finished, this ticket will be marked 'IN REVIEW' with 
+a requestee as a reviewer by sysadmin, 
+a requestee SHALL check new repository and mark as 'DONE'. 
 
 - Name of new repository (need to follow `naming convention of PFS GitHub <https://pfspipe.ipmu.jp/repos.html>`_)
 - Short description of new repository
@@ -75,13 +78,13 @@ as naming conventions, following procedures shall be performed by sysadmin.
 1. Add new GitHub repository with specified repository name and description
 2. From Settings panel, do following configurations.
 
-  1. Disable issues
-  2. Mark a team in the organization as admin for operation. Write permission is default for all members in the organization
-  3. Check slack integration (post activities) is configured
+  + Disable issues
+  + Mark a team in the organization as admin for operation. Write permission is default for all members in the organization
 
-3. Add a line of new repository to `repos.html <https://pfspipe.ipmu.jp/repos.html>`_
+3. Add a line of new repository to `repos.html <https://pfspipe.ipmu.jp/repos.html>`_ and `about.html <https://pfspipe.ipmu.jp/about.html>`_.
 4. Create new JIRA project or component, if required.
 5. Check JIRA integration to load repository updates (branch, PR etc.).
+6. Modify github-slack integration to add repository to channel via `slack app management page <https://sumire-pfs.slack.com/apps/manage>`_.
 
 After all procedures performed, sysadmin is required to set the JIRA ticket as 
 IN REVIEW with setting requestee as a reviewer. 
