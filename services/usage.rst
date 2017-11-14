@@ -310,9 +310,10 @@ GitHub
 PFS project uses `Subaru-PFS organization at GitHub <https://github.com/Subaru-PFS>`_. 
 In 'Subaru-PFS' organization at GitHub, 
 there is one (mostly private) `team per institute <https://github.com/orgs/Subaru-PFS/teams>`_
-where the members have the admin privilege.
-You will need to be in one team of this organization 
-for push access to repositories. 
+where the members have the admin privilege to repositories owned.
+You will need to be in this organization (by invitation from the organization), 
+and need to be in team(s) of this organization for admin privilege to 
+repositories related. 
 
 
 PFS JIRA
