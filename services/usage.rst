@@ -313,7 +313,7 @@ you need to be a member of team(s) or outside collaborators of Subaru-PFS
 organization. 
 For institutes actively working on software development, one (mostly private) 
 `team per group <https://github.com/orgs/Subaru-PFS/teams>`_ (by instrument, 
-data reduction, survey) is defined with admin privilege to repositories owned 
+data reduction, survey) is defined with admin privilege of repositories owned 
 by each team. 
 You can request to be a member of teams (if you have any one working for) or 
 outside collaborators by email to github at pfs.ipmu.jp. 
