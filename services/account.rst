@@ -13,11 +13,16 @@ After you have access to this SuMIRe/PFS PBworks wiki, your needs of other
 accounts and services depend on your role in the PFS project as explained 
 in `Technical team member`_ and `Science team member`_. 
 Follow the instructions and request appropriate account(s). 
-If you already have some of the accounts and plan to request others, 
-please read `Notes and tips for the registration process`_.
-Note that the contents in the services for PFS software development are 
-open to the public (apart from a part of them in the private repositories), 
-so they are readable without any account. 
+
+Notes and tips:
+
+* If you already have some of the accounts and plan to request others, 
+  please read `Notes and tips for the registration process`_.
+* If you lost your account information, refer 
+  `Lost account or change password`_. 
+* The contents in the services for PFS software development are 
+  open to the public (apart from a part of them in the private repositories), 
+  so they are readable without any account. 
 
 Technical team member
 ------
@@ -68,17 +73,33 @@ Notes and tips for the registration process
 * PFS JIRA is open to the public, so you can read the contents, but you cannot make any commitments therein unless you follow the above procedure.
 * In the PFS GitHub organization, there is one team per institute where the members are given admin privilege. So instead of sending email to github at pfs.ipmu.jp, you can also ask the members in your institute to add yourself with privilege given to repositories related to your institute. 
 
-When you lost your account information
+Lost account or change password
 ------
+
+If you lost your account information or forgot your password, ask to reset 
+by following procedures. 
 
 SuMIRe/PFS PBworks wiki
   Access `password reset <https://my.pbworks.com/?p=forgot>`_ and follow an instruction shown.
-pfs.ipmu.jp (https)
+pfs.ipmu.jp and pfspipe.ipmu.jp
   Send email to pfs at pfs.ipmu.jp from email address you registered.
 PFS JIRA
   If you have an account under single sign on at pfs.ipmu.jp (https), 
   send email to pfs at pfs.ipmu.jp. Otherwise access 
   `JIRA registration page <https://pfspipe.ipmu.jp/jira/secure/ForgotLoginDetails.jspa>`_
   and follow an instruction shown. 
+PFS Slack
+  Put your email address to the 
+  `slack password reset page <https://sumire-pfs.slack.com/forgot>`_, 
+  or contact pfs at pfs.ipmu.jp for help. 
 
+If you can access to services, and just want to change, process from following 
+links. 
 
+* `SuMIRe/PFS PBworks wiki <https://my.pbworks.com/?p=email>`_
+* `Single sign on for pfs/pfspipe.ipmu.jp <https://pfs.ipmu.jp/ldap-manip/>`_ 
+* Visit `PFS JIRA Profile page 
+  <https://pfspipe.ipmu.jp/jira/secure/ViewProfile.jspa>`_ 
+  and find 'change password' link. 
+  If you cannot find, you are under a single sign on. 
+* `Sumire-PFS slack account settings <https://sumire-pfs.slack.com/account/settings#password>`_
