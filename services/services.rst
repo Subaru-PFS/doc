@@ -15,9 +15,8 @@ Refer `account policy <account.rst>`_ for details and registration.
 * `SuMIRe/PFS PBworks wiki`_
 * `Public Web Site at pfs.ipmu.jp`_
 * `PFS project internal website (pfs.ipmu.jp)`_
-* `PFS software development website (pfspipe.ipmu.jp)`_ 
 * `Online meeting`_
-* `External services for software development`_
+* `Services for software development at pfspipe.ipmu.jp and external`_
 
 SuMIRe/PFS PBworks wiki
 ------
@@ -163,7 +162,6 @@ Some landfill instances would avail.
 (Note: landfill will be used for some testing purpose, but not a real 
 operated service.) 
 
-
 Online meeting
 ------
 
@@ -175,41 +173,37 @@ the project is providing a list of scheduled teleconferences calendar at
 `google calendar <https://calendar.google.com/calendar/embed?src=su0pbsaull17etlj62tet5anm0%40group.calendar.google.com>`_.
 
 
-External services for software development
+Services for software development at pfspipe.ipmu.jp and external
 ------
 
-A project management tool "Atlassian JIRA" is used for software development 
-of the PFS project for the issue ticketing. The contents on the PFS JIRA 
-are open to the public but registration through JIRA site account or a Single 
-Sign On integrated with other services at pfs.ipmu.jp is required for actions. 
+PFS software development group has its dedicated website at 
+`pfspipe.ipmu.jp <https://pfspipe.ipmu.jp/>`_, and also uses several external 
+services like `GitHub Subaru-PFS organization <https://github.com/Subaru-PFS>`_. 
+Followings are a list of commonly used services, refer top page at 
+`pfspipe.ipmu.jp <https://pfspipe.ipmu.jp/>`_ and links in the page 
+for details and full list of services with descriptions. 
+Also for details on accounts, please refer `account policy <account.rst>`_ 
+page. 
 
-The PFS project also has an organization at GitHub titled "Subaru-PFS" for 
-the software development, e.g. coding works, code reviews, and documentation. 
-The contents are open to the public except for those in the private 
-repositories. 
-
-
-GitHub
-------
-
-PFS project uses `Subaru-PFS organization at GitHub <https://github.com/Subaru-PFS>`_. 
-In 'Subaru-PFS' organization at GitHub, 
-there is one (mostly private) `team per institute <https://github.com/orgs/Subaru-PFS/teams>`_
-where the members have the admin privilege.
-You will need to be in one team of this organization 
-for push access to repositories. 
-
-
-PFS JIRA
-------
-
-`PFS JIRA site <https://pfspipe.ipmu.jp/jira/>`_ is open to the public, 
-so you can register by yourself. 
-If you have an account at pfs.ipmu.jp and have not logged in to PFS JIRA 
-before, contact jira at pfs.ipmu.jp to activate your account and use 
-the same user name and password as pfs.ipmu.jp. 
-
-PFS Slack
-------
-
+:pfspipe mailman:
+  Several public mail lists are hosted on `mailman at pfspipe.ipmu.jp 
+  <https://pfspipe.ipmu.jp/mailman/listinfo>`_. It is recommended to join 
+  `allhands <https://pfspipe.ipmu.jp/mailman/listinfo/allhands>`_ 
+  to receive important notices and announcements. 
+:PFS JIRA:
+  A project management tool "Atlassian JIRA" is used for software development 
+  of the PFS project for the issue ticketing. The contents on the PFS JIRA 
+  are open to the public, but login using an account under a Single Sign On 
+  integrated with other services at pfs.ipmu.jp or by 
+  `registration through JIRA site <https://pfspipe.ipmu.jp/jira/secure/Signup!default.jspa>`_
+  is required for making actions. 
+:GitHub Subaru-PFS organization:
+  PFS project uses 
+  `Subaru-PFS organization at GitHub <https://github.com/Subaru-PFS>`_. 
+  In 'Subaru-PFS' organization at GitHub, there is one (mostly private) 
+  `team per institute <https://github.com/orgs/Subaru-PFS/teams>`_
+  where the members have the admin privilege.
+:PFS Slack:
+  PFS project uses `sumire-pfs workspace <https://sumire-pfs.slack.com/>`_ 
+  for chat tool.
 
