@@ -121,8 +121,6 @@ LDAP account manipulator
   directory. 
   Also, you can edit your account setting (real name, password, institution, 
   photo, etc.) from this service.
-List of fuze telecons
-  also see `Fuze conference system`_
 Content sharing services
   Available services:
 
@@ -183,26 +181,12 @@ operated service.)
 Online meeting
 ------
 
-======
-Zoom system
-======
-
 PFS project uses Zoom system for teleconference. 
 For accessing on-line, you will need to `install clients <https://zoom.us/download>`_.
 
-You can check `list of planned teleconferences <https://calendar.google.com/calendar/embed?src=su0pbsaull17etlj62tet5anm0%40group.calendar.google.com&ctz=Asia/Tokyo>`_.
-
-
-======
-Fuze conference system
-======
-
-PFS project used Fuze service for teleconference. 
-You will get invitation for meetings by email, which has on-line (VoIP) 
-access URL and phone numbers with introductions to join. 
-For accessing on-line, you will need to `install clients <https://www.fuze.com/download>`_.
-
-You can check `list of planned teleconferences <https://pfs.ipmu.jp/fuzelist/>`_.
+For scheduled list of upcoming teleconferences for PFS technical team, 
+the project is providing a list of scheduled teleconferences calendar at 
+`google calendar <https://calendar.google.com/calendar/embed?src=su0pbsaull17etlj62tet5anm0%40group.calendar.google.com>`_.
 
 
 GitHub
