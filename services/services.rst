@@ -12,32 +12,12 @@ roles and contributions to the project, most of services hosted at IPMU are
 under single sign on (SSO) by pfs.ipmu.jp. 
 Refer `account policy <account.rst>`_ for details and registration. 
 
-* `Overview`_
-* `Details of the services`_
-
-  * `SuMIRe/PFS PBworks wiki`_
-  * `Public Web Site at pfs.ipmu.jp`_
-  * `Internal Web Site -- pfs.ipmu.jp (https)`_
-  * `Online meeting`_
-  * `GitHub`_
-  * `PFS JIRA`_
-
-Most of services for PFS instrument hardware development is provided at 
-`Internal Web Site -- pfs.ipmu.jp (https)`_.
-
-A project management tool "Atlassian JIRA" is used for software development 
-of the PFS project for the issue ticketing. The contents on the PFS JIRA 
-are open to the public but registration through JIRA site account or a Single 
-Sign On integrated with other services at pfs.ipmu.jp is required for actions. 
-
-The PFS project also has an organization at GitHub titled "Subaru-PFS" for 
-the software development, e.g. coding works, code reviews, and documentation. 
-The contents are open to the public except for those in the private 
-repositories. 
-
-
-Details of the services
-******
+* `SuMIRe/PFS PBworks wiki`_
+* `Public Web Site at pfs.ipmu.jp`_
+* `PFS project internal website (pfs.ipmu.jp)`_
+* `PFS software development website (pfspipe.ipmu.jp)`_ 
+* `Online meeting`_
+* `External services for software development`_
 
 SuMIRe/PFS PBworks wiki
 ------
@@ -91,7 +71,7 @@ Public Web Site at pfs.ipmu.jp
 Public project information is at http://pfs.ipmu.jp , 
 such as list of meetings, list of publications, and instrument parameters. 
 
-Internal Web Site -- pfs.ipmu.jp (https)
+PFS project internal website (pfs.ipmu.jp)
 ------
 
 Every contents at https://pfs.ipmu.jp/ are project only, and you will 
@@ -195,6 +175,20 @@ the project is providing a list of scheduled teleconferences calendar at
 `google calendar <https://calendar.google.com/calendar/embed?src=su0pbsaull17etlj62tet5anm0%40group.calendar.google.com>`_.
 
 
+External services for software development
+------
+
+A project management tool "Atlassian JIRA" is used for software development 
+of the PFS project for the issue ticketing. The contents on the PFS JIRA 
+are open to the public but registration through JIRA site account or a Single 
+Sign On integrated with other services at pfs.ipmu.jp is required for actions. 
+
+The PFS project also has an organization at GitHub titled "Subaru-PFS" for 
+the software development, e.g. coding works, code reviews, and documentation. 
+The contents are open to the public except for those in the private 
+repositories. 
+
+
 GitHub
 ------
 
@@ -214,4 +208,8 @@ so you can register by yourself.
 If you have an account at pfs.ipmu.jp and have not logged in to PFS JIRA 
 before, contact jira at pfs.ipmu.jp to activate your account and use 
 the same user name and password as pfs.ipmu.jp. 
+
+PFS Slack
+------
+
 
