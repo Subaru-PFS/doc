@@ -2,9 +2,15 @@ Overview of services
 ******
 
 Below are tools and resources that are used in the PFS project. 
+Many services are hosted at IPMU under `pfs.ipmu.jp <https://pfs.ipmu.jp>`_ 
+(mainly for instrument hardware development) or 
+`pfspipe.ipmu.jp <pfspipe.ipmu.jp>`_ (for software development), and also PFS 
+project is using several external services, like 
+`GitHub Subaru-PFS organization <https://github.com/Subaru-PFS>`_. 
 You may need account(s) and access to some or all of them depending on your 
-roles and contributions to the project. Refer `account policy <account.rst>`_ 
-for details and registration. 
+roles and contributions to the project, most of services hosted at IPMU are 
+under single sign on (SSO) by pfs.ipmu.jp. 
+Refer `account policy <account.rst>`_ for details and registration. 
 
 * `Overview`_
 * `Details of the services`_
