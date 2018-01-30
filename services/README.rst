@@ -1,4 +1,16 @@
+Services related on PFS Project
+******
 
+In this document, internet based services related on the PFS Project are 
+listed, as of the day of last updated per each page. 
+Please file a ticket to `INFRA project in the PFS JIRA <https://pfspipe.ipmu.jp/jira/browse/INFRA>`_ if you find any issue or missing item. 
 
-* `Account policy and procedures <account.rst>`_
+List of pages
+------
+
+* `Account policy and procedures <account.rst>`_ 
+  : Account policy and detailed procedures on request, change, or contacts 
+  on trouble. 
+* `Overview of services <services.rst>`_ 
+  : Overview of services and their short descriptions
 

@@ -1,15 +1,12 @@
-******
-Services related on PFS Project
-******
-
-ToC
+Overview of services
 ******
 
-In this document, internet based services related on the PFS Project are summarized 
-as of the day of release of this document. 
+Below are tools and resources that are used in the PFS project. 
+You may need account(s) and access to some or all of them depending on your 
+roles and contributions to the project. Refer `account policy <account.rst>`_ 
+for details and registration. 
 
 * `Overview`_
-* `Account policy and registration procedures`_
 * `Details of the services`_
 
   * `SuMIRe/PFS PBworks wiki`_
@@ -19,20 +16,8 @@ as of the day of release of this document.
   * `GitHub`_
   * `PFS JIRA`_
 
-Overview
-******
-
-Below are a few tools and resources that are used in the PFS project. 
-You may need account(s) and access to some or all of them depending on your 
-roles and contributions to the project. 
-
-* SuMIRe/PFS PBworks wiki
-* Services at pfs.ipmu.jp
-* For software development
-
-  * `PFS JIRA`_
-  * `GitHub`_ Subaru-PFS organization
-  * TravisCI
+Most of services for PFS instrument hardware development is provided at 
+`Internal Web Site -- pfs.ipmu.jp (https)`_.
 
 A project management tool "Atlassian JIRA" is used for software development 
 of the PFS project for the issue ticketing. The contents on the PFS JIRA 
