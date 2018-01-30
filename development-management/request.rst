@@ -64,7 +64,7 @@ a requestee as a reviewer by sysadmin,
 a requestee SHALL check new repository and mark as 'DONE'. 
 
 - Name of new repository (need to follow `naming convention of PFS GitHub <https://pfspipe.ipmu.jp/repos.html>`_)
-- Short description of new repository
+- Short description of new repository (one line, to be used as a description at `github <https://github.com/Subaru-PFS>`_ and `web page <https://pfspipe.ipmu.jp/repos.html>`_)
 - Responsible institution of the repository (coordination, development)
 - Corresponding JIRA project and component (request new if need)
 - License (OSS license is required)
