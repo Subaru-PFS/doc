@@ -4,11 +4,13 @@ Account policy and procedures
 This page presents PFS account policy and procedures on registration, update, 
 and contacts on trouble. 
 
+**PBworks wiki**
 First of all, if you are a member of the institutes in the PFS collaboration, 
 you need an account for access to SuMIRe/PFS PBworks wiki page. 
 You can go to `Request access <http://sumire.pbworks.com/w/request-access>`_
 page and request an account. 
 
+**Other services for PFS Project**
 After you have access to this SuMIRe/PFS PBworks wiki, your needs of other 
 accounts and services depend on your role in the PFS project as explained 
 in `Technical team member`_ and `Science team member`_. 
