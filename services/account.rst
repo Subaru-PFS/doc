@@ -4,13 +4,13 @@ Account policy and procedures
 This page presents PFS account policy and procedures on registration, update, 
 and contacts on trouble. 
 
-**PBworks wiki**
+**PBworks wiki**: 
 First of all, if you are a member of the institutes in the PFS collaboration, 
 you need an account for access to SuMIRe/PFS PBworks wiki page. 
 You can go to `Request access <http://sumire.pbworks.com/w/request-access>`_
 page and request an account. 
 
-**Other services for PFS Project**
+**Other services for PFS Project**: 
 After you have access to this SuMIRe/PFS PBworks wiki, your needs of other 
 accounts and services depend on your role in the PFS project as explained 
 in `Technical team member`_ and `Science team member`_. 
@@ -43,7 +43,7 @@ to send the following information to pfsprojectoffice at ipmu.jp.
 * Photo for photo directory at pfs.ipmu.jp (JPEG, less than 50kB; width 250-300 pixels, height 250-350 pixels)
 * If you will work on software development (in any area of PFS software development) 
 
-  * Request of access to PFS JIRA
+  * Request of access to `PFS JIRA <https://pfspipe.ipmu.jp/jira/>`_ and `PFS Slack <https://sumire-pfs.slack.com/>`_
   * Your GitHub account
 
 Once your request is granted, the account information for pfs.ipmu.jp (https) 
@@ -66,6 +66,9 @@ you should follow the procedure as follows:
 * Contact the local site manager at your institute in the PFS technical team and formalize your commitment(s) to the software development.
 * `Register to PFS JIRA <https://pfspipe.ipmu.jp/jira/secure/Signup!default.jspa>`_, if you need to participate in discussions by filing tickets, sending comments, and so on.
 * Send your GitHub account name by email to github at pfs.ipmu.jp, if you need to push to git repositories for software coding works, code reviews, and documentations. 
+* You can create a `PFS Slack <https://sumire-pfs.slack.com/>`_ account 
+  `by yourself <https://sumire-pfs.slack.com/signup/>`_ (for some email 
+  addresses), or send a request of invitation to pfs at pfs.ipmu.jp. 
 
 Notes and tips for the registration process
 ------
