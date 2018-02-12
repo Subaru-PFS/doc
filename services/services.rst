@@ -2,7 +2,7 @@ Overview of services
 ******
 
 Below are tools and resources that are used in the PFS project. 
-Many services are hosted at IPMU under `pfs.ipmu.jp <https://pfs.ipmu.jp>`_ 
+Many services are hosted at IPMU under `pfs.ipmu.jp (https) <https://pfs.ipmu.jp>`_ 
 (mainly for instrument hardware development) or 
 `pfspipe.ipmu.jp <pfspipe.ipmu.jp>`_ (for software development), and also PFS 
 project is using several external services, like 
@@ -13,8 +13,8 @@ under single sign on (SSO) by pfs.ipmu.jp.
 Refer `account policy <account.rst>`_ for details and registration. 
 
 * `SuMIRe/PFS PBworks wiki`_
-* `Public Web Site at pfs.ipmu.jp`_
-* `PFS project internal website (pfs.ipmu.jp)`_
+* `Public Web Site at pfs.ipmu.jp (http)`_
+* `PFS project internal website (https pfs.ipmu.jp)`_
 * `Online meeting`_
 * `Services for software development at pfspipe.ipmu.jp and external`_
 
@@ -64,20 +64,20 @@ Editing manual
 You can find `manual for editing PBworks <http://usermanual.pbworks.com/>`_. 
 
 
-Public Web Site at pfs.ipmu.jp
+Public Web Site at pfs.ipmu.jp (http)
 ------
 
 Public project information is at http://pfs.ipmu.jp , 
 such as list of meetings, list of publications, and instrument parameters. 
 
-PFS project internal website (pfs.ipmu.jp)
+PFS project internal website (https pfs.ipmu.jp)
 ------
 
-Every contents at https://pfs.ipmu.jp/ are project only, and you will 
-be required to log in to view pages. 
+Every contents at https://pfs.ipmu.jp/ are project only, and you 
+need to log in to view pages. 
 
-If you have any issue on this site, contact administrator 
-at pfs at pfs.ipmu.jp . 
+If you have any issue on this site, refer 
+`lost account or change password section <account.rst#lost-account-or-change-password>`_.
 
 ======
 Login and user account
@@ -98,7 +98,7 @@ Also you can view list of all accounts from
 ToC
 ======
 
-When accessing to https://pfs.ipmu.jp/, you will get newest list of 
+When accessing to https://pfs.ipmu.jp/, you will get the newest list of 
 contents in this server. 
 
 LDAP account manipulator
