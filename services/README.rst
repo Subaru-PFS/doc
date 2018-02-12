@@ -9,7 +9,7 @@ List of pages
 ------
 
 * `Account policy and procedures <account.rst>`_ 
-  : Account policy and detailed procedures on request, change, or contacts 
+  : Account policy and detailed procedures on request, change, and contacts 
   on trouble. 
 * `Overview of services <services.rst>`_ 
   : Overview of services and their short descriptions

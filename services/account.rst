@@ -2,7 +2,7 @@ Account policy and procedures
 ******
 
 This page presents PFS account policy and procedures on registration, update, 
-or contacts on trouble. 
+and contacts on trouble. 
 
 First of all, if you are a member of the institutes in the PFS collaboration, 
 you need an account for access to SuMIRe/PFS PBworks wiki page. 
