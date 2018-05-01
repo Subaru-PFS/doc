@@ -78,8 +78,9 @@ as naming conventions, following procedures shall be performed by sysadmin.
 1. Add new GitHub repository with specified repository name and description
 2. From Settings panel, do following configurations.
 
-  1. Disable issues
-  2. Mark a team in the organization as admin for operation. Write permission is default for all members in the organization
+   1. Disable issues
+   2. Mark a team in the organization as admin for operation. 
+      Write permission is default for all members in the organization
 
 3. Add a line of new repository to `repos.html <https://pfspipe.ipmu.jp/repos.html>`_ and `about.html <https://pfspipe.ipmu.jp/about.html>`_.
 4. Create new JIRA project or component, if required.
