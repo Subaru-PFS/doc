@@ -61,13 +61,17 @@ To request
 File a new JIRA ticket to the INFRA project with following information.
 Once operation procedure finished, this ticket will be marked 'IN REVIEW' with 
 a requestee as a reviewer by sysadmin, 
-a requestee SHALL check new repository and mark as 'DONE'. 
+a requestee SHALL check new repository is working (like succeeded to push 
+something, and to access repository admin panel) and mark as 'DONE', 
+but a requestee does not need to check PR for public web site (etc.).
 
 - Name of new repository (need to follow `naming convention of PFS GitHub <https://pfspipe.ipmu.jp/repos.html>`_)
 - Short description of new repository (one line, to be used as a description at `github <https://github.com/Subaru-PFS>`_ and `web page <https://pfspipe.ipmu.jp/repos.html>`_)
 - Responsible institution of the repository (coordination, development)
-- Corresponding JIRA project and component (request new if need)
-- License (OSS license is required)
+- Corresponding JIRA project and component 
+  (request new if need; default to add a component with a name of repository 
+  in the target area, like INSTRM for ics\_)
+- License (OSS license is required; default to GPLv2)
 
 Procedure to add new GitHub repository
 ======
@@ -78,18 +82,21 @@ as naming conventions, following procedures shall be performed by sysadmin.
 1. Add new GitHub repository with specified repository name and description
 2. From Settings panel, do following configurations.
 
-   1. Disable issues
+   1. Disable issues (if requested repositories are public)
    2. Mark a team in the organization as admin for operation. 
-      Write permission is default for all members in the organization
+      Write permission is default for all members in the organization and 
+      nothing to do for tham. 
 
-3. Add a line of new repository to `repos.html <https://pfspipe.ipmu.jp/repos.html>`_ and `about.html <https://pfspipe.ipmu.jp/about.html>`_.
-4. Create new JIRA project or component, if required.
+3. Add a line of new repository to 
+   `repos.html <https://pfspipe.ipmu.jp/repos.html>`_ and 
+   `about.html <https://pfspipe.ipmu.jp/about.html>`_, 
+   with a PR branch named as the repository creation ticket and sysadmin as 
+   reviewer (not a requestee). Just merge if updated website is fine. 
+4. Create new JIRA project or component, if requested.
 5. Check JIRA integration to load repository updates (branch, PR etc.).
 6. Modify github-slack integration to add repository to channel via `slack app management page <https://sumire-pfs.slack.com/apps/manage>`_.
 
-After all procedures performed, sysadmin is required to set the JIRA ticket as 
-IN REVIEW with setting requestee as a reviewer. 
-
-Once requestee success to push a file to the repository, requestee shall mark 
-the JIRA ticket as DONE. 
+After all procedures performed, sysadmin SHALL set the JIRA ticket as 
+'IN REVIEW' with setting requestee as a reviewer. 
+Also, sysadmin SHALL work on 'pfs_www_pipe' PR independently. 
 
