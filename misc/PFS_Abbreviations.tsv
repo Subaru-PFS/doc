@@ -15,18 +15,18 @@ BDA	SpS	Subcomponent	Blue Disperser Assembly	Spectrograph assembly for BCU consi
 BIA	SpS	Subcomponent	Back-Illumination Assembly	Spectrograph assembly to illuminate science fibers from back side for their configuration. LAM has a responsibility for its development.
 CAA	SpS	Subcomponent	Camera Assembly	Spectrograph assembly collecting dispersed rays with lens and detectors. There are three kinds of CAA; blue, red and nir.
 CAL	PFI	Subcomponent	Calibration Lamp	On the top of PFI, calibration lamps are accommodated to illuminate homogeneously the screen on the ceiling of the dome. Two arc lamps and one continuum lamp are attached. PU has a responsibility for its development.
-Caltech	General	Organization	California Institute of Technology, USA	PFS collaborator. It is also called CIT. Caltech has a responsibility for developing fiber positioners "Cobra".
+Caltech	General	Organization	California Institute of Technology, USA	PFS collaborator. It is also called CIT. Caltech has a responsibility for developing fiber positioners 'Cobra'.
 CAS	SpS	Subcomponent	Visible (TBC) Camera Unit AIT Station	Designated place to assemble optical components and dewar into the visible camera unit. LAM has a responsibility for development.
 CAT	SpS	Subcomponent	CU optical Alignment Tool	Integration tool for Visible (TBC) Camera Unit AIT Station to align the optical components of the camera unit.
 CB2F	Subaru	Facility	Control Building 2nd Floor	The place at which main control infrastructure will be accommodated.
 CIT	SpS	Subcomponent	CU Integration Tool	A part of Visible (TBC) Camera Unit AIT Station to assemble the Spectrograph camera unit.
-CIT	General	Organization	California Institute of Technology, USA	PFS collaborator. It is also called Caltech. CIT has a responsibility for developing fiber positioners "Cobra".
+CIT	General	Organization	California Institute of Technology, USA	PFS collaborator. It is also called Caltech. CIT has a responsibility for developing fiber positioners 'Cobra'.
 CLA	PFI	Subcomponent	Cell Assemblies of Tower Connector of Cable C	Assembly of cable C. CLA consists of two MTP ferrules, and 11 cells are accommodated in one Tower Connector unit. LNA has a responsibility for development.
 CMA	SpS	Subcomponent	Collimator Mirror Assembly	Spectrograph assembly. The light induced at the slit firstly passes CMA before being separated  into three bands.
 CMA	MCS	Subcomponent	Camera Module Assembly	Metrology Camera assembly. It consists of Canon CMOS camera, shutter, and filter modules.
 COA	SpS	Subcomponent	Central Optical Assembly	SpS assembly consisting of two dichroic mirrors. With two dichroic mirrors, COA separates incoming light to three bands (blue, red and near-infrared).
 COB	PFI	Subcomponent	Cobra Optical Bench	PFI component. Cobra modules for science fibers, fixed fiducial fibers and AG cameras are mounted on this bench. CIT has a responsibility for its development.
-COBRA	PFI	Subcomponent	COBRA positioners	Also written as "Cobra". Two-staged piezo motor by New Scale for fiber configuration. CIT has a responsibility for purchase. JPL has a responsibility for developing control electricity and software.
+COBRA	PFI	Subcomponent	COBRA positioners	Also written as 'Cobra'. Two-staged piezo motor by New Scale for fiber configuration. CIT has a responsibility for purchase. JPL has a responsibility for developing control electricity and software.
 COT	SpS	Subcomponent	Camera Optics SA integration tool	SpS assembly used at AIT. COT holds camera optics and integrates moves on the guide rails on integration bench.
 CPPC	General	Organization	Chinese PFS Participant Consortium	PFS collaborator. As of May 2017, 6 institutes (Shanghai Jiao Tong University, National Astronomical Observatories of China, Tsinghua University, The University of Science and Technology of China, Xiamen University, and Peking University) join to this consortium.
 CRA	SpS	Subcomponent	Cryostat Assembly	Spectrograph assembly to provide vacuumed and cold chamber for camera and detectors.
@@ -86,7 +86,7 @@ MCPS	PFI	Subcomponent	Master Controller Power Supply	Device of Positioner Remote
 MCS	PFS	Subsystem	Metrology Camera System	PFS instrument subsystem installed to the Cassegrain focus. MCS takes image of back-illuminated fibers, and measures their centroids. ASIAA has a responsibility for its development.
 MEB	MCS	Subcomponent	MCS Electronic Box	Box accommodating infrastructures to control MCS camera, shutter and telemetry sensor.
 meb	ICS	Actor	MCS Electronic Box interface	Software to control power supply and telemetry system for MCS. ASIAA has a responsibility for its development.
-MHS	ICS	General	Messaging Hub System	Server for various software modules (actors) to exchange their "messages" such as statuses, commands. MHS provides a client library for network communication, and analysis of messages. PFS uses "tron" from SDSS.
+MHS	ICS	General	Messaging Hub System	Server for various software modules (actors) to exchange their 'messages' such as statuses, commands. MHS provides a client library for network communication, and analysis of messages. PFS uses 'tron' from SDSS.
 MLP1	Subaru	Operation	Mid-Level Processors 1	Subaru computer system which controls the entire telescope drivers and sensors. Tracking error in azimuth and elevation axes, which is measured by PFS software MAC, is sent to MLP1.
 MP1	PFI	Subcomponent	Modular Plate 1	One of the three plate to route fiber cables inside of PFI, from tower connector at the top to focal plane at the bottom. MP1 is the bottom-most one.
 MP2	PFI	Subcomponent	Modular Plate 2	One of the three plate to route fiber cables inside of PFI, from tower connector at the top to focal plane at the bottom. MP2 is the middle one.
@@ -99,7 +99,7 @@ NCU	SpS	Subcomponent	NIR Camera Unit	One of the three camera units of Spectrogra
 ncu	ICS	Actor	NIR Camera Unit	Software module to operate NCU, in particular vacuum, cooling down, and telemetry. JHU and PU have a responsibility for its development.
 OBA	SpS	Subcomponent	Optical Bench Assembly	Optical bench, where SpS components are mounted. OBA has air-suspension legs.
 OBCP	Subaru	Operation	Observation Control Processor	Computers to control Subaru instruments. In PFS case, ICS works as OBCP.
-OCS	Subaru	Operation	Observation Control System	OCS is used to operate observations, interfacing of users (operators and/or observers) and various computers controlling telescope and instruments. the command by a user transferred to other control systems. Current OCS is called "Gen2".
+OCS	Subaru	Operation	Observation Control System	OCS is used to operate observations, interfacing of users (operators and/or observers) and various computers controlling telescope and instruments. the command by a user transferred to other control systems. Current OCS is called 'Gen2'.
 OWS	Subaru	Operation	Observation Workstation	Computers at Subaru telescope (and remote observation room) to send commands to telescope and instruments via Gen2.
 PBA	PFI	Subcomponent	Positioner Bench Assembly	PFI assembly for mounting Cobra positioner and AG cameras. PBA also consists of field element and AG cameras and their mount structure.
 PDE	PFI	Subcomponent	Positioner Driver Electronics	Electronics board that drives one row of positioners (28 or 29) in a module. PDEs are assembled to Cobra module. JPL has a responsibility for its development.
@@ -108,7 +108,7 @@ PFI	PFS	Subsystem	Prime Focus Instrument	PFS instrument installed to the Subaru 
 PFS	General	General	Prime Focus Spectrograph	This project.
 PFU	Subaru	Subcomponent	Prime Focus Unit	General name for Subaru-mounting modules for the instrument at prime focus. For PFS, POpt2 is the case.
 PGR	SpS	Subcomponent	Parking Guiding Rails	Guide rails used for SpS Camera Unit integration tool (CIT). 
-PMA	PFI	Subcomponent	Positioner Module Assembly	An assembly of fiber (Cable C), microlens, fiber positioner and driver boards. One module is designed to accommodate 57 fibers. PMA is also called "Cobra module". JPL, CIT and LNA has a responsibility for is development.
+PMA	PFI	Subcomponent	Positioner Module Assembly	An assembly of fiber (Cable C), microlens, fiber positioner and driver boards. One module is designed to accommodate 57 fibers. PMA is also called 'Cobra module'. JPL, CIT and LNA has a responsibility for is development.
 PMC	PFI	Subcomponent	Positioner Master Controller	Device to control driver boards of cobra positioners.
 PO	General	Organization	(PFS) Project Office	Group made-up from members at IPMU and NAOJ to manage the PFS project.
 POF	PFI	Subcomponent	Positioner Frame	Interface plate with instrument rotator of POpt2. POF also has a structure to mount cobra optical bench (COB). ASIAA has responsibility for its development.
