@@ -66,6 +66,17 @@ you should follow the procedure as follows:
 * Contact the local site manager at your institute in the PFS technical team and formalize your commitment(s) to the software development.
 * `Register to PFS JIRA <https://pfspipe.ipmu.jp/jira/secure/Signup!default.jspa>`_, if you need to participate in discussions by filing tickets, sending comments, and so on.
 * Send your GitHub account name by email to github at pfs.ipmu.jp, if you need to push to git repositories for software coding works, code reviews, and documentations. 
+
+  * For institutes actively working on software development, one (mostly 
+    private) `team per group <https://github.com/orgs/Subaru-PFS/teams>`_ 
+    (by instrument, data reduction, survey) is defined with admin privilege 
+    of repositories owned by each team, so you can ask your site local 
+    members for it. 
+  * Instead, you can request to be a member of teams (if you have any one 
+    working for) or `outside collaborators to repositories 
+    <https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/>`_ 
+    by email to github at pfs.ipmu.jp. 
+
 * You can create a `PFS Slack <https://sumire-pfs.slack.com/>`_ account 
   `by yourself <https://sumire-pfs.slack.com/signup/>`_ (for some email 
   addresses), or send a request of invitation to pfs at pfs.ipmu.jp. 

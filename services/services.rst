@@ -200,9 +200,10 @@ PFS JIRA
 GitHub Subaru-PFS organization
   PFS project uses 
   `Subaru-PFS organization at GitHub <https://github.com/Subaru-PFS>`_. 
-  In 'Subaru-PFS' organization at GitHub, there is one (mostly private) 
-  `team per institute <https://github.com/orgs/Subaru-PFS/teams>`_
-  where the members have the admin privilege.
+  To work on repositories, such as pushing to a repository, or reviewing a PR, 
+  you need to be a member of team(s) or `outside collaborators to repositories 
+  <https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/>`_ 
+  of Subaru-PFS organization. 
 PFS Slack
   PFS project uses `sumire-pfs workspace <https://sumire-pfs.slack.com/>`_ 
   for chat tool.
