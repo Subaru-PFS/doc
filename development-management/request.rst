@@ -84,7 +84,9 @@ as naming conventions, following procedures shall be performed by sysadmin.
 3. Add a line of new repository to `repos.html <https://pfspipe.ipmu.jp/repos.html>`_ and `about.html <https://pfspipe.ipmu.jp/about.html>`_.
 4. Create new JIRA project or component, if required.
 5. Check JIRA integration to load repository updates (branch, PR etc.).
-6. Modify github-slack integration to add repository to channel via `slack app management page <https://sumire-pfs.slack.com/apps/manage>`_.
+6. Add target repository by `command <https://api.slack.com/slash-commands>`_ 
+   '/github subscribe Subaru-PFS/<repo_name>' 
+   at #github channel of PFS slack.
 
 After all procedures performed, sysadmin is required to set the JIRA ticket as 
 IN REVIEW with setting requestee as a reviewer. 
