@@ -71,8 +71,8 @@ you should follow the procedure as follows:
     private) `team per group <https://github.com/orgs/Subaru-PFS/teams>`_ 
     (by instrument, data reduction, survey) is defined with admin privilege 
     of repositories owned by each team, so you can ask your site local 
-    members for it. 
-  * Instead, you can request to be a member of teams (if you have any one 
+    members to make your account in the group. 
+  * Otherwise, you can request to be a member of teams (if you have any one 
     working for) or `outside collaborators to repositories 
     <https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/>`_ 
     by email to github at pfs.ipmu.jp. 
