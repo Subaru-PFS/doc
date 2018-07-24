@@ -99,7 +99,9 @@ For accessing on-line, you will need to `install clients <https://zoom.us/downlo
 For scheduled list of upcoming teleconferences for PFS technical team, 
 the project is providing a list of scheduled teleconferences calendar at 
 `google calendar <https://calendar.google.com/calendar/embed?src=su0pbsaull17etlj62tet5anm0%40group.calendar.google.com>`_.
-
+Also `meeting reminder notification service <https://pfs.ipmu.jp/notification/>`_ 
+is provided to get reminders via phone, text (SMS), email, or push notification 
+to your web browser. 
 
 Services for software development at pfspipe.ipmu.jp and external
 ------
