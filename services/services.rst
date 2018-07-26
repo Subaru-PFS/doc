@@ -44,7 +44,8 @@ Public Web Site at pfs.ipmu.jp (http)
 ------
 
 Public project information is at http://pfs.ipmu.jp , 
-such as list of meetings, list of publications, and instrument parameters. 
+such as list of milestones or major meetings, list of publications, 
+and instrument parameters and performance. 
 
 `PFS blog <http://pfs.ipmu.jp/blog/>`_ is also available on this site. 
 
