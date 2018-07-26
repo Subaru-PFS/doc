@@ -52,7 +52,7 @@ and instrument parameters and performance.
 PFS project internal website (https pfs.ipmu.jp)
 ------
 
-Every contents at https://pfs.ipmu.jp/ are project only, and you 
+Every content at https://pfs.ipmu.jp/ is project only, and you 
 need to log in using `PFS LDAP account <account.rst>`_ to view pages. 
 Use your 'account name' (not email address) and 'password', see details on 
 registration at `PFS LDAP account <account.rst>`_.
@@ -85,8 +85,8 @@ Online meeting
 PFS project uses Zoom system for teleconference. 
 For accessing on-line, you will need to `install clients <https://zoom.us/download>`_.
 
-For scheduled list of upcoming teleconferences for PFS technical team, 
-the project is providing a list of scheduled teleconferences calendar at 
+For upcoming teleconferences for PFS technical team, 
+the project is providing the meeting schedule at 
 `google calendar <https://calendar.google.com/calendar/embed?src=su0pbsaull17etlj62tet5anm0%40group.calendar.google.com>`_.
 Also `meeting reminder notification service <https://pfs.ipmu.jp/notification/>`_ 
 is provided to get reminders via phone, text (SMS), email, or push notification 
@@ -98,32 +98,19 @@ Services for software development at pfspipe.ipmu.jp and external
 PFS software development group has its dedicated website at 
 `pfspipe.ipmu.jp <https://pfspipe.ipmu.jp/>`_, and also uses several external 
 services like `GitHub Subaru-PFS organization <https://github.com/Subaru-PFS>`_. 
-Followings are a list of frequently used services, refer top page at 
+Followings are a list of frequently used service. Refer top page at 
 `pfspipe.ipmu.jp <https://pfspipe.ipmu.jp/>`_ and links in the page 
 for details and full list of services with descriptions. 
 Also for details on accounts, please refer `account policy <account.rst>`_ 
 page. 
 
-pfspipe mailman
-  Several public mail lists are hosted on `mailman at pfspipe.ipmu.jp 
-  <https://pfspipe.ipmu.jp/mailman/listinfo>`_. It is recommended to join 
-  `allhands <https://pfspipe.ipmu.jp/mailman/listinfo/allhands>`_ 
-  to receive important notices and announcements. 
-PFS JIRA
-  A project management tool "Atlassian JIRA" is used for software development 
-  of the PFS project for the issue ticketing. The contents on the PFS JIRA 
-  are open to the public, but login using an account under a Single Sign On 
-  integrated with other services at pfs.ipmu.jp or by 
-  `registration through JIRA site <https://pfspipe.ipmu.jp/jira/secure/Signup!default.jspa>`_
-  is required for making actions. 
-GitHub Subaru-PFS organization
-  PFS project uses 
-  `Subaru-PFS organization at GitHub <https://github.com/Subaru-PFS>`_. 
-  To work on repositories, such as pushing to a repository, or reviewing a PR, 
-  you need to be a member of team(s) or `outside collaborators to repositories 
-  <https://help.github.com/articles/adding-outside-collaborators-to-repositories-in-your-organization/>`_ 
-  of Subaru-PFS organization. 
-PFS Slack
-  PFS project uses `sumire-pfs workspace <https://sumire-pfs.slack.com/>`_ 
-  for chat tool.
+* `mail lists at pfspipe.ipmu.jp <https://pfspipe.ipmu.jp/mailman/listinfo>`_
+
+  * It is recommended to join 
+    `allhands <https://pfspipe.ipmu.jp/mailman/listinfo/allhands>`_ 
+    to receive important notices and announcements. 
+
+* `PFS JIRA <https://pfspipe.ipmu.jp/jira/>`_
+* `Subaru-PFS organization at GitHub <https://github.com/Subaru-PFS>`_
+* `sumire-pfs slack workspace <https://sumire-pfs.slack.com/>`_ 
 
