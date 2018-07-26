@@ -52,7 +52,9 @@ PFS project internal website (https pfs.ipmu.jp)
 
 Every contents at https://pfs.ipmu.jp/ are project only, and you 
 need to log in using `PFS LDAP account <account.rst>`_ to view pages. 
-If you have any issue on this site, refer 
+Use your 'account name' (not email address) and 'password', see details on 
+registration at `PFS LDAP account <account.rst>`_.
+If you have any account issue on this site, refer 
 `lost account or change password section <account.rst#lost-account-or-change-password>`_.
 
 With accessing to `PFS project internal website <https://pfs.ipmu.jp/>`_, 
@@ -60,6 +62,12 @@ you will get the newest list of contents in this server as its top page.
 Short list of frequently used items are:
 
 * `PFS LDAP account manipulator <https://pfs.ipmu.jp/ldap-manip/>`_
+
+  * You can edit your account information from this system, 
+    such as password, your real name, institution, and photo. 
+  * `List of existing accounts <https://pfs.ipmu.jp/ldap-manip/view_all.cgi>`_
+  * `photo directory <https://pfs.ipmu.jp/ldap-manip/view_allphoto.cgi>`_
+
 * Content sharing services
 
   * `Document server <https://pfs.ipmu.jp/docsrv/>`_
@@ -68,20 +76,6 @@ Short list of frequently used items are:
 
 * `Issue tracker and ticketing system for hardware development <https://pfs.ipmu.jp/bts/>`_
 * `pfs.ipmu.jp internal mail list <https://pfs.ipmu.jp/mailman/listinfo>`_
-
-======
-Login and user account
-======
-
-Use your 'account name' (not email address) and 'password', see details on 
-registration or troubleshooting at `PFS LDAP account <account.rst>`_.
-
-You can edit your account information from `LDAP account manipulator service <https://pfs.ipmu.jp/ldap-manip/>`_, 
-such as password, your real name, institution, and photo. 
-Also you can view list of all accounts from 
-
-* `List of existing accounts <https://pfs.ipmu.jp/ldap-manip/view_all.cgi>`_
-* `photo directory <https://pfs.ipmu.jp/ldap-manip/view_allphoto.cgi>`_
 
 Online meeting
 ------
