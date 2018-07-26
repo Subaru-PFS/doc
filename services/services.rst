@@ -63,10 +63,10 @@ Short list of frequently used items are:
 
 * `PFS LDAP account manipulator <https://pfs.ipmu.jp/ldap-manip/>`_
 
-  * You can edit your account information from this system, 
-    such as password, your real name, institution, and photo. 
   * `List of existing accounts <https://pfs.ipmu.jp/ldap-manip/view_all.cgi>`_
   * `photo directory <https://pfs.ipmu.jp/ldap-manip/view_allphoto.cgi>`_
+  * Also note, you can edit your account information from this system, 
+    such as password, your real name, institution, and photo. 
 
 * Content sharing services
 
