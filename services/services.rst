@@ -30,20 +30,13 @@ This page contains links to contents in the wiki, also
 `SideBar <https://sumire.pbworks.com/w/SideBar>`_ is shown at right side of 
 every wiki page as list of links with short names. 
 
-======
 Files
-======
-
-You can find all files uploaded into this SuMIRe/PFS PBworks from 
-`folder listing <http://sumire.pbworks.com/w/browse/#view=ViewAllFiles>`_.
-Some files are categorized into *FOLDERS*, and you can get each list by 
-clicking FOLDER name at left side. 
-
-======
+  You can find all files uploaded into this SuMIRe/PFS PBworks from 
+  `folder listing <http://sumire.pbworks.com/w/browse/#view=ViewAllFiles>`_.
+  Some files are categorized into *FOLDERS*, and you can get each list by 
+  clicking FOLDER name at left side. 
 Editing manual
-======
-
-You can find `manual for editing PBworks <http://usermanual.pbworks.com/>`_. 
+  You can find `manual for editing PBworks <http://usermanual.pbworks.com/>`_. 
 
 
 Public Web Site at pfs.ipmu.jp (http)
