@@ -6,6 +6,7 @@ Many services are hosted at IPMU under `pfs.ipmu.jp (https) <https://pfs.ipmu.jp
 (mainly for instrument hardware development) or 
 `pfspipe.ipmu.jp <pfspipe.ipmu.jp>`_ (for software development), and also PFS 
 project is using several external services, like 
+`PBworks <http://sumire.pbworks.com/>`_, or 
 `GitHub Subaru-PFS organization <https://github.com/Subaru-PFS>`_. 
 You may need account(s) and access to some or all of them depending on your 
 roles and contributions to the project, most of services hosted at IPMU are 
