@@ -1,6 +1,6 @@
 # Princeton Document Registry
 
-This registry serves as a means to 
+This registry serves as a means to: 
 
 * Track existing Princeton documents 
 * Determine document codes for new documents
