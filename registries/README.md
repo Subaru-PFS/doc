@@ -1,3 +1,3 @@
 # Document Registries
 
-* [princeton](/princeton/): princeton-specific authors and document registry.
+* [princeton](princeton/): princeton-specific authors and document registry.
