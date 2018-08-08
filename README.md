@@ -7,4 +7,4 @@ General project documents for the PFS project.
 * operation: operational plan documents
 * misc: miscellaneous documents
  * PFS_Abbreviations.tsv: abbreviation list
-* [princeton](/princeton/): princeton-specific authors and document registry.
+* [registries](/registries/): document registries for individual institutions.
