@@ -7,3 +7,4 @@ General project documents for the PFS project.
 * operation: operational plan documents
 * misc: miscellaneous documents
  * PFS_Abbreviations.tsv: abbreviation list
+* [registries](/registries/): document registries for individual institutions.
