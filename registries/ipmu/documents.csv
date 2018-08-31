@@ -8,7 +8,7 @@
 "PFS-SPT-IPM001000-02", "Applicable limitations to ETS on target assignment", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/101954185/PFS-SE-IPMU-00007-002-ETSlimitation.pptx", "2015/10/23", "PFS-SE-IPMU-00007"
 "PFS-SPS-IPM001002-01", "SpS 5th rack unit registration", "Atsushi Shimono",, "2015/12/02", "PFS-SE-IPMU-00008. PFS-SpS:01980"
 "PFS-FIB-IPM001000-01", "Fiber monitoring system design", "Atsushi Shimono",, "version tbc", "PFS-SE-IPMU-00009"
-"PFS-SPS-IPM001003-01", "SCR cable tray design and cable numbers", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/105003117/PFS-SE-IPMU-00010-001-scr-cable-tray.pptx", "2016/02/01, "PFS-SE-IPMU-00010"
+"PFS-SPS-IPM001003-01", "SCR cable tray design and cable numbers", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/105003117/PFS-SE-IPMU-00010-001-scr-cable-tray.pptx", "2016/02/01", "PFS-SE-IPMU-00010"
 "PFS-SPS-IPM001004-01", "SpS cabling budget", "Atsushi Shimono",, "2018/05/23", "PFS-SpS:03616"
 "PFS-SPS-IPM001005-01", "SpS UPS capacity requirement", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/105003111/PFS-SE-IPMU-00011-001-SpS-UPS-Capacity.pptx", "2016/02/09", "PFS-SE-IPMU-00011"
 "PFS-PFI-IPM001001-01", "Study on dot placement on radius from center of Cobra", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/106814211/PFS-SE-IPMU-00012-001-dot-radius.pptx", "2016/04/05", "PFS-SE-IPMU-00012"
@@ -40,10 +40,10 @@
 "PFS-PFI-IPM001007-01", "Procedure to measure and store MPS configurations", "Atsushi Shimono",, "2015/11/27", "SSN-00021. pfspo 16593"
 "PFS-ICS-IPM001012-01", "ICS on-site (summit/CB2F) rack design, restriction and unit registration", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/106906770/SSN-00022-001%2B-OnSiteCB2FRack.pptx", "2016/04/08", "SSN-00022"
 "PFS-PFI-IPM001008-02", "(AG/A&G control flow and interface" , "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00023", "2016/05/18", "SSN-00023", 
-"PFS-ICS-IPM001013-01", "FITS file generation flow", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/pull/19", , "SSN-24. PR#19 on github"
+"PFS-ICS-IPM001013-01", "FITS file generation flow", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/pull/19","unknown", "SSN-24. PR#19 on github"
 "PFS-PFI-IPM001009-01", "Collision detection during Cobra configuration", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00025", "unknown", "SSN-00025"
-"PFS-PFI-IPM001010-01", "Cobra collision cases" , "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/ticket/SSN-00026-initial", , "SSN-00026. before PR"
-"PFS-PFI-IPM001011-01", "(TradeStudy) Cobra operational data (spot measurement, target) handling on MHS or DB", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00027", "unknown", "SSN-00027", 
+"PFS-PFI-IPM001010-01", "Cobra collision cases" , "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/ticket/SSN-00026-initial","unknown", "SSN-00026. before PR"
+"PFS-PFI-IPM001011-01", "(TradeStudy) Cobra operational data (spot measurement, target) handling on MHS or DB", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00027", "unknown", "SSN-00027"
 "PFS-ICS-IPM001014-01", "ics_dnsmasq (ICS DHCP/DNS server) organization and item registration procedure", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00028", "unknown", "SSN-00028"
 "PFS-ICS-IPM001015-01", "(Material for review) PFS ICS infrastructure design and performance verification", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/blob/master/SSN-00029.pptx", "2017/03/09", "SSN-00029"
 "PFS-ICS-IPM001016-01", "PFS ICS production configuration", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00030", "unknown", "SSN-00030"
