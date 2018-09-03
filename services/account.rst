@@ -93,8 +93,12 @@ Notes and tips for the registration process
 * PFS JIRA is open to the public, so you can read the contents, but you cannot make any commitments therein unless you follow the above procedure.
 * In the PFS GitHub organization, there is one team per institute where the members are given admin privilege. So instead of sending email to github at pfs.ipmu.jp, you can also ask the members in your institute to add yourself with privilege given to repositories related to your institute. 
 
+Helps
+-----
+
+======
 Lost account or change password
-------
+======
 
 If you lost your account information or forgot your password, ask to reset 
 by following procedures. 
@@ -124,8 +128,12 @@ links.
   If you cannot find, you are under a single sign on. 
 * `Sumire-PFS slack account settings <https://sumire-pfs.slack.com/account/settings#password>`_
 
-If you have issues on 2FA 
-(`two factor authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication>`_), 
+======
+2FA (two factor authentication) configuration
+======
+
+To configure 2FA on services, or if you have issues on 
+`2FA <https://en.wikipedia.org/wiki/Multi-factor_authentication>`_), 
 refer official helps: 
 
 * `GitHub help <https://help.github.com/articles/configuring-two-factor-authentication/>`_
