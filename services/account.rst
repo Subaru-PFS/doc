@@ -25,6 +25,9 @@ Notes and tips:
 * The contents in the services for PFS software development are 
   open to the public (except some in the private repositories), 
   so they are readable without any account. 
+* Some services are configured as 2FA 
+  (`two factor authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication>`_) 
+  as mandatory, you will be required to configure using some 2FA application. 
 
 Technical team member
 ------
@@ -120,3 +123,13 @@ links.
   and find 'change password' link. 
   If you cannot find, you are under a single sign on. 
 * `Sumire-PFS slack account settings <https://sumire-pfs.slack.com/account/settings#password>`_
+
+If you have issues on 2FA 
+(`two factor authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication>`_), 
+refer official helps: 
+
+* `GitHub help <https://help.github.com/articles/configuring-two-factor-authentication/>`_
+* `Slack help <https://get.slack.help/hc/en-us/articles/204509068-Set-up-two-factor-authentication>`_
+* `JIRA secure login user's guide <https://syracom-bee.atlassian.net/wiki/spaces/SL/pages/15007764/User+s+Guide>`_
+
+
