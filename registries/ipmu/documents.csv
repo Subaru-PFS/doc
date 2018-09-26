@@ -50,7 +50,7 @@
 "PFS-ICS-IPM001012-02", "(AG/A&G control flow and interface", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00023", "2018/09/26", "SSN-00023", 
 "PFS-ICS-IPM001013-00", "FITS file generation flow", "Atsushi Shimono", , , "SSN-00024"
 "PFS-PFI-IPM001009-01", "Collision detection during Cobra configuration", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00025", "2018/09/26", "SSN-00025"
-"PFS-PFI-IPM001010-01", "Cobra collision cases" , "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00026","2018/09/26", "SSN-00026"
+"PFS-PFI-IPM001010-01", "Cobra collision cases", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00026", "2018/09/26", "SSN-00026"
 "PFS-ICS-IPM001014-01", "(TradeStudy) Cobra operational data (spot measurement, target) handling on MHS or DB", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00027", "2017/02/10", "SSN-00027"
 "PFS-ICS-IPM001015-01", "ics_dnsmasq (ICS DHCP/DNS server) organization and item registration procedure", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00028", "2018/06/20", "SSN-00028"
 "PFS-ICS-IPM001016-01", "(Material for review) PFS ICS infrastructure design and performance verification", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/blob/master/SSN-00029.pptx", "2017/03/09", "SSN-00029"
