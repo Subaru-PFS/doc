@@ -47,7 +47,7 @@
 "PFS-ICS-IPM001010-01", "Preparation at Subaru/Summit before delivery of subsystems", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00020", "2015/11/27", "SSN-00020"
 "PFS-PFI-IPM001007-01", "Procedure to measure and store MPS configurations", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/blob/master/SSN-00021-001%2B-MPSconfiguration.pptx", "2015/11/27", "SSN-00021. pfspo 16593"
 "PFS-ICS-IPM001011-01", "ICS on-site (summit/CB2F) rack design, restriction and unit registration", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/106906770/SSN-00022-001%2B-OnSiteCB2FRack.pptx", "2016/04/08", "SSN-00022"
-"PFS-ICS-IPM001012-02", "(AG/A&G control flow and interface", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00023", "2018/09/26", "SSN-00023", 
+"PFS-ICS-IPM001012-02", "(AG/A&G control flow and interface", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00023", "2018/09/26", "SSN-00023"
 "PFS-ICS-IPM001013-00", "FITS file generation flow", "Atsushi Shimono", , , "SSN-00024"
 "PFS-PFI-IPM001009-01", "Collision detection during Cobra configuration", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00025", "2018/09/26", "SSN-00025"
 "PFS-PFI-IPM001010-01", "Cobra collision cases", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00026", "2018/09/26", "SSN-00026"
@@ -60,7 +60,7 @@
 "PFS-GEN-IPM004001-01", "AIT of subsystems at Subaru workflow and requirements", "Yuki Moritani", "https://sumire.pbworks.com/w/file/111633073/PFS-GEN-IPM004001-01_PFS_AIT_Subaru.pptx", "2018/04/24",   
 "PFS-GEN-IPM004002-01", "Run 0 configuration", "Yuki Moritani", "https://pfs.ipmu.jp/docsrv/docinfo.cgi?did=2960", "2018/01/06",   
 "PFS-GEN-IPM004003-02", "Run 1 configuration", "Yuki Moritani", "https://sumire.pbworks.com/w/file/128342742/PFS-GEN-IPM004003-02-Erun1_plan.pdf", "2018/08/16", 
-"PFS-GEN-IPM004004-01", "Report of MCS June Run", "Yuki Moritani",,"2018/06/15", "PFS-ics:01343/pfspo 24817"
+"PFS-GEN-IPM004004-01", "Report of MCS June Run", "Yuki Moritani", ,"2018/06/15", "PFS-ics:01343/pfspo 24817"
 "PFS-PFI-IPM004000-01", "Screening Cable C by FRD Measurement", "Yuki Moritani", "https://sumire.pbworks.com/w/file/128131368/PFS-PFI-IPM004000-CableC_Screening_20180815.pdf", "2018/08/15", 
 "PFS-MCS-IPM004000-01", "MCS anomalies at AIT work @ Subaru and associated documentation", "Yuki Moritani", "https://pfs.ipmu.jp/docsrv/docinfo.cgi?did=3121", "2018/06/18",
 "PFS-GEN-IPM900000-01", "Reference Code for PFS documents", "Project Office", "https://sumire.pbworks.com/w/file/fetch/126042107/ReferenceCode_20180504.pdf", "2018/05/04",
