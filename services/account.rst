@@ -28,6 +28,8 @@ Notes and tips:
 * Some services are configured as 2FA 
   (`two factor authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication>`_) 
   as mandatory, you will be required to configure using some 2FA application. 
+  Refer `2FA (two factor authentication) configuration`_ section for links to 
+  help pages. 
 
 Technical team member
 ------
@@ -137,6 +139,13 @@ To configure 2FA on services, or if you have issues on
 refer official helps: 
 
 * `GitHub help <https://help.github.com/articles/configuring-two-factor-authentication/>`_
+
+  * To login on git operation (git command or integrated/plugin for code 
+    editors), you need to use 
+    `GitHub personal access token <https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/>`_ 
+    or 
+    `ssh public key authentication <https://help.github.com/articles/connecting-to-github-with-ssh/>`_. 
+
 * `Slack help <https://get.slack.help/hc/en-us/articles/204509068-Set-up-two-factor-authentication>`_
 * `JIRA secure login user's guide <https://syracom-bee.atlassian.net/wiki/spaces/SL/pages/15007764/User+s+Guide>`_
 
