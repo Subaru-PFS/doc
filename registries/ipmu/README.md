@@ -46,5 +46,5 @@ To be assigned.
 
 | Number | Author |
 |:------:|:-------:|
-| 00 | Projcet office (unique) |
+| 00 | Project office (unique) |
 
