@@ -37,6 +37,7 @@ Details for each section is described below.
 | 02 | Naoki Yasuda |
 | 03 | Kiyoto Yabe |
 | 04 | Yuki Moritani |
+| 05 | Keigo Nakamura |
 
 #### Durham
 
