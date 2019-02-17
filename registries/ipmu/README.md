@@ -41,7 +41,11 @@ Details for each section is described below.
 
 #### Durham
 
-To be assigned.
+| Number | Author |
+|:------:|:-------:|
+| 00 | Graham Murray |
+| 01 | Tim Butterley |
+
 
 #### Project Office
 
