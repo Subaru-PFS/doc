@@ -8,7 +8,7 @@
 "PFS-FIB-IPM000002-01", "Cable B fiber FRD test procedure", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/128335698/PFS-FIB-IPM000002-01_CableBFRDTestProcedure.pdf", "2018/08/22", "syseng:1361/pfspo 24892"
 "PFS-FIB-IPM000003-01", "Cable B mini-design review Review objec6ves & success criteria", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/128335701/PFS-FIB-IPM000003-01_CableBReviewObjectives.pdf", "2018/08/27", "syseng:1376/pfspo 24976"
 "PFS-FIB-IPM000004-01", "Fiber Connection Monitoring System (FCMS)", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/128640633/PFS-FIB-IPM000004-01_FCMS20150929.pdf", "2015/09/29", ""
-"PFS-FIB-IPM000005-02", "Prototype Cable B Testing in Dec 2018: Data Summary", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/131113560/PFS-FIB-IPM000005-02_PrototypeCableBTestingDec2018DataSummary.pdf", "2018/12/30"
+"PFS-FIB-IPM000005-02", "Prototype Cable B Testing in Dec 2018: Data Summary", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/131113560/PFS-FIB-IPM000005-02_PrototypeCableBTestingDec2018DataSummary.pdf", "2018/12/30",
 "PFS-PFI-IPM000001-01", "Measured runouts and beam angles", "Naoyuki Tamura", , "2018/0/13", "PFI: 1041"
 "PFS-SPS-IPM001000-03", "IR4 SpS chiller planning", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/88004371/PFS-SE-IPMU-00001-003-IR4-SpS-Chiller.pptx", "2014/10/24", "PFS-SE-IPMU-00001"
 "PFS-SPS-IPM001001-01", "Note on PFS humidity control", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/blob/master/SE-IPMU-00002", "2014/11/04", "PFS-SE-IPMU-00002"
@@ -68,12 +68,23 @@
 "PFS-GEN-IPM004001-01", "AIT of subsystems at Subaru workflow and requirements", "Yuki Moritani", "https://sumire.pbworks.com/w/file/111633073/PFS-GEN-IPM004001-01_PFS_AIT_Subaru.pptx", "2018/04/24",   
 "PFS-GEN-IPM004002-01", "Run 0 configuration", "Yuki Moritani", "https://pfs.ipmu.jp/docsrv/docinfo.cgi?did=2960", "2018/01/06",   
 "PFS-GEN-IPM004003-02", "Run 1 configuration", "Yuki Moritani", "https://sumire.pbworks.com/w/file/128342742/PFS-GEN-IPM004003-02-Erun1_plan.pdf", "2018/08/16", 
-"PFS-GEN-IPM004004-01", "Report of MCS June Run", "Yuki Moritani", ,"2018/06/15", "PFS-ics:01343/pfspo 24817"
+"PFS-GEN-IPM004004-01", "Report of MCS June Run", "Yuki Moritani", "https://pfs.ipmu.jp/internal/docsrv/docinfo.cgi?did=3152","2018/06/15", "PFS-ics:01343/pfspo 24817"
 "PFS-GEN-IPM004005-00", "WFC distortion", "Yuki Moritani", , "2018/09/27", "drafting"
-"PFS-GEN-IPM004006-01", "Plan of Engineering Run 1: Readiness Review Material", "Yuki Moritani", , "2018/10/16", "PFS-ics:01537/pfspo 25718"
+"PFS-GEN-IPM004006-01", "Plan of Engineering Run 1: Readiness Review Material", "Yuki Moritani", "https://pfs.ipmu.jp/internal/docsrv/docinfo.cgi?did=3200", "2018/10/16", "PFS-ics:01537/pfspo 25718"
+"PFS-GEN-IPM004007-03", "Plan of Run 00 c (using HSC)in Nov. 2018", "Yuki Moritani", "https://pfs.ipmu.jp/internal/docsrv/docinfo.cgi?did=3230", "2018/10/16", "pfspo 25978"
 "PFS-PFI-IPM004000-01", "Screening Cable C by FRD Measurement", "Yuki Moritani", "https://sumire.pbworks.com/w/file/128131368/PFS-PFI-IPM004000-CableC_Screening_20180815.pdf", "2018/08/15", 
-"PFS-PFI-IPM004002-01", "FRD data: Reels 02--49", "Yuki Moritani", "To be uploaded", "2018/10/04" ,
-"PFS-PFI-IPM004003-01", "FRD data: Reels 50--96", "Yuki Moritani", "To be uploaded", "2019/01/15" ,
+"PFS-PFI-IPM004002-01", "FRD data: Reels 02--49", "Yuki Moritani", "To be uploaded", "2018/10/04",
+"PFS-PFI-IPM004003-01", "FRD data: Reels 50--96", "Yuki Moritani", "To be uploaded", "2019/01/15",
+"PFS-PFI-IPM004004-01", "FRD data: Reels 97--TBD", "Yuki Moritani", "To be uploaded", "2019/01/31",
 "PFS-MCS-IPM004000-01", "MCS anomalies at AIT work @ Subaru and associated documentation", "Yuki Moritani", "https://pfs.ipmu.jp/docsrv/docinfo.cgi?did=3121", "2018/06/18",
+"PFS-SPS-IPM100000-01", "Slit unit pointing test", "Graham Murray", "https://sumire.pbworks.com/w/file/94634438/Slit%20unit%20pointing.pdf", "2014/10/25",
+"PFS-SPS-IPM100001-01", "Dummy Cable B Build & Evaluation Summary", "Graham Murray", "https://sumire.pbworks.com/w/file/121359156/Dummy%20Cable%20B%20Summary-GJMurray-20161121.pdf", "2016/11/21",
+"PFS-SPS-IPM100002-02", "MTP Ferrule breakage during the FRD test of Dummy Cable B at LAM", "Graham Murray", "https://sumire.pbworks.com/w/file/121415136/MTP%20Ferrule%20breakage%20report%20V2-GJMurray-20171103.pdf", "2017/11/03",
+"PFS-SPS-IPM100003-01", "Dummy Cable Repair Report by Graham", "Graham Murray", , , "in preparation"
+"PFS-FIB-IPM100000-01", "Cable terminus concept", "Graham Murray", "https://sumire.pbworks.com/w/file/118615788/Cable%20terminus%20concept%20GJMurray%2020170527.ppt", "2017/05/27",
+"PFS-FIB-IPM100001-01", "Proposed test bench", "Graham Murray", "https://sumire.pbworks.com/w/file/118615791/Proposed%20test%20bench%20GJMurray%2020170527.ppt", "2017/05/27",
+"PFS-FIB-IPM100002-01", "Options for conduits and fittings", "Graham Murray", "https://pfs.ipmu.jp/internal/docsrv/docinfo.cgi?did=3151 ", "2018/08/17",
+"PFS-FIB-IPM110000-01", "PFS prototype cable B FRD test results", "Tim Butterley", "https://sumire.pbworks.com/w/file/115419187/pfs-frd.pdf", "2017/02/14",
+"PFS-PFI-IPM100000-01", "Fibre termination using ceramic ferrules", "Graham Murray", "https://sumire.pbworks.com/w/file/fetch/88073692/Fibre%20termination.pdf", "2014/10/25",
 "PFS-GEN-IPM900000-01", "Reference Code for PFS documents", "Project Office", "https://sumire.pbworks.com/w/file/fetch/126042107/ReferenceCode_20180504.pdf", "2018/05/04",
 "PFS-GEN-IPM900000-02", "Reference Code for PFS documents", "Project Office", "https://sumire.pbworks.com/w/file/fetch/126042107/ReferenceCode_20180504.pdf", "2018/09/19",
