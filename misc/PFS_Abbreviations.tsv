@@ -61,7 +61,7 @@ fms	ICS	Actor	Fiber connection Monitoring System	FOCCoS software to illuminate m
 FOCCoS	General	PFS Subsystem	Fiber Optical Cable and Connector System	PFS instrument subsystem which delivers light from PFI at the prime focus to SpS  on the IR4 floor. LNA has a responsibility for FOCCoS development.
 FPA	SpS	Subcomponent	Focal Plane Assembly	SpS assembly in camera unit. FPA consists of detectors and focusing mechanism.
 FPRD	General	Document	Functional Performance Requirements Document	One of the documents at Preliminary Design Review. FPRD describes all requirements for PFS instrument to satisfy scientific requirements. For system-level requirements, the latest version is available on PBworks.
-fps	ICS	Actor	Fiber Positioning Sequencer	PFI software to operate fiber configuration. FPS controls MCS exposure, derives fibers positions from measured centroids, and sends them with command to MPS to move fibers. ASIAA has a responsibility for its development.
+FPS	ICS	Actor	Fiber Positioning Sequencer	PFI software to operate fiber configuration. FPS controls MCS exposure, derives fibers positions from measured centroids, and sends them with command to MPS to move fibers. ASIAA has a responsibility for its development.
 FPSA	SpS	Subcomponent	Fiber Slit Positioning Sub-Assembly	SpS assembly to position fiber slit. FPSA consists of Hexapod to tilt and shift the Fiber Slit sub-Assembly (FSA).
 FSA	SpS/FOCCoS	Subcomponent	Fiber Slit Sub-Assembly	FOCCoS assembly as a part of SpS. The slit accommodates about 600 fibers in a row.
 FST	SpS	Subcomponent	Fiber Slit alignment Tool	SpS integration tool to align Fiber Slit Assembly (FSA). Dedicated collimator corrector and camera are used.
@@ -71,7 +71,7 @@ Gen2	Subaru	Operation	Generation-2 observation control system	Current observatio
 HSC	Subaru	Instrument	Hyper Suprime-Cam	Wide field (~1.5 degree in diameter) camera with more than 100 CCDs at Subaru prime focus. HSC SSP, which started in 2014, is sister survey of PFS in the SuMIRe project.
 ICD	General	Document	Interface Control Document	If there is an interface between different developer institutes, they discuss it using ICD.
 ICS	Software	General	Instrument Control Software	Software packages to operate PFS instrument. Individual actuators, which control smaller components, exchange command, status with each other via messaging hub systems (MHS).
-iic	ICS	Actor	Instrument Interface and Controller	ICS software module which organizes operation of PFS subsystems in an exposure sequence, in harmony with the telescope.
+IIC	ICS	Actor	Instrument Interface and Controller	ICS software module which organizes operation of PFS subsystems in an exposure sequence, in harmony with the telescope.
 IIS	SpS	Subcomponent	Internal Illumination Source	Light source of SpS to illuminate engineering fibers.
 IPMU	General	Organization	Kavli Institute for the Physics and Mathematics of the Universe, the University of Tokyo	PFS collaborator (PI) taking initiative to proceed the project. IPMU also has a responsibility to develop software interfacing between PFS and Subaru, and execute system commissioning.
 IR3	Subaru	Facility	IR-side 3rd floor in the dome building 	The place on which the UPS, chillers for spectrograph modules and the spectrograph clean room (SCR) will be accommodated.
