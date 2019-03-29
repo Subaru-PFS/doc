@@ -1,0 +1,441 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+%
+\usepackage{color}
+\usepackage[colorlinks=true, citecolor=blue, linktocpage=true]{hyperref} % glossary colour is set in style
+\usepackage{xspace}
+\usepackage{import}
+\usepackage[titletoc,title]{appendix}
+\usepackage[margin=1.0in,nohead,nofoot]{geometry}
+%\usepackage[titletoc,title]{appendix}
+%\usepackage[style=authoryear, uniquename=false, backend=bibtex]{biblatex}
+%\usepackage{journals}
+\usepackage[acronym,nonumberlist,toc,xindy]{glossaries}
+%\bibliography{XXX}
+%------------------------------------------------------------------------------
+
+\renewcommand{\c}{\textit{c.}\xspace}
+\newcommand{\cf}{\textit{cf.}\xspace}
+\newcommand{\eg}{\textit{e.g.}\xspace}
+\newcommand{\etc}{\textit{etc.}\xspace}
+\newcommand{\ie}{\textit{i.e.}\xspace}
+\newcommand{\nb}{\textit{n.b.}\xspace}
+\newcommand{\Nb}{\textit{N.b.}\xspace}
+
+%
+% Convenient (but unnecessary) abbreviations
+%
+\newcommand{\AGC}{\gls{AGC}\xspace}
+\newcommand{\ICS}{\gls{ICS}\xspace}
+\newcommand{\IIC}{\gls{IIC}\xspace}
+\newcommand{\MCS}{\gls{MCS}\xspace}
+\newcommand{\MHS}{\gls{MHS}\xspace}
+\newcommand{\FPS}{\gls{FPS}\xspace}
+\newcommand{\opDB}{\gls{opDB}\xspace}
+\newcommand{\PFI}{\gls{PFI}\xspace}
+\newcommand{\PFS}{\gls{PFS}\xspace}
+\newcommand{\SPS}{\gls{SPS}\xspace}
+\newcommand{\TBD}{\gls{TBD}\xspace}
+
+\newcommand{\jupyter}{\gls{jupyter}\xspace}
+\newcommand{\ssh}{\gls{ssh}\xspace}
+
+%------------------------------------------------------------------------------
+
+\newcommand{\XXX}[1]{\textbf{XXX: #1}}
+\newcommand{\appRef}[1]{Appendix \ref{sec:#1}} % n.b. same prefix (sec:) as \secRef
+\newcommand{\secRef}[1]{Section \ref{sec:#1}}
+
+%------------------------------------------------------------------------------
+
+\import{.}{initializeGlossary}
+\import{../misc/}{PFS_Abbreviations}
+\import{.}{glossaryEntries}
+
+%------------------------------------------------------------------------------
+
+\begin{document}
+\title{\acrshort{PFI} Operations at Subaru}
+\author{Robert Lupton}
+%\date{1996-03-06}
+\maketitle
+
+%------------------------------------------------------------------------------
+
+I have been asked to think about how the complete \PFS instrument behaves at the summit, with particular
+reference to the hardware and software components associated with the cobra system:
+\begin{itemize}
+\item\AGC
+\item\MCS
+\item\FPS
+  Uses \gls{cobraCharmer} to control the \gls{FPGA} and \gls{cobraOps} to plan moves. 
+\item\PFI
+\item\IIC
+  The high-level command and control actor
+\end{itemize}
+
+These systems are all commanded by the \ICS, and commands are passed between subsystems
+using the \MHS. The interface to the telescope is through \gls{Gen2}, specifically via an \MHS
+actor called \gls{gen2actor}.
+
+Some of the discussion is based on the
+documents by Yabe-san on \href{https://github.com/Subaru-PFS/doc/tree/master/operation}{operations} and
+Moritani-san on 
+\href{https://github.com/Subaru-PFS/ics\_doc/blob/master/commissioning/commissioning\_details.pdf}{commissioning} and this document should not be taken to supersede either of these;  rather it is intended to clarify the
+scope of the software that must be provided as part of \PFS's successful integration and test.  Wherever
+possible this software should be written, tested, and \textit{used} before the hardware is shipped to Hawai`i.
+This has not always been the case for previous instruments (\eg CHARIS).
+
+This document does not discuss how measurements (\eg bias exposures, the seeing and transparency) are logged
+to the \opDB, although this is of critical importance.
+
+Some of the analysis code discussed here may belong in the \MHS actors, but some of it will probably
+live outside the core operation software (an example is the rastering code described in \secRef{IIC}).
+
+\section{Relationship to Subaru}
+
+In routine operations we expect that \PFS will be run from \gls{Gen2} like any other Subaru instrument,
+but while we are commissioning the system we will need to troubleshoot hardware problems and debug
+the software.  We do not expect that this will be needed in routine operations, and we therefore do
+not plan to make the debugging tools available \textit{as part of the routine mountain top environment};
+however we will provide documentation and support, and where appropriate training, to make these tools
+usable by Subaru staff.
+
+In particular, we believe that we need to be able to commission \PFS without using any \gls{Gen2} visualisation
+tools as they are designed to support routine operations rather than the particular needs of the \PFS project.
+As we identify diagnostics, whether numerical or visual, that Subaru would like to adopt for long-term
+\PFS operations we will help make them available via \gls{Gen2}.  As emphasized in \secRef{availability}
+the \PFS project expects to have developed the basic tools before shipping, which means that this
+collaboration with Subaru should be able to start before the hardware arrives on the Mountain.
+
+An exception is the \gls{STS}; all error conditions detected by the \PFS instrument and deemed worthy
+of attention will be made available to Subaru using the \gls{STS} system.  The analysis of
+internal \PFS state and decisions about what is indeed an error will be made by the \MHS \texttt{Alerts Actor}.
+
+\section{PFS's Software Environment at Subaru}
+
+Because this document's scope covers troubleshooting at the summit we expect a significant amount of ad-hoc
+analysis, which means that we need a flexible and powerful way of interacting with the data (engineering and
+scientific) which we are taking.  The \PFS software is built around python, and all tools needed on the summit
+must therefore expose a python interface unless granted an explicit exemption by the Project Manager or
+his nominated designate.
+
+For work in Hilo and on the summit there are no restrictions on access to most \PFS computers and in
+particular all the disks will be visible to the \PFS network.  We will need the same level of access from \eg
+Princeton, IPMU, and from other arbitrary locations (\eg hotels), and exactly how this will be achieved needs
+to be negotiated.  We expect that the Subaru \gls{VPN} will be sufficient, as the \PFS
+configuration options no longer route all traffic through Japan.
+
+I propose that we standardize on using \gls{pyQt5} for status displays (as already adopted in the \SPS
+work at \gls{LAM}) and
+\jupyter as the interface to the data (see \appRef{jupyter}).
+
+There are two ways to work remotely with the \PFS data, and both should be supported (both will
+make use of the \gls{VPN} to connect, possibly via \ssh tunnels).
+By a \textit{local} program I mean one running on \eg on your laptop.
+\begin{itemize}
+\item Using a local browser to connect to a \jupyter server running
+  on \PFS machines in Hawai`i
+\item Connecting from a local machine to a \gls{VNC} running in Hawai`i
+\end{itemize}
+
+We anticipate that largely pre-defined displays (such as the guide signals from the \AGC) will make
+use of \glspl{VNC}, while ad-hoc analysis using \jupyter is more likely to connect to a server
+using \ssh tunnels.  Image and graphical displays are more problematic; it is possible to display
+these using \jupyter inside a browser, or some people may choose to run the displays within
+a \gls{VNC} session and command them via a local \jupyter session.  In order to support both of
+these modes of image display we propose using the device-agnostic image display protocol ``afwDisplay''
+provided by the LSST stack;\footnote{But refactored in such a way that it does not depend on other LSST code.}
+backends include \gls{ginga}, \gls{ds9}, and \gls{matplotlib}.
+
+We also need to do some refactoring of our current \PFS instrument software to create libraries
+which can be called from other places, \eg analysis code.
+
+\subsection{Availability of PFS Software}
+\label{sec:availability}
+
+Telescope time is extremely valuable, and \PFS has a duty to ensure that the hardware and software
+is as ready as it can be before we ship to Hawai`i, and in particular before any daytime or nighttime
+operations on the telescope.
+
+Some of the functionality described in the document cannot be validated before on sky operations,
+but almost all of the tooling and plumbing can be written and tested as part of the instrument
+development, and the \PFS project is committed to so doing.
+
+\section{AGC}
+\label{sec:AGC}
+
+In many ways the \AGC is the simplest of the \PFS systems, although it has one of the largest interfaces to
+the telescope, as while the logic of acquiring fields and focussing can be carried out entirely by \PFS,
+the actual
+commands to the telescope must pass through \gls{Gen2}\footnote{With the exception of the offset signal
+  which is passed by \gls{MAC} directly to \gls{MLP1}.}.  It is essential that \PFS have the ability to do its
+own field acquisition as its capabilities are rather different from previous Subaru instruments:
+\begin{itemize}
+\item \PFS has much more stringent requirements on guiding than imagers
+\item \PFS has 6 guide cameras, and will guide on more than one star
+\item \PFS requires the ability to update the rotator angle based on guide stars
+\item \PFS will generate lists of guide stars as part of the target selection process
+\item \PFS will generate a focus signal, rather than expecting the observer to take
+  manual focus sweeps
+\end{itemize}
+and we will need to be able to debug and polish this functionality on the sky.
+
+We do not yet know how much of field acquisition will be done by the \PFS instrument during
+science operations, especially in open-use time, and as appropriate some of these functionalities may be
+transferred to, or duplicated by \gls{Gen2}, presumably learning from \PFS's experience.
+
+\subsection{ISR and Image Processing}
+
+We expect to need some sort of simple \gls{ISR} for the \AGC, probably just bias and flat fielding using
+flats derived from sky frames.  Both the generation of calibration products and their application could
+be easily done using the \gls{HSC}/\gls{LSST} code that we already use at Subaru to process \gls{HSC} data.
+
+Tasks include
+\begin{itemize}
+  \item Perform simple \gls{ISR} on the frames
+    The \gls{ISR} is also responsible for estimating the image variance, either per-pixel or per camera.
+  \item Estimate and subtract the sky
+  \item Carry out object detection and centroiding.  The defocus
+    is probably not an issue for any of these operations
+  \item Estimate the fluxes of objects in the field
+  \item Measure suitably-weighted second moments for detected objects. The weighting function
+    will probably be a suitably chosen Gaussian (but not chosen per-object as we need to
+    calibrate how we estimate the defocus given these moments). It is possible that we will
+    need to crudely estimate the \gls{PSF} in order to set the weighting function.
+\end{itemize}
+
+\subsection{Field Acquisition}
+\label{sec:FieldAcquisition}
+
+After the telescope is at the nominal field position the \AGC will take an exposure.  It must
+be able to:
+\begin{itemize}
+  \item Display the post-sky subtracted images as a mosaic of all six chips arranged
+    with the correct relative orientation and rotation.
+  \item Overlay the positions of detected objects
+  \item Overlay the expected positions of guide stars at the epoch of the exposure
+\end{itemize}
+
+Note that the \AGC needs access to the guide star catalogue being used.  It seems likely that we will be able
+to use \gls{Gaia}, but it is the job of the target selection software to provide the catalogues, probably as
+part of the \gls{pfsDesign} file.  This catalogue must also provide estimates of the flux of the stars in the
+\AGC filter passband, and allowing for the devices' sensitivity curves.  It is likely that these colour
+terms will be determined on the sky; high accuracy is not required, so \eg \gls{GaiaG} and \gls{GaiaBPRP}
+would probably suffice.
+
+\subsubsection{Transparency/Seeing}
+
+Under poor conditions we will need to use the results of this analysis to adjust the \AGC exposure
+times.
+
+We expect that the second moments will be sufficient to characterise the seeing, and the point-source
+fluxes will be sufficient to measure the transparency.
+
+\subsubsection{Offset/Rotation}
+
+We need to solve for the offset between the measured and expected positions.  We expect the offset
+to be small, but it seems unwise to assume that this is always the case --- however, we should expect
+that it \textit{will} be small enough that we do not need a blind solver.  Once again,
+the \gls{HSC}/\gls{LSST} code provides this functionality.
+
+We need to be able to display the measured offset vectors as a function of the position of the stars
+in the focal plane.
+
+Once we know the offsets in each of the guide cameras in which we have detected stars we can
+calculate the scale/rotation change that must be applied via \gls{Gen2}.  Discussing how
+this information transfer is achieved is outside the scope of this document.
+
+\subsubsection{Focus and Tilt}
+
+Every exposure, providing there are enough stars detected, can be used to estimate the focus and tilt
+of the \PFI focal plane.  The stars used to make this measurement need not be in the guide catalogue.
+
+We need to be able to overlay the measured second-moments (probably as ellipses) on the guide images,
+and plot the image sizes as a function of position on the \PFI focal plane.  Because the defocus
+is not measured per-object the visualisation of the defocus/tilt is \TBD.
+
+\Nb if the focus shift is due to changes in the distance from the primary mirror to the \PFI then
+then focussing will also correct scale errors.  If it is due to changes in the radius of curvature
+of the primary then focussing will change the scale.  The \AGC analysis code needs to monitor this
+and warn the operator if the scale has changed.
+
+With the second moments in hand we need to calculate the defocus and tilt measurements that must be applied
+via \gls{Gen2}.  Discussing how this information transfer is achieved is outside the scope of this document.
+
+\subsection{Guiding}
+
+Once the telescope is locked onto the guide stars the \AGC still needs to provide status displays
+as well as sending offsets to \gls{MLP1}.
+
+\subsubsection{Per Guide-Image Displays}
+
+After every \AGC readout all the processing and displays described in \secRef{FieldAcquisition} need
+to be available taking into account \gls{ROI} readout.  For example, rather than displaying
+all six cameras in the proper orientation we need to display all the chosen guide stars (suitably enlarged)
+in their proper orientation and relative position.  The details are \TBD; for example the stars
+from each chip should probably be grouped together with the correct relative positions, but the
+per-chip groups should be separated using a different scaling.
+
+\subsubsection{Tracking Performance through a PFS exposure}
+
+We also need plots to track the performace of the system.  For example, we will want to see the variation
+of the focus with time, broken down suitably by azimuthal angle to show tilts.  Because we will be running
+a \gls{Kalman filter} to track the focus, the display will need to show the filtered values too.  Other
+examples are the seeing, background, and transparency as a function of time, updated after every \AGC read.
+
+\subsection{Debugging}
+
+All the data described above needs to be available in convenient ways within the \jupyter environment.  In
+particular, this means that images need to be available via the \gls{visit} number and an \AGC sequence number
+within the visit rather than via a path into the file system.
+
+The catalogues and derived quantities (seeing, fluxes) will also need to be available within \jupyter, and
+in standard formats (\eg \gls{pandas} dataframes) and made available to \gls{Gen2} as desired, using
+formats \TBD.
+
+\section{MCS}
+\label{sec:MCS}
+
+The \MCS is responsible for taking and analysing images of the back-illuminated PFI science and fiducial
+fibres.  It is not responsible for understanding or even knowing of the existance of cobras; that is left to the \FPS.
+
+\Nb the current \MCS code does, in fact, assign cobraIds to the spots that it detects, but this
+is problematic because:
+\begin{itemize}
+\item it needs to know the geometry of the cobras, both within the \PFI and arm-lengths, stop positions, \etc.
+\item it needs access to the \gls{pfsDesign} data to know which cobras are illuminated
+  (\ie not behind spots or broken)
+\item it needs to know the distortion maps from sky to \MCS coordinates
+\end{itemize}
+
+\subsection{ISR and Image Processing}
+
+As every image is taken we need to:
+\begin{itemize}
+  \item Perform simple \gls{ISR} on the frame if necessary
+  \item Estimate and subtract the background, if necessary
+  \item Carry out object detection and centroiding, including error analysis
+\end{itemize}
+
+If the image quality is poor, as it was during the initial commissioning run, the centroiding will
+need to be more sophisticated, \eg estimating the \gls{PSF} as a function of position, correlating
+the image with the \gls{PSF}, and then estimating centroids on the resulting image.  It is
+acceptable to only support this sort of analysis in the \jupyter notebooks.
+
+\subsection{Visualisation}
+
+We need to be able to:
+\begin{itemize}
+\item Display the entire image
+\item Overlay the measured centroids of all detected objects
+\end{itemize}
+
+\section{FPS}
+
+Although this document is not normative for the \FPS's required functionality, as a reminder
+the \FPS must:
+\begin{itemize}
+\item
+  identify cobras from the centroids provided by the \MCS.  This may
+  require information about the last known position of the fibres
+\item
+  link together together detections of the same fibre, as there can be more than
+  one when we are strobing the illuminator
+\item
+  Fit arcs of circles to sets of centroids (either from one strobed image or from
+  a set of \MCS images) in the case that only one motor is being run.  Note that
+  this information must come from the \opDB.
+\item
+  Update the \glspl{motor map}
+\end{itemize}
+
+\subsection{Visualisation}
+
+The \FPS need not provide visualisation of the pixel-level \MCS data.
+We need to be able to:
+\begin{itemize}
+\item Display the measured centroids of all detected objects linked together by cobraId (\eg colour)  
+\item Overlay the expected centroids, transformed using the nominal distortion maps
+  into the \MCS coordinate system.
+  This information comes from the \gls{pfsDesign} file, and the distortion library. The
+  source of truth for the fiducial fibres is \TBD
+\item Plot the vector field of derived offsets of the fibres from their expected positions,
+  including information about which fibres are supposed to be present but aren't detected,
+  which are behind spots, and which are broken and should not be detectable.
+  We probably need the ability to only plot the fiducial fibres.
+\item
+  Overlay the best-fit circles when appropriate
+\end{itemize}
+
+\begin{itemize}
+\item Display the data being used to update the \gls{motor map}
+\item Overlay the current (old) \gls{motor map} and proposed new one
+\item Show the convergence of each fibre, either individually or as a full-focal-plane graphic
+\end{itemize}
+
+\section{IIC}
+\label{sec:IIC}
+
+While the \IIC is not directly responsible for any part of the fibre system it is a natural home
+for some high-level analysis.  In some cases this code may ultimately live elsewhere.
+
+\subsection{Analyzing Fibre Flux}
+
+As soon as we start an \SPS integration we can check how consistent the data is with the
+results from \FPS.  For all objects with a significant and known flux (\eg telluric standards) we
+can extract the flux from the \gls{NIR} arm and compare it to the expected value based on the
+seeing/transparency values coming from the \AGC and the known cobra pointing errors from the \FPS.
+
+\subsection{Analysing Full-PFI Raster Sequences}
+
+During commissioning we will need to tie the \PFI and \AGC coordinate systems together.   Depending
+on how stable the system proves to be we may need to repeat this analysis from time to time.
+
+We will target a dense star field, and take a set of short \SPS exposures with small offsets
+between each (\eg a $n\times n$ grid of 1arcsec offsets centred at the nominal position).  This
+will probably be driven from a \gls{Gen2} script; $n$ should be odd.
+
+For each pointing we need to:
+\begin{itemize}
+\item Read out the spectrographs, possibly only the \gls{NIR} arms
+\item Extract the flux from each object
+\end{itemize}
+
+When all the data has been taken:
+\begin{itemize}
+\item Retrieve the guide star positions from the \AGC images, and measure the raster offsets
+\item Analyse the fluxes to find the centres of the objects
+\item Generate an image of all the objects, created from the $n\times n$ rasters, with each object
+  at the correct relative position based on the \gls{pfsConfig} file, in the coordinate systems
+  of the centre of the dither.
+\item Overlay the measured and expected positions
+\item Generate a vector image of the offsets between measured and expected positions
+\end{itemize}
+
+Update the offsets between the \AGC and \MCS coordinate systems (scale, offset, rotation; or higher
+order terms if necessary which seems unlikely). Update the \MCS distortion model if needs be.
+
+If this analysis is carried out on a science field, calculate the parameters needed to reconfigure
+the \PFI and/or adjust the telescope's offset/rotation to maximise the \gls{SNR}, and pass these
+parameters to \gls{Gen2}.
+
+%------------------------------------------------------------------------------
+
+\begin{appendices}
+
+\section{Jupyter}
+\label{sec:jupyter}
+
+\XXX{Write me.  Describe image display and plotting options}
+
+\end{appendices}
+
+%------------------------------------------------------------------------------
+%
+% Print acronyms/glossaries
+%
+\printglossary[type=\acronymtype]
+\printglossary
+
+\end{document}
