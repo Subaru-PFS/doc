@@ -67,7 +67,7 @@ FSA	SpS/FOCCoS	Subcomponent	Fiber Slit Sub-Assembly	FOCCoS assembly as a part of
 FST	SpS	Subcomponent	Fiber Slit alignment Tool	SpS integration tool to align Fiber Slit Assembly (FSA). Dedicated collimator corrector and camera are used.
 FUA	PFI	Subcomponent	Fixed Upper Assembly	One of the two main PFI structure. FUA is fixed to POpt2 and accommodates cable wrapper assembly,(CWA), modular plate for fiber cables (MP3), and calibration lamp and so on.
 fvc	ICS	Actor	Fiber Viewing Camera	PFI software to take images of fixed fiducial fibers. fvc also turn on/off LED to illuminate fixed fiducial fibers. ASIAA has a responsibility for its development.
-Gen2	Subaru	Operation	Generation-2 observation control system	Current observation control system (OCS) for Subaru. It launched in 2011.
+Gen2	Subaru	Operation	Subaru Observation Support System Generation 2 (SOSS Gen2)	The Subaru observation control system (OCS). It launched in 2011.
 HSC	Subaru	Instrument	Hyper Suprime-Cam	Wide field (~1.5 degree in diameter) camera with more than 100 CCDs at Subaru prime focus. HSC SSP, which started in 2014, is sister survey of PFS in the SuMIRe project.
 ICD	General	Document	Interface Control Document	If there is an interface between different developer institutes, they discuss it using ICD.
 ICS	Software	General	Instrument Control Software	Software packages to operate PFS instrument. Individual actuators, which control smaller components, exchange command, status with each other via messaging hub systems (MHS).

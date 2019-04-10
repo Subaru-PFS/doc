@@ -175,7 +175,8 @@ own field acquisition as its capabilities are rather different from previous Sub
 \item \PFS has much more stringent requirements on guiding than imagers
 \item \PFS has 6 guide cameras, and will guide on more than one star
 \item \PFS requires the ability to update the rotator angle based on guide stars
-\item \PFS will generate lists of guide stars as part of the target selection process
+\item \PFS will generate lists of guide stars while choosing objects to be observed;  the final
+  list will be determined only when the mapping of objects to cobras has been made.
 \item \PFS will generate a focus signal, rather than expecting the observer to take
   manual focus sweeps
 \end{itemize}
@@ -218,7 +219,8 @@ be able to:
 \end{itemize}
 
 Note that the \AGC needs access to the guide star catalogue being used.  It seems likely that we will be able
-to use \gls{Gaia}, but it is the job of the target selection software to provide the catalogues, probably as
+to use \gls{Gaia}, but it is the job of the software that determines the scientific targets to also provide a
+list of possible guide stars, probably as
 part of the \gls{pfsDesign} file.  This catalogue must also provide estimates of the flux of the stars in the
 \AGC filter passband, and allowing for the devices' sensitivity curves.  It is likely that these colour
 terms will be determined on the sky; high accuracy is not required, so \eg \gls{GaiaG} and \gls{GaiaBPRP}
@@ -248,12 +250,18 @@ this information transfer is achieved is outside the scope of this document.
 
 \subsubsection{Focus and Tilt}
 
+Subaru expects to use code developed by Yoko Tanaka \XXX{reference} to optimize the
+alignment of the PFI+WFC assembly against the telescope primary mirror in translation and tilt, based on the
+shapes of defocused stellar images on the AG cameras.  Depending on how well the resulting lookup
+tables work we may not need to actively control these degrees of freedom.
+
 Every exposure, providing there are enough stars detected, can be used to estimate the focus and tilt
 of the \PFI focal plane.  The stars used to make this measurement need not be in the guide catalogue.
 
 We need to be able to overlay the measured second-moments (probably as ellipses) on the guide images,
-and plot the image sizes as a function of position on the \PFI focal plane.  Because the defocus
-is not measured per-object the visualisation of the defocus/tilt is \TBD.
+and plot the image sizes as a function of position on the \PFI focal plane.  Because the distance
+from optimal focus
+is not measured per-object the visualisation of the piston/tilt is \TBD.
 
 \Nb if the focus shift is due to changes in the distance from the primary mirror to the \PFI then
 then focussing will also correct scale errors.  If it is due to changes in the radius of curvature
@@ -262,6 +270,9 @@ and warn the operator if the scale has changed.
 
 With the second moments in hand we need to calculate the defocus and tilt measurements that must be applied
 via \gls{Gen2}.  Discussing how this information transfer is achieved is outside the scope of this document.
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
 
 \subsection{Guiding}
 
@@ -340,7 +351,7 @@ the \FPS must:
   identify cobras from the centroids provided by the \MCS.  This may
   require information about the last known position of the fibres
 \item
-  link together together detections of the same fibre, as there can be more than
+  link together detections of the same fibre, as there can be more than
   one when we are strobing the illuminator
 \item
   Fit arcs of circles to sets of centroids (either from one strobed image or from
@@ -414,7 +425,8 @@ When all the data has been taken:
 \end{itemize}
 
 Update the offsets between the \AGC and \MCS coordinate systems (scale, offset, rotation; or higher
-order terms if necessary which seems unlikely). Update the \MCS distortion model if needs be.
+order terms if necessary which seems unlikely). Update the \MCS's mapping from sky to MCS pixel
+coordinates if needs be.
 
 If this analysis is carried out on a science field, calculate the parameters needed to reconfigure
 the \PFI and/or adjust the telescope's offset/rotation to maximise the \gls{SNR}, and pass these
