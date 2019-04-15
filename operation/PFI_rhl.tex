@@ -131,13 +131,13 @@ work at \gls{LAM}) and
 \jupyter as the interface to the data (see \appRef{jupyter}).
 
 There are two ways to work remotely with the \PFS data, and both should be supported (both will
-make use of the \gls{VPN} to connect, possibly via \ssh tunnels).
-By a \textit{local} program I mean one running on \eg on your laptop.
+make use of the \gls{VPN} to connect, possibly via \ssh tunnels):
 \begin{itemize}
 \item Using a local browser to connect to a \jupyter server running
   on \PFS machines in Hawai`i
-\item Connecting from a local machine to a \gls{VNC} running in Hawai`i
+\item Connecting from a local machine to a \gls{VNC} instance running in Hawai`i
 \end{itemize}
+By a \textit{local} program I mean one running on \eg on your laptop.
 
 We anticipate that largely pre-defined displays (such as the guide signals from the \AGC) will make
 use of \glspl{VNC}, while ad-hoc analysis using \jupyter is more likely to connect to a server
@@ -194,7 +194,7 @@ be easily done using the \gls{HSC}/\gls{LSST} code that we already use at Subaru
 
 Tasks include
 \begin{itemize}
-  \item Perform simple \gls{ISR} on the frames
+  \item Perform simple \gls{ISR} on the frames.
     The \gls{ISR} is also responsible for estimating the image variance, either per-pixel or per camera.
   \item Estimate and subtract the sky
   \item Carry out object detection and centroiding.  The defocus
@@ -290,7 +290,7 @@ per-chip groups should be separated using a different scaling.
 
 \subsubsection{Tracking Performance through a PFS exposure}
 
-We also need plots to track the performace of the system.  For example, we will want to see the variation
+We also need plots to track the performance of the system.  For example, we will want to see the variation
 of the focus with time, broken down suitably by azimuthal angle to show tilts.  Because we will be running
 a \gls{Kalman filter} to track the focus, the display will need to show the filtered values too.  Other
 examples are the seeing, background, and transparency as a function of time, updated after every \AGC read.
@@ -309,7 +309,7 @@ formats \TBD.
 \label{sec:MCS}
 
 The \MCS is responsible for taking and analysing images of the back-illuminated PFI science and fiducial
-fibres.  It is not responsible for understanding or even knowing of the existance of cobras; that is left to the \FPS.
+fibres.  It is not responsible for understanding or even knowing of the existence of cobras; that is left to the \FPS.
 
 \Nb the current \MCS code does, in fact, assign cobraIds to the spots that it detects, but this
 is problematic because:
