@@ -376,8 +376,10 @@ We need to be able to:
   which are behind spots, and which are broken and should not be detectable.
   We probably need the ability to only plot the fiducial fibres.
 \item
-  Overlay the best-fit circles when appropriate
+  Overlay the best-fit circles when appropriate.
 \end{itemize}
+
+For motor maps, we need to:
 
 \begin{itemize}
 \item Display the data being used to update the \gls{motor map}
@@ -385,10 +387,30 @@ We need to be able to:
 \item Show the convergence of each fibre, either individually or as a full-focal-plane graphic
 \end{itemize}
 
+We also need to display cobra collisions. This display is still to be determined, but it will already be impractical
+to display 2394 for all cobras. So it is most likely that we need to process the centroids for a given cobraId 
+to determine deviations from a circular motion, and those cobras that have significant non-circular movements
+are displayed.
+
+
 In addition, the evolution of the performance of individual cobras should be monitored over time, for two reasons:
 the first is to confirm that the method to position the fibers is working as expected, and the second is to measure
 the long-term degradation in cobra performance. Once a cobra degrades to a certain extent, that cobra may no longer be useable. 
-For the long term degradation, one could simply visualise the number of steps needed for convergence over time.
+
+
+The long-term degradation should be monitored at IPMU rather than on the mountain.
+This can be performed by running a script against the \opDB, 
+which displays:
+
+\begin{itemize}
+\item for each cobra the number of steps taken to acheive convergence as
+a function of time since the start of operations.
+\item the maximum number of steps a fully functioning cobra is expected to take for convergence.
+\end{itemize}
+
+If the expected number of steps is exceeded for a given cobra, and there is on reasonable recovery, 
+that cobra should be disabled from operations.
+
 
 \section{IIC}
 \label{sec:IIC}
