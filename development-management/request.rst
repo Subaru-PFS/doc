@@ -38,10 +38,13 @@ To request
 
 File a new JIRA ticket to the INFRA project with following information.
 
-- Long name of a new project, key (e.g. INFRA) of a new project, username of project lead, and description
+- Long name of the new project 
+- Key (e.g. INFRA) of the new project
+- Username of the project lead
+- Description
 - Initial components
 
-Procedure to add new JIRA project
+Procedure to add new JIRA project (to assignee)
 ======
 
 1. On list of projects page, add new and select "Basic software development"
@@ -65,15 +68,15 @@ a requestee SHALL check new repository is working (like succeeded to push
 something, and to access repository admin panel) and mark as 'DONE', 
 but a requestee does not need to check PR for public web site (etc.).
 
-- Name of new repository (need to follow `naming convention of PFS GitHub <https://pfspipe.ipmu.jp/repos.html>`_)
-- Short description of new repository (one line, to be used as a description at `github <https://github.com/Subaru-PFS>`_ and `web page <https://pfspipe.ipmu.jp/repos.html>`_)
+- Name of the new repository (need to follow `naming convention of PFS GitHub <https://pfspipe.ipmu.jp/repos.html>`_)
+- Short description of the new repository (one line, to be used as a description at `github <https://github.com/Subaru-PFS>`_ and `web page <https://pfspipe.ipmu.jp/repos.html>`_)
 - Responsible institution of the repository (coordination, development)
 - Corresponding JIRA project and component 
   (request new if need; default to add a component with a name of repository 
   in the target area, like INSTRM for ics\_)
 - License (OSS license is required; default to GPLv2)
 
-Procedure to add new GitHub repository
+Procedure to add new GitHub repository (to assignee)
 ======
 
 Following verification of supplied information per project requirements, such 
