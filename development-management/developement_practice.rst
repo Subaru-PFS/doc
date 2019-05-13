@@ -10,8 +10,8 @@ Developement Infrastructure
 Code Repositories
 ^^^^^^^^^^^^^^^^^
 
-The all codes for PFS software packages should be available on the `Github <https://github.com>`_ repositories hosteed by `Subaru-PFS <https://github.com/Subaru-PFS>`_ organization.
-The avaiable repositories are listed in `Subaru-PFS Github padge <https://github.com/Subaru-PFS>`_ and `the PFS official web site <https://pfspipe.ipmu.jp/repos.html>`_.
+All codes for PFS software packages should be available on the `Github <https://github.com>`_ repositories hosted by `Subaru-PFS <https://github.com/Subaru-PFS>`_ organization.
+The available repositories are listed in `Subaru-PFS Github padge <https://github.com/Subaru-PFS>`_ and `the PFS official web site <https://pfspipe.ipmu.jp/repos.html>`_.
 If you need to create a new repository, you shoud send request to the adiministrators of the PFS Project Office, following `the procedure <request.rst>`_ ("Add new GitHub repository" section).
 
 JIRA
@@ -34,7 +34,7 @@ Developement Workflow
 All works shall be ticketed to `JIRA <https://pfspipe.ipmu.jp/jira/>`_ before they are undertaken.
 The developer should file his/her (or colleague's) ticket to a proper project among `the existing ones <https://pfspipe.ipmu.jp/jira/secure/BrowseProjects.jspa?selectedCategory=all&selectedProjectType=all>`_. 
 If there is no proper project, send request to the adiministrators of the PFS Project Office, following `the procedure <request.rst>`_ ("Add new JIRA project" section).
-Here is a few items to pay attention to when filing a ticket, citing from ([Ref1]_.).
+Here are a few items to pay attention to when filing a ticket, citing from ([Ref1]_.).
 
     The summary and description fields are the most important; provide as much information as possible in the description field such that an assigned developer can address the issue quickly, and provide a meaningful summary such that the issue can be easily identified on a board or query output.
 
@@ -48,7 +48,7 @@ Once the assignee starts working on the ticket, he/she should change JIRA status
 The code developement and modification shoud be undertaken in the branch named after the ticket (e.g. ``tickets/XXX-n`` for the ticket ``XXX-n``) in relating repositories, **not in the master branch**.
 
 The developers should test the codes well before setting Pull Request.
-When finishing testing the code, the developers should set a Pul Request, assign the reviewer(s), and chenge the JIRA status to *In Review*. It is reccomemded to notify the reviewer.
+When finishing testing the code, the developers should set a Pull Request, assign the reviewer(s), and change the JIRA status to *In Review*. It is reccomemded to notify the reviewer.
 Note that the manager (or equivalent colleague) may change the reviewer(s) considering the workload balance and priority at that time.
 
 If there is reason for which a review is not necessary or impractical (e.g., a simple typo in documentation, or a review will take too long), then the developer can contact the manager to ask to either not have a review, or cancel the review.
@@ -59,7 +59,7 @@ When the reviewer approves the code, or if the manager agrees to merging the tic
 Exceptions
 ^^^^^^^^^^
 
-The all development work should be done in the branch-and-review process, as described above.
+All development work should be done in the branch-and-review process, as described above.
 However, there is a case where this workflow is not applicable.
 
 PFS have a few repositories (codes and documents) where one developer (or two) is allowed as a custodian to take care of completely, such as reference code registries and the abbreviations list. 
@@ -81,7 +81,7 @@ Here is a list to these file:
 +-------------+------------------------------+-----------------+
 
 
-If finding something to modify the above files, the developers should contact to the custodian.
+If finding something to modify the above files, the developer should contact to the custodian.
 
 
 System-level (L2) requirements relating with PFS software developement
