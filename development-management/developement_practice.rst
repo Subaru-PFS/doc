@@ -11,8 +11,8 @@ Code Repositories
 ^^^^^^^^^^^^^^^^^
 
 All codes for PFS software packages should be available on the `Github <https://github.com>`_ repositories hosted by `Subaru-PFS <https://github.com/Subaru-PFS>`_ organization.
-The available repositories are listed in `Subaru-PFS Github padge <https://github.com/Subaru-PFS>`_ and `the PFS official web site <https://pfspipe.ipmu.jp/repos.html>`_.
-If you need to create a new repository, you shoud send request to the adiministrators of the PFS Project Office, following `the procedure <request.rst>`_ ("Add new GitHub repository" section).
+The available repositories are listed in `Subaru-PFS Github page <https://github.com/Subaru-PFS>`_ and `the PFS official web site <https://pfspipe.ipmu.jp/repos.html>`_.
+If the developer needs to create a new repository, he/she shoud send request to the adiministrators of the PFS Project Office, following `the procedure <request.rst>`_ ("Add new GitHub repository" section).
 
 JIRA
 ^^^^
@@ -42,19 +42,21 @@ Here are a few items to pay attention to when filing a ticket, citing from ([Ref
 
     Sometimes issues need to be grouped into particular categories in order to more easily identify groups of work, such as "2D PSF modelling" or "arm merging". For this purpose, the "label" field can be used. Regarding other exotic fields, the "component" field is typically used for categories that exist in the long term, but has it’s own limitations in that it is project-specific. In general, as labels are more flexible it is not recommended to use this. For short-term work, the developer may use the "epic" field, as it does have the advantage that JIRA highlights issues associated to a given epic in scrum boards, but it also has a significant limitation in that only one epic can be assigned to one ticket. Because of that, this field will not be used for general project scheduling.
 
-Filed ticket is named ``XXX-n``, where ``XXX`` is the key of the project (``DAMD`` for the Data Model project), and ``n`` is the ID number of the ticket. The status is *Open* in general at this point.
+Filed ticket is named ``XXX-n``, where ``XXX`` is the key of the project (``DAMD`` for the Data Model project, for instance), and ``n`` is the ID number of the ticket. The status is *Open* in general at this point.
 
 Once the assignee starts working on the ticket, he/she should change JIRA status to *In Progress*.
 The code developement and modification shoud be undertaken in the branch named after the ticket (e.g. ``tickets/XXX-n`` for the ticket ``XXX-n``) in relating repositories, **not in the master branch**.
 
-The developers should test the codes well before setting Pull Request.
-When finishing testing the code, the developers should set a Pull Request, assign the reviewer(s), and change the JIRA status to *In Review*. It is reccomemded to notify the reviewer.
+The assignee should test the codes well before setting Pull Request.
+When finishing testing the code, the developer should set a Pull Request, assign the reviewer(s), and change the JIRA status to *In Review*. 
+Here, he/she should add a comment how the test has been done, what are the outputs, and why the outputs are convincing to adress the issue on the ticket. 
+It is reccomemded to notify the reviewer.
 Note that the manager (or equivalent colleague) may change the reviewer(s) considering the workload balance and priority at that time.
 
 If there is reason for which a review is not necessary or impractical (e.g., a simple typo in documentation, or a review will take too long), then the developer can contact the manager to ask to either not have a review, or cancel the review.
 
 When the reviewer approves the code, or if the manager agrees to merging the ticket branch to master without review, the developers merges the branch to master, and changes the JIRA ticket status to *Close*.
-
+Informative comment on the tests and results to be added, if they have not been adressed well in the earlier processes.
 
 Exceptions
 ^^^^^^^^^^
@@ -65,10 +67,10 @@ However, there is a case where this workflow is not applicable.
 PFS have a few repositories (codes and documents) where one developer (or two) is allowed as a custodian to take care of completely, such as reference code registries and the abbreviations list. 
 He/she can change such files without following branch-and-review workflow.
 
-Here is a list to these file:
+Here is a list to these files:
 
 +-------------+------------------------------+-----------------+
-| Registory   | File                         | Custodian(s)    |
+| Repository  | File                         | Custodian(s)    |
 +=============+==============================+=================+
 | doc         | misc/PFS_Abbreviations.tsv   | Hassan Siddiqui |
 |             |                              | / Yuki Moritani |
