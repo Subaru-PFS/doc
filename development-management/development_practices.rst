@@ -1,4 +1,4 @@
-PFS Software Development Practice
+PFS Software Development Practices
 ==================================
 This document describes common rules and guidelines for developing the PFS software.
 
