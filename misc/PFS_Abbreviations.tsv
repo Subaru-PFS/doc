@@ -130,6 +130,7 @@ RFCS	SpS	Subcomponent	Racks for Control Systems	Rack accommodating devices of Sp
 RIT	SpS	Subcomponent	Rear dewar Integration Tool	AIT tool of SpS Camera Assembly (CAA). RIT is used for integrating cryostat (dewar) assembly (CAA).
 RLA	PFI	Subcomponent	Rotating Lower Components	One of the two main PFI structure mounted to instrument rotator. The main components of RLA are fibers and their positioners, AG cameras and field elements.
 SAIT	SpS	Subcomponent	Spectrograph AIT Tools	Dedicated tools for SpS integration. SAIT consists of tools for alignment, characterization and specified software. LAM has a responsibility for its development.
+SAM	SpS	Subcomponent	SIDECAR ASIC Module	Module used to control the ASIC for the NIR camera
 SAS	ICS	General	Status Archive System	Software which collects all PFS instrument status, and sends some of them to Subaru Telemetry System. SAS will be designed to analyze status for error handling etc. IPMU has a responsibility for its development.
 SBC	FOCCoS/SpS	Subcomponent	Small Black Cable	Protective tubes for optical fibers at Cable A (This is equivalent to segmented tube?)
 SCP	PFI	Subcomponent	Shaft Coupler	Part of positioner module assembly to connect the shaft of Cobra positioner to fiber arm. SCP also provides hard stop on the second stage motion of Cobra.
