@@ -79,10 +79,12 @@
 "PFS-GEN-IPM003006-01", "PFS summit display connection drawing", "Kiyoto Yabe", "", "", "in prep."
 "PFS-GEN-IPM003007-01", "PFS software opDB connection drawing", "Kiyoto Yabe", "", "2019/06/10", "not circulated yet"
 "PFS-GEN-IPM003007-02", "PFS software opDB connection drawing", "Kiyoto Yabe", "", "2019/09/03", "po 27686 (but version number is wrong)"
+"PFS-GEN-IPM003008-01", "PFS Operational Plan (slides)", "Kiyoto Yabe", "", "2019/12/19", "Circulated to limited people"
 "PFS-SPT-IPM003002-01", "PFS ETS netflow F2F meeting at MPE/MPA Mar. 2019", "Kiyoto Yabe", "", "2019/03/28", "PFS-SPT:00412"
 "PFS-DAT-IPM003001-02", "MCS engineering run in August 2019 (from opDB perspectives)", "Kiyoto Yabe","","2019/07/09", "PFS-ics:01725/MCS 23"
 "PFS-DAT-IPM003002-01", "PFS operational database (opDB) schema diagram (full version)", "Kiyoto Yabe", "https://github.com/Subaru-PFS/spt_operational_database/blob/master/PFS-DAT-IPM003002-01_pfs_schema.pdf", "2019/09/06", 
 "PFS-DAT-IPM003003-01", "PFS operational database (opDB) schema diagram (simplified version)", "Kiyoto Yabe", "https://github.com/Subaru-PFS/spt_operational_database/blob/master/PFS-DAT-IPM003002-01_pfs_schema_light.pdf", "2019/09/06", 
+"PFS-DAT-IPM003004-01", "PFS opDB plan for PFI tests", "Kiyoto Yabe", "https://sumire.pbworks.com/w/file/135741306/PFS-DAT-IPM003004-01_opdb_plan_for_pfi_tests.pdf", "2019/09/20",
 "PFS-GEN-IPM004000-01", "PFS Commissioning Work Flow", "Yuki Moritani", "https://github.com/Subaru-PFS/ics_doc/blob/master/commissioning/commissioning_details.pdf", "2017/04/24",   
 "PFS-GEN-IPM004001-01", "AIT of subsystems at Subaru workflow and requirements", "Yuki Moritani", "https://sumire.pbworks.com/w/file/111633073/PFS-GEN-IPM004001-01_PFS_AIT_Subaru.pptx", "2018/04/24",   
 "PFS-GEN-IPM004002-01", "Run 0 configuration", "Yuki Moritani", "https://pfs.ipmu.jp/docsrv/docinfo.cgi?did=2960", "2018/01/06",   
@@ -98,8 +100,12 @@
 "PFS-GEN-IPM004011-01", "Result of HSC run in Nov. 2018 -WFC distortion and Coordinate Transformation-", "Yuki Moritani", "", "2019/04/08", "pfspo 26868"
 "PFS-GEN-IPM004012-01", "Data acquisition for distortion study in Run 2-b", "Yuki Moritani", "", "2019/08/21", "PFS-ics:01811/MCS 89"
 "PFS-GEN-IPM004013-01", "Field selection for HSC Run on 21 Sep. 2019", "Yuki Moritani", "", "2019/09/18", "pfspo 27759"
+"PFS-GEN-IPM004014-01", "Expected error and variation in PFS focal plane", "Yuki Moritani", "", "2019/10/16", "pfspo 27889"
+"PFS-GEN-IPM004015-01", "PFS Coordinates and Calibrations during Commissioning", "Yuki Moritani", "", "2019/10/31", 
+"PFS-GEN-IPM004016-01", "Field selection for HSC Run in Jan. 2020", "Yuki Moritani", "", "2020/01/14", "pfspo 28330"
 "PFS-SPS-IPM004000-01", "Ring Test of FCA#3 (LAM, 2018/07)", "Yuki Moritani", "", "2018/08/03", "PFS-SpS:03838"
-"PFS-SPS-IPM004002-01", "SM1 Flux hole: FCA3 data at LNA for comparison", "", "Yuki Moritani", "2019/08/15", "PFS-SpS:04371"
+"PFS-SPS-IPM004002-01", "SM1 Flux hole: FCA3 data at LNA for comparison", "Yuki Moritani", "", "2019/08/15", "PFS-SpS:04371"
+"PFS-SPS-IPM004003-04", "Photo and microscope image taken during FCA2 repair", "Yuki Moritani", "", "2019/11/30", "PFS-SpS:04656"
 "PFS-PFI-IPM004000-01", "Screening Cable C by FRD Measurement", "Yuki Moritani", "https://sumire.pbworks.com/w/file/128131368/PFS-PFI-IPM004000-CableC_Screening_20180815.pdf", "2018/08/15", 
 "PFS-PFI-IPM004002-01", "FRD data: Reels 02--49", "Yuki Moritani", "To be uploaded", "2018/10/04",
 "PFS-PFI-IPM004003-01", "FRD data: Reels 50--96", "Yuki Moritani", "To be uploaded", "2019/01/15",
@@ -113,6 +119,8 @@
 "PFS-FIB-IPM004003-08", "Notes about Cesar's reports", "Yuki Moritani", "", "2016/04/27",
 "PFS-FIB-IPM004004-04", "Notes about FRD Test - Mating the USCONEC MTP Ferrules-", "Yuki Moritani", "https://sumire.pbworks.com/w/file/113397745/PFS-FIB-IPM004004-04_FRDtest201611a_mating.pdf", "2016/11/25", 
 "PFS-FIB-IPM004005-01", "Cable B optical performance test at LNA", "Yuki Moritani", "", "2019/07/19",
+"PFS-FIB-IPM004006-01", "Proposal for position FRD-measured fibers in MTP ferrule", "Yuki Moritani", "", "2019/11/01", "Bug 758"
+"PFS-FIB-IPM004006-05", "Proposal for position FRD-measured fibers in MTP ferrule", "Yuki Moritani", "", "2020/01/21", "Bug 758"
 "PFS-ICS-IPM004000-01", "Command and Data Flow for run2", "Yuki Moritani", "", "2019/09/05", "PFS-ics:01825"
 "PFS-SPS-IPM100000-01", "Slit unit pointing test", "Graham Murray", "https://sumire.pbworks.com/w/file/94634438/Slit%20unit%20pointing.pdf", "2014/10/25",
 "PFS-SPS-IPM100001-01", "Dummy Cable B Build & Evaluation Summary", "Graham Murray", "https://sumire.pbworks.com/w/file/121359156/Dummy%20Cable%20B%20Summary-GJMurray-20161121.pdf", "2016/11/21",
