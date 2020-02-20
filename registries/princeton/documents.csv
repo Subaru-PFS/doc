@@ -52,3 +52,4 @@
 "PFS-PFI-PRU000290-01", "The PFS Calibration System Controller II. Software and Operating System", "Jim Gunn", "https://sumire.pbworks.com/w/file/138638898/CalibrationSystem.pdf", "2020-02-18", ""
 "PFS-SPS-PRU020100-01", "Pumping Control", "Craig Loomis", "https://github.com/Subaru-PFS/ics_xcuActor/blob/74fab98c5953183d82c796b796b13b7c1df6d219/docs/PFS-SPS-PRU020100_Pumping_Control.rst", "2019-06-11", ""
 "PFS-PFI-PRU020110-01", "MHS control of PFI calibration lamps", "Craig Loomis", "https://sumire.pbworks.com/w/file/138655719/mhs_lampcontrol.pdf", "2020-02-19", ""
+"PFS-PFI-PRU000300-01", "Calibration System Performance In The SPS Image Plane", "Jim Gunn", "https://sumire.pbworks.com/w/file/138656415/CalibrationSystemPSF_Performance.pdf", "2020-02-19", ""
