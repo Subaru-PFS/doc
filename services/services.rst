@@ -14,8 +14,8 @@ under single sign on (SSO) by pfs.ipmu.jp.
 Refer `account policy <account.rst>`_ for details and registration. 
 
 * `SuMIRe/PFS PBworks wiki`_
-* `Public Web Site at pfs.ipmu.jp (http)`_
-* `PFS project internal website (https pfs.ipmu.jp)`_
+* `Public Web Site`_
+* `PFS Project Internal Service for Instrument Development`_
 * `Online meeting`_
 * `Services for software development at pfspipe.ipmu.jp and external`_
 
