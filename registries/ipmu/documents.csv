@@ -14,7 +14,7 @@
 "PFS-FIB-IPM000002-03", "Cable B fiber FRD test procedure", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/134231385/PFS-FIB-IPM000002-03_CableBFRDTestProcedure.pdf", "2019/06/24",
 "PFS-FIB-IPM000004-01", "Fiber Connection Monitoring System (FCMS)", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/128640633/PFS-FIB-IPM000004-01_FCMS20150929.pdf", "2015/09/29", ""
 "PFS-FIB-IPM000005-02", "Prototype Cable B Testing in Dec 2018: Data Summary", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/131113560/PFS-FIB-IPM000005-02_PrototypeCableBTestingDec2018DataSummary.pdf", "2018/12/30",
-"PFS-FIB-IPM000006-01", "Cable B mini	design review: Cable’s	current status", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/134231352/PFS-FIB-IPM000006-01_CableBStatusJun2019.pdf", "2019/06/24",
+"PFS-FIB-IPM000006-01", "Cable B mini design review: Cable’s current status", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/134231352/PFS-FIB-IPM000006-01_CableBStatusJun2019.pdf", "2019/06/24",
 "PFS-FIB-IPM000007-01", "A summary for the Cable B mini review about the status of Cable B requirements", "Naoyuki Tamura", "", "2019/06/20", "syseng:1477"
 "PFS-FIB-IPM000008-01", "Prototype Cable B on-Telescope test in Jan. 2020", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/138402348/PFS-FIB-IPM000008-01_PrototypeCableBTestingJan2020DataSummary.pdf", "2020/02/04", "syseng:1571/Cable-B 122"
 "PFS-SPS-IPM000001-01", "FCA issues: A summary", "Naoyuki Tamura", "", "2019/10/01", ""
@@ -113,7 +113,7 @@
 "PFS-SPS-IPM004000-01", "Ring Test of FCA#3 (LAM, 2018/07)", "Yuki Moritani", "", "2018/08/03", "PFS-SpS:03838"
 "PFS-SPS-IPM004002-01", "SM1 Flux hole: FCA3 data at LNA for comparison", "Yuki Moritani", "", "2019/08/15", "PFS-SpS:04371"
 "PFS-SPS-IPM004003-04", "Photo and microscope image taken during FCA2 repair", "Yuki Moritani", "", "2019/11/30", "PFS-SpS:04656"
-"PFS-SPS-IPM004004-02", "Aiming Error Test of FCA#4 (LNA 2020/03)",	"Yuki Moritani", "", "2020/03/25",
+"PFS-SPS-IPM004004-02", "Aiming Error Test of FCA#4 (LNA 2020/03)", "Yuki Moritani", "", "2020/03/25",
 "PFS-PFI-IPM004000-01", "Screening Cable C by FRD Measurement", "Yuki Moritani", "https://sumire.pbworks.com/w/file/128131368/PFS-PFI-IPM004000-CableC_Screening_20180815.pdf", "2018/08/15", 
 "PFS-PFI-IPM004002-01", "FRD data: Reels 02--49", "Yuki Moritani", "To be uploaded", "2018/10/04",
 "PFS-PFI-IPM004003-01", "FRD data: Reels 50--96", "Yuki Moritani", "To be uploaded", "2019/01/15",
