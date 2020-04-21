@@ -2,7 +2,7 @@ Overview of services
 ******
 
 Below are tools and resources that are used in the PFS project. 
-Many services are hosted at IPMU under `pfs.ipmu.jp (https) <https://pfs.ipmu.jp>`_ 
+Many services are hosted at IPMU under `pfs.ipmu.jp <https://pfs.ipmu.jp/internal/>`_ 
 (mainly for instrument hardware development) or 
 `pfspipe.ipmu.jp <pfspipe.ipmu.jp>`_ (for software development), and also PFS 
 project is using several external services, like 
@@ -40,44 +40,44 @@ Editing manual
   You can find `manual for editing PBworks <http://usermanual.pbworks.com/>`_. 
 
 
-Public Web Site at pfs.ipmu.jp (http)
+Public Web Site
 ------
 
-Public project information is at http://pfs.ipmu.jp , 
+Public project information is at https://pfs.ipmu.jp , 
 such as list of milestones or major meetings, list of publications, 
 and instrument parameters and performance. 
 
-`PFS blog <http://pfs.ipmu.jp/blog/>`_ is also available on this site. 
+`PFS blog <https://pfs.ipmu.jp/blog/>`_ is also available on this site. 
 
-PFS project internal website (https pfs.ipmu.jp)
+PFS Project Internal Service for Instrument Development
 ------
 
-Every content at https://pfs.ipmu.jp/ is project only, and you 
+Every content at https://pfs.ipmu.jp/internal/ is project only, and you 
 need to log in using `PFS LDAP account <account.rst>`_ to view pages. 
 Use your 'account name' (not email address) and 'password', see details on 
 registration at `PFS LDAP account <account.rst>`_.
 If you have any account issue on this site, refer 
 `lost account or change password section <account.rst#lost-account-or-change-password>`_.
 
-With accessing to `PFS project internal website <https://pfs.ipmu.jp/>`_, 
+With accessing to `PFS project internal internal services <https://pfs.ipmu.jp/internal/>`_, 
 you will get the newest list of contents in this server as its top page. 
 Short list of frequently used items are:
 
-* `PFS LDAP account manipulator <https://pfs.ipmu.jp/ldap-manip/>`_
+* `PFS LDAP account manipulator <https://pfs.ipmu.jp/internal/ldap-manip/>`_
 
-  * `List of existing accounts <https://pfs.ipmu.jp/ldap-manip/view_all.cgi>`_
-  * `photo directory <https://pfs.ipmu.jp/ldap-manip/view_allphoto.cgi>`_
+  * `List of existing accounts <https://pfs.ipmu.jp/internal/ldap-manip/view_all.cgi>`_
+  * `photo directory <https://pfs.ipmu.jp/internal/ldap-manip/view_allphoto.cgi>`_
   * Also note, you can edit your account information from this system, 
     such as password, your real name, institution, and photo. 
 
 * Content sharing services
 
-  * `Document server <https://pfs.ipmu.jp/docsrv/>`_
-  * `Photo archive <https://pfs.ipmu.jp/photo/>`_
+  * `Document server <https://pfs.ipmu.jp/internal/docsrv/>`_
+  * `Photo archive <https://pfs.ipmu.jp/internal/photo/>`_
   * WebDAV storage
 
-* `Issue tracker and ticketing system for hardware development <https://pfs.ipmu.jp/bts/>`_
-* `pfs.ipmu.jp internal mail list <https://pfs.ipmu.jp/mailman/listinfo>`_
+* `Issue tracker and ticketing system for hardware development <https://pfs.ipmu.jp/internal/bts/>`_
+* `pfs.ipmu.jp internal mail list <https://pfs.ipmu.jp/internal/mailman/listinfo>`_
 
 Online meeting
 ------
@@ -88,7 +88,7 @@ For accessing on-line, you will need to `install clients <https://zoom.us/downlo
 For upcoming teleconferences for PFS technical team, 
 the project is providing the meeting schedule at 
 `google calendar <https://calendar.google.com/calendar/embed?src=su0pbsaull17etlj62tet5anm0%40group.calendar.google.com>`_.
-Also `meeting reminder notification service <https://pfs.ipmu.jp/notification/>`_ 
+Also `meeting reminder notification service <https://pfs.ipmu.jp/internal/notification/>`_ 
 is provided to get reminders via phone, text (SMS), email, or push notification 
 to your web browser. 
 
