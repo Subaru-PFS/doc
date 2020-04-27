@@ -123,6 +123,7 @@ PSC	PFI	Subcomponent	Power Switch Controller	Device to turn on and off powers of
 PSci	General	Organization	(PFS) Project Scientist	Scientists who join PFS SSP survey. There are three main working groups: cosmology, galaxy evolution and AGN, and galaxy archaeology.
 PSE	General	Organization	(PFS) Project System Engineer	System Engineer for developing PFS instrument. Each developer institute has one or two PSE(s). They have bi-weekly teleconf. to discuss progress, issues and plans of development,
 PU	General	Organization	Princeton University, USA	PFS collaborator. PU is a one of the SpS and PFI development team with hardware aspect. For software development, PU has a responsibility for 2D-DRP and database.
+REB	PFI	Subcomponent	Remote Electronics Box	Electronics box that accommodates the control systems for the cobras
 RCU	SpS	Subcomponent	Red Camera Unit	One of the three camera units of Spectrograph Modules which images the spectra ranging from 630 nm to 970 nm. LAM, JHU and WS have a responsibility for its development.
 rcu	ICS	Actor	Red Camera Unit	Software module to operate RCU, in particular vacuum, cooling down, and telemetry. JHU and PU have a responsibility for its development.
 RDA	SpS	Subcomponent	Red Disperser Assembly	Spectrograph assembly for RCU with VPH grating and its holder. RDA also includes mechanism for exchange grating between Low-resolution and Medium-resolution.
