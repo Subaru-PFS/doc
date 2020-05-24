@@ -90,6 +90,7 @@
 "PFS-DAT-IPM003003-01", "PFS operational database (opDB) schema diagram (simplified version)", "Kiyoto Yabe", "https://github.com/Subaru-PFS/spt_operational_database/blob/master/PFS-DAT-IPM003002-01_pfs_schema_light.pdf", "2019/09/06", 
 "PFS-DAT-IPM003004-01", "PFS opDB plan for PFI tests", "Kiyoto Yabe", "https://sumire.pbworks.com/w/file/135741306/PFS-DAT-IPM003004-01_opdb_plan_for_pfi_tests.pdf", "2019/09/20",
 "PFS-DAT-IPM003005-02", "PFS opDB discussion", "Kiyoto Yabe", "https://sumire.pbworks.com/w/file/139620333/PFS-DAT-IPM003005-02_opDB_schema_management_discussion.pdf", "2020/04/16",
+"PFS-DAT-IPM003007-01", "A proposal of a standard library to access PFS operational database (opDB)", "Kiyoto Yabe", "https://sumire.pbworks.com/w/file/139861650/PFS-DAT-IPM003007-01_opdb_proposal_library.pdf", "2020/04/30",
 "PFS-GEN-IPM004000-01", "PFS Commissioning Work Flow", "Yuki Moritani", "https://github.com/Subaru-PFS/ics_doc/blob/master/commissioning/commissioning_details.pdf", "2017/04/24",   
 "PFS-GEN-IPM004001-01", "AIT of subsystems at Subaru workflow and requirements", "Yuki Moritani", "https://sumire.pbworks.com/w/file/111633073/PFS-GEN-IPM004001-01_PFS_AIT_Subaru.pptx", "2018/04/24",   
 "PFS-GEN-IPM004002-01", "Run 0 configuration", "Yuki Moritani", "https://pfs.ipmu.jp/docsrv/docinfo.cgi?did=2960", "2018/01/06",   
@@ -131,6 +132,7 @@
 "PFS-FIB-IPM004006-01", "Proposal for position FRD-measured fibers in MTP ferrule", "Yuki Moritani", "", "2019/11/01", "Bug 758"
 "PFS-FIB-IPM004006-05", "Proposal for position FRD-measured fibers in MTP ferrule", "Yuki Moritani", "", "2020/01/21", "Bug 758"
 "PFS-FIB-IPM004007-02", "Interim Report of the Stability Test", "Yuki Moritani", "", "2020/04/07", "Cable-B 149"
+"PFS-FIB-IPM004007-03", "Interim Report of the Stability Test", "Yuki Moritani", "https://sumire.pbworks.com/w/file/139943565/PFS-FIB-IPM004007-03_Analysis_StabilityTest.pdf", "2020/05/06",
 "PFS-ICS-IPM004000-01", "Command and Data Flow for run2", "Yuki Moritani", "", "2019/09/05", "PFS-ics:01825"
 "PFS-SPS-IPM100000-01", "Slit unit pointing test", "Graham Murray", "https://sumire.pbworks.com/w/file/94634438/Slit%20unit%20pointing.pdf", "2014/10/25",
 "PFS-SPS-IPM100001-01", "Dummy Cable B Build & Evaluation Summary", "Graham Murray", "https://sumire.pbworks.com/w/file/121359156/Dummy%20Cable%20B%20Summary-GJMurray-20161121.pdf", "2016/11/21",
@@ -160,3 +162,4 @@
 "PFS-SPS-IPM900008-01", "Slides for SpS telecon on Jun 12 2019", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/134053506/PFS-SPS-IPM900008-01_SlidesforSpStelecon20190612.pdf", "2019/06/12",
 "PFS-SPS-IPM900009-01", "Slides for SpS telecon on Jul 3 2019", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/134404563/PFS-SPS-IPM900009-01_SlidesforSpStelecon20190703.pdf", "2019/07/03",
 "PFS-SPS-IPM900010-01", "SCR compliance matrix", "Project Office", "", "2019/11/05", "pfspo 28048/PFS-SpS:04579"
+"PFS-SPS-IPM900011-01", "SMx health-check list", "Project Office", "https://sumire.pbworks.com/w/file/139873824/PFS-SPS-IPM900011-01_SMx_HealthCheckList.pdf", "2020/04/30",
