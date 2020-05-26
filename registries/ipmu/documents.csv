@@ -90,6 +90,7 @@
 "PFS-DAT-IPM003003-01", "PFS operational database (opDB) schema diagram (simplified version)", "Kiyoto Yabe", "https://github.com/Subaru-PFS/spt_operational_database/blob/master/PFS-DAT-IPM003002-01_pfs_schema_light.pdf", "2019/09/06", 
 "PFS-DAT-IPM003004-01", "PFS opDB plan for PFI tests", "Kiyoto Yabe", "https://sumire.pbworks.com/w/file/135741306/PFS-DAT-IPM003004-01_opdb_plan_for_pfi_tests.pdf", "2019/09/20",
 "PFS-DAT-IPM003005-02", "PFS opDB discussion", "Kiyoto Yabe", "https://sumire.pbworks.com/w/file/139620333/PFS-DAT-IPM003005-02_opDB_schema_management_discussion.pdf", "2020/04/16",
+"PFS-DAT-IPM003006-01", "A proposal of PFS operational database (opDB) system", "Kiyoto Yabe", "", "", "in prep"
 "PFS-DAT-IPM003007-01", "A proposal of a standard library to access PFS operational database (opDB)", "Kiyoto Yabe", "https://sumire.pbworks.com/w/file/139861650/PFS-DAT-IPM003007-01_opdb_proposal_library.pdf", "2020/04/30",
 "PFS-GEN-IPM004000-01", "PFS Commissioning Work Flow", "Yuki Moritani", "https://github.com/Subaru-PFS/ics_doc/blob/master/commissioning/commissioning_details.pdf", "2017/04/24",   
 "PFS-GEN-IPM004001-01", "AIT of subsystems at Subaru workflow and requirements", "Yuki Moritani", "https://sumire.pbworks.com/w/file/111633073/PFS-GEN-IPM004001-01_PFS_AIT_Subaru.pptx", "2018/04/24",   
