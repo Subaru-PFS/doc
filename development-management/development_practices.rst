@@ -69,18 +69,20 @@ He/she can change such files without following branch-and-review workflow.
 
 Here is a list to these files:
 
-+-------------+------------------------------+-----------------+
-| Repository  | File                         | Custodian(s)    |
-+=============+==============================+=================+
-| doc         | misc/PFS_Abbreviations.tsv   | Hassan Siddiqui |
-|             |                              | / Yuki Moritani |
-+-------------+------------------------------+-----------------+
-| doc         | registries/princeton         | Hassan Siddiqui |
-+-------------+------------------------------+-----------------+
-| doc         | registries/mitaka            | Masayuki Tanaka |
-+-------------+------------------------------+-----------------+
-| doc         | registries/ipmu              | Yuki Moritani   |
-+-------------+------------------------------+-----------------+
++-------------+------------------------------+------------------+
+| Repository  | File                         | Custodian(s)     |
++=============+==============================+==================+
+| doc         | misc/PFS_Abbreviations.tsv   | Hassan Siddiqui  |
+|             |                              | / Yuki Moritani  |
++-------------+------------------------------+------------------+
+| doc         | registries/princeton         | Hassan Siddiqui  |
++-------------+------------------------------+------------------+
+| doc         | registries/mitaka            | Masayuki Tanaka  |
++-------------+------------------------------+------------------+
+| doc         | registries/subaru            | Shintaro Koshida |
++-------------+------------------------------+------------------+
+| doc         | registries/ipmu              | Yuki Moritani    |
++-------------+------------------------------+------------------+
 
 
 If finding something to modify the above files, the developer should contact to the custodian.
