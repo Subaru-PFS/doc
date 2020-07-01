@@ -8,6 +8,7 @@
 "PFS-GEN-IPM000006-02", "NAOJ/Subaru-PFS software assembly meeting #3", "Naoyuki Tamura", , "2019/05/29", "PFS-ics:01689/PFS-Soft-Subaru:624"
 "PFS-GEN-IPM000007-01", "NAOJ/Subaru-PFS software assembly meeting #4", "Naoyuki Tamura", , "2019/10/01", "PFS-Soft-Subaru:641/PFS-ics:01846"
 "PFS-GEN-IPM000007-02", "NAOJ/Subaru-PFS software assembly meeting #4", "Naoyuki Tamura", , "2019/10/02", "PFS-Soft-Subaru:644/PFS-ics:01850"
+"PFS-GEN-IPM000008-01", "PFS data QA telecon on Jun 24/25 2020: Brief Introductoin", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/140514828/PFS-GEN-IPM000008-01_DataQAIntro24Jun2020.pdf", "2020/06/25",
 "PFS-FIB-IPM000001-04", "A summary of fiber test", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/68673176/fiber-summary-v4.pdf", "2013/09/04", ""
 "PFS-FIB-IPM000002-01", "Cable B fiber FRD test procedure", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/128335698/PFS-FIB-IPM000002-01_CableBFRDTestProcedure.pdf", "2018/08/22", "syseng:1361/pfspo 24892"
 "PFS-FIB-IPM000002-02", "Cable B fiber FRD test procedure", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/131540898/PFS-FIB-IPM000002-02_CableBFRDTestProcedure.pdf", "2019/01/24", ""
@@ -73,6 +74,7 @@
 "PFS-ICS-IPM001016-01", "(Material for review) PFS ICS infrastructure design and performance verification", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/blob/master/SSN-00029.pptx", "2017/03/09", "SSN-00029"
 "PFS-ICS-IPM001017-01", "PFS ICS production configuration", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/tree/master/SSN-00030", "2018/04/01", "SSN-00030"
 "PFS-SPS-IPM001010-03", "SpS power and heat budget", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/128351088/SpS-SM-PowerHeat-Budget-v3-rev4-20171017.xlsx", "2017/10/17", "PFS-SpS:03261"
+"PFS-GEN-IPM002001-01", "PFS QA metrics", "Naoki Yasuda", "https://sumire.pbworks.com/w/file/fetch/140540049/PFS-GEN-IPM002001-01_QAMetrics25Jun2020.pdf", "2020/06/25",
 "PFS-GEN-IPM003001-01", "PFS Expected Performance Summary", "Kiyoto Yabe", "https://sumire.pbworks.com/w/file/129441444/PFS-GEN-IPM003001-01_pfs_expected_performance_KYabe_20170731.pdf", "2017/07/31",
 "PFS-GEN-IPM003002-01", "PFS Operational Plan", "Kiyoto Yabe", "https://github.com/Subaru-PFS/doc/blob/master/operation/pfs_operation_plan_doc.tex", "2016/08/24",
 "PFS-GEN-IPM003003-01", "PFS Gen2 Command Proposal", "Kiyoto Yabe", "https://sumire.pbworks.com/w/file/129441486/pfs_gen2_commands_proposal_KYabe_20180115.pdf", "2018/01/15",
@@ -134,7 +136,8 @@
 "PFS-FIB-IPM004006-05", "Proposal for position FRD-measured fibers in MTP ferrule", "Yuki Moritani", "", "2020/01/21", "Bug 758"
 "PFS-FIB-IPM004007-02", "Interim Report of the Stability Test", "Yuki Moritani", "", "2020/04/07", "Cable-B 149"
 "PFS-FIB-IPM004007-03", "Interim Report of the Stability Test", "Yuki Moritani", "https://sumire.pbworks.com/w/file/139943565/PFS-FIB-IPM004007-03_Analysis_StabilityTest.pdf", "2020/05/06",
-"PFS-ICS-IPM004000-01", "Command and Data Flow for run2", "Yuki Moritani", "", "2019/09/05", "PFS-ics:01825"
+"PFS-FIB-IPM004008-01", "Stability Test Report 2", "Yuki Moritani", , "2020/6/23", "Cable-B 167"
+"PFS-ICS-IPM004000-01", "Command and Data Flow for run2", "Yuki Moritani", , "2019/09/05", "PFS-ics:01825"
 "PFS-SPS-IPM100000-01", "Slit unit pointing test", "Graham Murray", "https://sumire.pbworks.com/w/file/94634438/Slit%20unit%20pointing.pdf", "2014/10/25",
 "PFS-SPS-IPM100001-01", "Dummy Cable B Build & Evaluation Summary", "Graham Murray", "https://sumire.pbworks.com/w/file/121359156/Dummy%20Cable%20B%20Summary-GJMurray-20161121.pdf", "2016/11/21",
 "PFS-SPS-IPM100002-02", "MTP Ferrule breakage during the FRD test of Dummy Cable B at LAM", "Graham Murray", "https://sumire.pbworks.com/w/file/121415136/MTP%20Ferrule%20breakage%20report%20V2-GJMurray-20171103.pdf", "2017/11/03",
