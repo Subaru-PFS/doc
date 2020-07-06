@@ -43,10 +43,10 @@
 "PFS-DRP-PRU030004-01", "2D DRP Development Practices", "Hassan Siddiqui", "", "2019-05-09", ""
 "PFS-PFI-PRU040004-01", "Cobra Ontime Shape and Separability Tests", "Erin Kado-Fong", "https://sumire.pbworks.com/w/file/fetch/135428967/PFS-PFI-PRU040004-01_cobraontimeshapeseparabilitytests.pdf", "2019-08-15", 
 "PFS-SPS-PRU030005-01", "SPS Software Test Cases Skeleton", "Hassan Siddiqui", "", "2019-08-05", ""
-"PFS-SPS-PRU030006-01", "SPS Software Test Report Skelelton", "Hassan Siddiqui", "", "2019-08-05", ""
+"PFS-SPS-PRU030006-01", "SPS Software Test Report Skeleton", "Hassan Siddiqui", "", "2019-08-05", ""
 "PFS-SPS-PRU000260-01", "Tests on the Omega 4200-series Rotameters with Glycol-Water Solutions", "Jim Gunn", "https://sumire.pbworks.com/w/file/fetch/135960531/PFS-SPS-PRU000260-01_rotametertests.pdf", 2016-08-28, ""
 "PFS-PFI-PRU011001-01", "The use of Gaia Catalogues for PFS Field Acquisition and Guiding", "Robert Lupton", "https://sumire.pbworks.com/w/file/fetch/137938419/PFS-PFI-PRU011001-01_GaiaforGuideStars-RHLupton-20200103.pdf", 2020-02-04, ""
-"PFS-ICS-PRU030007-01", "Subaru Data Directory Structure", "Hassan Siddiqui", "", "2020-02-08", "https://sumire.pbworks.com/w/file/138520242/PFS-ICS-PRU030007_Subaru-Data-Directory-Structure.pdf"
+"PFS-ICS-PRU030007-01", "Subaru Data Directory Structure", "Hassan Siddiqui", "https://sumire.pbworks.com/w/file/140649978/PFS-PFI-PRU000280-03_CalibrationPackingAndInstallation.pdf", "2020-02-08", ""
 "PFS-PFI-PRU000270-01", "The PFS Calibration System", "Jim Gunn", "https://sumire.pbworks.com/w/file/138638898/CalibrationSystem.pdf", "2020-02-18", ""
 "PFS-PFI-PRU000280-01", "Unpacking and Installing and Testing the PFS Calibration System", "Jim Gunn", "https://sumire.pbworks.com/w/file/138638901/CalibrationPackingAndInstallation.pdf", "2020-02-18", ""
 "PFS-PFI-PRU000290-01", "The PFS Calibration System Controller II. Software and Operating System", "Jim Gunn", "https://sumire.pbworks.com/w/file/138638898/CalibrationSystem.pdf", "2020-02-18", ""
