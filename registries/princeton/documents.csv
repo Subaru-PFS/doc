@@ -54,3 +54,5 @@
 "PFS-PFI-PRU020110-01", "MHS control of PFI calibration lamps", "Craig Loomis", "https://sumire.pbworks.com/w/file/138655719/mhs_lampcontrol.pdf", "2020-02-19", ""
 "PFS-PFI-PRU000300-01", "Calibration System Performance In The SPS Image Plane", "Jim Gunn", "https://sumire.pbworks.com/w/file/138656415/CalibrationSystemPSF_Performance.pdf", "2020-02-19", ""
 "PFS-PFI-PRU000280-03", "Unpacking and Installing and Testing the PFS Calibration System", "Jim Gunn", "https://sumire.pbworks.com/w/file/140649978/PFS-PFI-PRU000280-03_CalibrationPackingAndInstallation.pdf", "2020-07-06", "Version 3"
+"PFS-FIB-PRU000310-01", "Fiber Monitor Controller I: Mechanics and Electronics", "Jim Gunn", "", "2020-08-18", ""
+"PFS-FIB-PRU000320-01", "Fiber Monitor Controller II: Software and Operating System", "Jim Gunn", "", "2020-08-18", ""
