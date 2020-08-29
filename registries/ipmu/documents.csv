@@ -9,6 +9,7 @@
 "PFS-GEN-IPM000007-01", "NAOJ/Subaru-PFS software assembly meeting #4", "Naoyuki Tamura", , "2019/10/01", "PFS-Soft-Subaru:641/PFS-ics:01846"
 "PFS-GEN-IPM000007-02", "NAOJ/Subaru-PFS software assembly meeting #4", "Naoyuki Tamura", , "2019/10/02", "PFS-Soft-Subaru:644/PFS-ics:01850"
 "PFS-GEN-IPM000008-01", "PFS data QA telecon on Jun 24/25 2020: Brief Introductoin", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/140514828/PFS-GEN-IPM000008-01_DataQAIntro24Jun2020.pdf", "2020/06/25",
+"PFS-GEN-IPM000009-02", "For discussions to consolidate the scope and development plan of ""obslog""", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/140867298/PFS-GEN-IPM000009-02_ObsLogScopePlan.pdf", "2020/07/31",
 "PFS-FIB-IPM000001-04", "A summary of fiber test", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/68673176/fiber-summary-v4.pdf", "2013/09/04", ""
 "PFS-FIB-IPM000002-01", "Cable B fiber FRD test procedure", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/128335698/PFS-FIB-IPM000002-01_CableBFRDTestProcedure.pdf", "2018/08/22", "syseng:1361/pfspo 24892"
 "PFS-FIB-IPM000002-02", "Cable B fiber FRD test procedure", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/131540898/PFS-FIB-IPM000002-02_CableBFRDTestProcedure.pdf", "2019/01/24", ""
@@ -137,6 +138,8 @@
 "PFS-FIB-IPM004007-02", "Interim Report of the Stability Test", "Yuki Moritani", "", "2020/04/07", "Cable-B 149"
 "PFS-FIB-IPM004007-03", "Interim Report of the Stability Test", "Yuki Moritani", "https://sumire.pbworks.com/w/file/139943565/PFS-FIB-IPM004007-03_Analysis_StabilityTest.pdf", "2020/05/06",
 "PFS-FIB-IPM004008-01", "Stability Test Report 2", "Yuki Moritani", , "2020/6/23", "Cable-B 167"
+"PFS-FIB-IPM004009-01", "Notes about protrusion measurement and all-fiber test", "Yuki Moritani", "https://sumire.pbworks.com/w/file/140668713/PFS-FIB-IPM004009-01_Notes_CableB1test_MTPdone.pdf", "2020/06/23",
+"PFS-FIB-IPM004010-01", "FRD test of Cable B1 after MTP termination", "Yuki Moritani", "https://sumire.pbworks.com/w/file/140668749/PFS-FIB-IPM004010-01_FRDtest_CableB1_MTPdone_202007.pdf", "2020/07/08",
 "PFS-ICS-IPM004000-01", "Command and Data Flow for run2", "Yuki Moritani", , "2019/09/05", "PFS-ics:01825"
 "PFS-SPS-IPM100000-01", "Slit unit pointing test", "Graham Murray", "https://sumire.pbworks.com/w/file/94634438/Slit%20unit%20pointing.pdf", "2014/10/25",
 "PFS-SPS-IPM100001-01", "Dummy Cable B Build & Evaluation Summary", "Graham Murray", "https://sumire.pbworks.com/w/file/121359156/Dummy%20Cable%20B%20Summary-GJMurray-20161121.pdf", "2016/11/21",
@@ -155,6 +158,7 @@
 "PFS-FIB-IPM900002-01", "Cable B shipping information", "Project Office", "", "2019/04/29", "Bugzilla 469"
 "PFS-FIB-IPM900002-02", "Cable B shipping information", "Project Office", "", "2019/05/30", "Bugzilla 469"
 "PFS-FIB-IPM900003-01", "Cable B mini design review: Open issues", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/134231295/PFS-FIB-IPM900003-01_CableBOpenIssues.pdf", "2019/06/24",
+"PFS-FIB-IPM900004-03", "Cable B Optical Test plan + FMS Test plan	Project Office", "Project Office", "https://sumire.pbworks.com/w/file/140980980/PFS-FIB-IPM900004-03_CableB_testplan.pdf", "2020/08/13",
 "PFS-PFI-IPM900001-01", "Scope of PFI I&T mini review: Spare module installation", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/132458097/PFS-PFI-IPM900001-01_SpareModuleInstallationReviewScope.pdf", "2019/03/04",
 "PFS-SPS-IPM900001-01", "Slides for the SpS telecon on Mar 13 2019", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/132483162/PFS-SPS-IPM900001-01_SlidesforSpStelecon20190313.pdf", "2019/03/13", 
 "PFS-SPS-IPM900002-01", "Slides for the SpS telecon on Mar 27 2019", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/132762198/PFS-SPS-IPM900002-01_SlidesforSpStelecon20190327.pdf", "2019/03/27", 
