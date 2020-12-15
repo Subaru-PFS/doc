@@ -118,6 +118,7 @@
 "PFS-GEN-IPM004017-02", "Development to be Done before the Engineering First Light", "Yuki Moritani", "", "2020/04/02", "pfspo 28750"
 "PFS-GEN-IPM004018-01", "Field selection for HSC Run in May 2020", "Yuki Moritani", "", "2020/04/15", "pfspo 28857"
 "PFS-GEN-IPM004019-02", "Field selection for HSC Run in Oct 2020", "Yuki Moritani", , "2020/10/13", sent to pfspo
+"PFS-GEN-IPM004020-01", "Operation sequence diagram", "Yuki Moritani", "https://sumire.pbworks.com/w/file/142271562/PFS-GEN-IPM004020-01_Flow_fiber_allocation_and_configuration.pdf", "2020/11/25",
 "PFS-SPS-IPM004000-01", "Ring Test of FCA#3 (LAM, 2018/07)", "Yuki Moritani", "", "2018/08/03", "PFS-SpS:03838"
 "PFS-SPS-IPM004002-01", "SM1 Flux hole: FCA3 data at LNA for comparison", "Yuki Moritani", "", "2019/08/15", "PFS-SpS:04371"
 "PFS-SPS-IPM004003-04", "Photo and microscope image taken during FCA2 repair", "Yuki Moritani", "", "2019/11/30", "PFS-SpS:04656"
