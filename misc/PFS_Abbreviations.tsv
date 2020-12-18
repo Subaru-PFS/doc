@@ -151,6 +151,7 @@ sth	ICS	Actor	SNMP trap handler	ICS actor to handle alerts (trap) sent via SNMP 
 STI	FOCCoS/PFI	Subcomponent	Segment Tubes Inside PFI	Polymer tubes populating fibers to route them from focal plane to strain relief boxes (SRBes) on the top of PFI. 28 or 29 fibers are distributed to one segmented tube.
 STO	FOCCoS/PFI	Subcomponent	Segment Tubes Outside PFI	Polymer tubes populating fibers to route them from strain relief boxes (SRBes) on the top of PFI to tower connectors.
 STS	Subaru	Archive	Subaru Telemetry System	Internal service for telemetry of Subaru instruments.
+SuNSS	PFS	Instrument	SUbaru Night Sky Spectrograph	Instrument system mounted on the Subaru telescope. Used to measure the spatial and temporal variations of the sky.
 TCM	FOCCoS/PFI	Subcomponent	Tower Connector Male	Male Connector between cable B and C. TCM is used on the Cable C (PFI) side.
 TCS	Subaru	Operation	Telescope Control System	Computing system to control Subaru Telescope. TCS has hierarchy structure. 
 TEM	PFI	Subcomponent	Telemetry Monitor	PFI telemetry system, Temperature, humidity, flow rate and sound are monitored. ASIAA has a responsibility for its development.
