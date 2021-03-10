@@ -25,6 +25,7 @@
 "PFS-PFI-IPM000002-01", "Impact of Cobra angle error", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/134560827/PFS-PFI-IPM000002-01_CobraAngleError.pdf", "2019/07/16",
 "PFS-PFI-IPM000003-02", "Proposed success criteria of Cobra module-level FRD and relative fiber throughput", "Naoyuki Tamura", "", "2019/11/07", "PFI: 1859"
 "PFS-PFI-IPM000004-01", "Wrap-up discussion for CAL lamp mini pre-ship review", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/138643545/PFS-PFI-IPM000004-01_CalMiniPreshipReviewWrapup.pdf", "2020/02/20",
+"PFS-PFI-IPM000005-08", "A summary of key dimensions around the PFS focal plane", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/143524584/PFS-PFI-IPM000005-08_PFIFocalPlaneKeyDimensions.pdf", "2021/02/15",
 "PFS-SPS-IPM001000-03", "IR4 SpS chiller planning", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/88004371/PFS-SE-IPMU-00001-003-IR4-SpS-Chiller.pptx", "2014/10/24", "PFS-SE-IPMU-00001"
 "PFS-SPS-IPM001001-01", "Note on PFS humidity control", "Atsushi Shimono", "https://github.com/Subaru-PFS/ics_doc/blob/master/SE-IPMU-00002", "2014/11/04", "PFS-SE-IPMU-00002"
 "PFS-SPS-IPM001002-02", "SpS power distribution box design", "Atsushi Shimono", "https://sumire.pbworks.com/w/file/103421893/PFS-SE-IPMU-00003-002-SpS-PDB.pptx", "2015/12/02", "PFS-SE-IPMU-00003"
@@ -87,6 +88,7 @@
 "PFS-GEN-IPM003007-01", "PFS software opDB connection drawing", "Kiyoto Yabe", "", "2019/06/10", "not circulated yet"
 "PFS-GEN-IPM003007-02", "PFS software opDB connection drawing", "Kiyoto Yabe", "", "2019/09/03", "po 27686 (but version number is wrong)"
 "PFS-GEN-IPM003008-01", "PFS Operational Plan (slides)", "Kiyoto Yabe", "", "2019/12/19", "Circulated to limited people"
+"PFS-GEN-IPM003009-01", "PFS instrument throughput update (ver. 2020 Dec.)", "Kiyoto Yabe", "https://sumire.pbworks.com/w/file/143193324/PFS-GEN-IPM003009-01_pfs_throughput_update_2020dec.pdf", "2021/02/05", "pfspo 732"
 "PFS-SPT-IPM003002-01", "PFS ETS netflow F2F meeting at MPE/MPA Mar. 2019", "Kiyoto Yabe", "", "2019/03/28", "PFS-SPT:00412"
 "PFS-DAT-IPM003001-02", "MCS engineering run in August 2019 (from opDB perspectives)", "Kiyoto Yabe","","2019/07/09", "PFS-ics:01725/MCS 23"
 "PFS-DAT-IPM003002-01", "PFS operational database (opDB) schema diagram (full version)", "Kiyoto Yabe", "https://github.com/Subaru-PFS/spt_operational_database/blob/master/PFS-DAT-IPM003002-01_pfs_schema.pdf", "2019/09/06", 
@@ -119,11 +121,15 @@
 "PFS-GEN-IPM004018-01", "Field selection for HSC Run in May 2020", "Yuki Moritani", "", "2020/04/15", "pfspo 28857"
 "PFS-GEN-IPM004019-02", "Field selection for HSC Run in Oct 2020", "Yuki Moritani", , "2020/10/13", sent to pfspo
 "PFS-GEN-IPM004020-01", "Operation sequence diagram", "Yuki Moritani", "https://sumire.pbworks.com/w/file/142271562/PFS-GEN-IPM004020-01_Flow_fiber_allocation_and_configuration.pdf", "2020/11/25",
+"PFS-GEN-IPM004020-02", "Operation sequence diagram", "Yuki Moritani", "https://sumire.pbworks.com/w/file/142694859/PFS-GEN-IPM004020-02_Flow_fibrs_allocation_and_configuration.pdf", "2021/01/06",
+"PFS-GEN-IPM004021-01", "Summary of SpS and PFI coordinates", "Yuki Moritani", "https://sumire.pbworks.com/w/file/142840005/PFS-GEN-IPM004021-01_summary_sps_pfi_coordinates.pdf","2021/1/22",
 "PFS-SPS-IPM004000-01", "Ring Test of FCA#3 (LAM, 2018/07)", "Yuki Moritani", "", "2018/08/03", "PFS-SpS:03838"
 "PFS-SPS-IPM004002-01", "SM1 Flux hole: FCA3 data at LNA for comparison", "Yuki Moritani", "", "2019/08/15", "PFS-SpS:04371"
 "PFS-SPS-IPM004003-04", "Photo and microscope image taken during FCA2 repair", "Yuki Moritani", "", "2019/11/30", "PFS-SpS:04656"
 "PFS-SPS-IPM004004-02", "Aiming Error Test of FCA#4 (LNA 2020/03)", "Yuki Moritani", "", "2020/03/25",
 "PFS-SPS-IPM004005-01", "SpS coordinates", "Yuki Moritani", "https://sumire.pbworks.com/w/file/141805671/PFS-SPS-IPM004005-01_sps_coordinates.pdf", "2020/10/21",
+"PFS-SPS-IPM004006-01", "Aiming Error Test of FCA#5 (LNA, 2020/11)", "Yuki Moritani", "", "2020/12/04", "pfspo 347/PFS-SpS:05461"
+"PFS-SPS-IPM004007-01", "Uniformity Test of FCA#5 (LNA, 2020/11)", "Yuki Moritani", "", "2020/12/03", "pfspo 347/PFS-SpS:05461"
 "PFS-PFI-IPM004000-01", "Screening Cable C by FRD Measurement", "Yuki Moritani", "https://sumire.pbworks.com/w/file/128131368/PFS-PFI-IPM004000-CableC_Screening_20180815.pdf", "2018/08/15", 
 "PFS-PFI-IPM004002-01", "FRD data: Reels 02--49", "Yuki Moritani", "To be uploaded", "2018/10/04",
 "PFS-PFI-IPM004003-01", "FRD data: Reels 50--96", "Yuki Moritani", "To be uploaded", "2019/01/15",
@@ -149,6 +155,9 @@
 "PFS-FIB-IPM004012-01", "Block Diagram of FMS", "Yuki Moritani", , "2020/09/10",
 "PFS-FIB-IPM004013-01", "FMS Functional Test", "Yuki Moritani", ,"2020/09/14",
 "PFS-FIB-IPM004014-01", "Cable B optical test plan at Subaru", "Yuki Moritani", , "2020/10/06",
+"PFS-FIB-IPM004015-01", "Cable B optical test result at LNA", "Yuki Moritani", "https://sumire.pbworks.com/w/file/141654054/PFS-FIB-IPM004015-01_CAB1_OptTesReport_LNA.pdf", "2020/10/07",
+"PFS-FIB-IPM004016-01", "Uniformity test of the Cable B1 at Subaru", "Yuki Moritani", "", "2021/01/28", "Cable-B 382"
+"PFS-FIB-IPM004017-02", "FRD test of the Cable B1 at Subaru", "Yuki Moritani", "", "2021/02/07", "Cable-B 408"
 "PFS-ICS-IPM004000-01", "Command and Data Flow for run2", "Yuki Moritani", , "2019/09/05", "PFS-ics:01825"
 "PFS-SPS-IPM100000-01", "Slit unit pointing test", "Graham Murray", "https://sumire.pbworks.com/w/file/94634438/Slit%20unit%20pointing.pdf", "2014/10/25",
 "PFS-SPS-IPM100001-01", "Dummy Cable B Build & Evaluation Summary", "Graham Murray", "https://sumire.pbworks.com/w/file/121359156/Dummy%20Cable%20B%20Summary-GJMurray-20161121.pdf", "2016/11/21",
@@ -172,6 +181,8 @@
 "PFS-FIB-IPM900005-01", "Size measurement of Fujikura fibers", "Project Office", , "2020/09/10",
 "PFS-FIB-IPM900006-01", "General introduction for PFS Cable B#1 preship review", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/141610086/PFS-FIB-IPM900006-01_IntroductionCableB1PreshipReview.pdf", "2020/10/08/",
 "PFS-FIB-IPM900007-01", "Summary and Discussion for PFS Cable B#1 preship review", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/141667323/PFS-FIB-IPM900007-01_SummaryDiscuussoinCableB1PreshipReview.pdf", "2020/10/09",
+"PFS-FIB-IPM900008-01", "Inspection of MTP ferrule surfaces of the Cable B1", "Yuki Moritani", "", "2021/01/28", "Cable-B 382"
+"PFS-FIB-IPM900009-02", "Debriefing of Cable B1 AIT at Subaru", "Project Office", "https://sumire.pbworks.com/w/file/143470422/PFS-FIB-IPM900009-02_debriefing_CAB1_AIT.pdf", "2021/02/24", 
 "PFS-PFI-IPM900001-01", "Scope of PFI I&T mini review: Spare module installation", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/132458097/PFS-PFI-IPM900001-01_SpareModuleInstallationReviewScope.pdf", "2019/03/04",
 "PFS-SPS-IPM900001-01", "Slides for the SpS telecon on Mar 13 2019", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/132483162/PFS-SPS-IPM900001-01_SlidesforSpStelecon20190313.pdf", "2019/03/13", 
 "PFS-SPS-IPM900002-01", "Slides for the SpS telecon on Mar 27 2019", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/132762198/PFS-SPS-IPM900002-01_SlidesforSpStelecon20190327.pdf", "2019/03/27", 
