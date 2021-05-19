@@ -158,6 +158,7 @@
 "PFS-FIB-IPM004015-01", "Cable B optical test result at LNA", "Yuki Moritani", "https://sumire.pbworks.com/w/file/141654054/PFS-FIB-IPM004015-01_CAB1_OptTesReport_LNA.pdf", "2020/10/07",
 "PFS-FIB-IPM004016-01", "Uniformity test of the Cable B1 at Subaru", "Yuki Moritani", "", "2021/01/28", "Cable-B 382"
 "PFS-FIB-IPM004017-02", "FRD test of the Cable B1 at Subaru", "Yuki Moritani", "", "2021/02/07", "Cable-B 408"
+"PFS-FIB-IPM004018-05", "Fiber test after MTP termination: the cable B2", "Yuki Moritani", "", "2021/05/04", "Cable-B 408"
 "PFS-ICS-IPM004000-01", "Command and Data Flow for run2", "Yuki Moritani", , "2019/09/05", "PFS-ics:01825"
 "PFS-SPS-IPM100000-01", "Slit unit pointing test", "Graham Murray", "https://sumire.pbworks.com/w/file/94634438/Slit%20unit%20pointing.pdf", "2014/10/25",
 "PFS-SPS-IPM100001-01", "Dummy Cable B Build & Evaluation Summary", "Graham Murray", "https://sumire.pbworks.com/w/file/121359156/Dummy%20Cable%20B%20Summary-GJMurray-20161121.pdf", "2016/11/21",
@@ -184,6 +185,7 @@
 "PFS-FIB-IPM900008-01", "Inspection of MTP ferrule surfaces of the Cable B1", "Yuki Moritani", "", "2021/01/28", "Cable-B 382"
 "PFS-FIB-IPM900009-02", "Debriefing of Cable B1 AIT at Subaru", "Project Office", "https://sumire.pbworks.com/w/file/143470422/PFS-FIB-IPM900009-02_debriefing_CAB1_AIT.pdf", "2021/02/24", 
 "PFS-PFI-IPM900001-01", "Scope of PFI I&T mini review: Spare module installation", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/132458097/PFS-PFI-IPM900001-01_SpareModuleInstallationReviewScope.pdf", "2019/03/04",
+"PFS-PFI-IPM900002-01", "Opening remarks for PFS PFI preship review", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/144225903/PFS-PFI-IPM900002-01_PFIPreshipReviewOpening.pdf", "2019/05/14",
 "PFS-SPS-IPM900001-01", "Slides for the SpS telecon on Mar 13 2019", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/132483162/PFS-SPS-IPM900001-01_SlidesforSpStelecon20190313.pdf", "2019/03/13", 
 "PFS-SPS-IPM900002-01", "Slides for the SpS telecon on Mar 27 2019", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/132762198/PFS-SPS-IPM900002-01_SlidesforSpStelecon20190327.pdf", "2019/03/27", 
 "PFS-SPS-IPM900003-02", "Slides for the SpS telecon on Apr 3 2019", "Naoyuki Tamura", "https://sumire.pbworks.com/w/file/132864621/PFS-SPS-IPM900003-02_SlidesforSpStelecon20190403.pdf", "2019/04/03", 
