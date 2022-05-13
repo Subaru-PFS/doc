@@ -37,6 +37,7 @@ DEA	SpS	Subcomponent	Dewar Assembly	The same as Cryostat Assembly (CRA). [TBC]
 DECS	SpS	Subcomponent	Detector Control System	TBW.
 DPS	PFI	Subcomponent	DC Power Supply	The device in Auxiliary Power/Control Electronic (APC) box of PFI to convert AC power to DC power for other PFI devices.
 DRP	Software	General	Data Reduction Pipeline	Software for data processing. There are two kinds of pipelines according to reduction stage. 2D-DRP, developed by PU, extracts spectra calibrated for both wavelength and flux. 1D-DRP by LAM measures spectral parameters such as redshift.
+ebox	General	Subcomponent	Electric or Electronic Box	General term for one of 4 hardware components: the MEB for the MCS, or one of 3 PFI components: the APC (also known as the PEB), the PRE-A or the PRE-B.
 emp	ICS	Actor	Environment Monitoring module using rasPi	Software to control telemetry system for Spectrograph Clean Room (SCR).
 ENU	SpS	Subcomponent	Entrance Unit	Spectrograph unit to capture the input signal from fibers and deliver to three camera units. ENU collimates the beam, separates into three channels, and disperse the beam on individual band. LAM, WS and LNA have a responsibility for its development.
 enu	ICS	Actor	Entrance Unit	Software to control Spectrograph components other than Camera Units, such as BIA and slit. LAM has a responsibility for its development.
@@ -104,6 +105,7 @@ OCS	Subaru	Operation	Observation Control System	OCS is used to operate observati
 OWS	Subaru	Operation	Observation Workstation	Computers at Subaru telescope (and remote observation room) to send commands to telescope and instruments via Gen2.
 PBA	PFI	Subcomponent	Positioner Bench Assembly	PFI assembly for mounting Cobra positioner and AG cameras. PBA also consists of field element and AG cameras and their mount structure.
 PDE	PFI	Subcomponent	Positioner Driver Electronics	Electronics board that drives one row of positioners (28 or 29) in a module. PDEs are assembled to Cobra module. JPL has a responsibility for its development.
+PEB	PFI	Subcomponent	PFI Electronic Box	Another name for the APC (Auxiliary Power/control Electronics) box.
 peb	ICS	Actor	PFI Electronic Box interface	Software to control power supply and telemetry system for PFI. ASIAA has a responsibility for its development.
 PFI	PFS	Subsystem	Prime Focus Instrument	PFS instrument installed to the Subaru Prime Focus positioning fibers on astronomical objects. PFI has not only fibers and their positioners on the focal plane, but also a variety of cameras for field acquisition and guiding, viewing fiducial fibers and small region at field center. ASIAA, CIT, JPL and LNA have a responsibility for its development.
 PFS	General	General	Prime Focus Spectrograph	This project.
