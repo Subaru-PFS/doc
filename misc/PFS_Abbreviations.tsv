@@ -7,7 +7,7 @@ agcc	ICS	Actor	Acquisition and Guidance Camera Controller	Software module to con
 AIT	PFS	General	Assembly and Integration Tests	After shipment from each laboratory, an instrument should be assembled, integrated (again) and tested in its commissioning process. Subaru call this process AIT.
 APC	PFI	Subcomponent	Auxiliary Power/control Electronics	This box is accommodated on the side of PFI, and supplies power and network for PFI components. The box also provides telemetry. ASIAA has a responsibility for its development.
 ASIAA	General	Organization	Academia Sinica Institute of Astronomy and Astrophysics, Taiwan	PFS collaborator. ASIAA has responsibility for development of PFI and MCS.
-ASIC	SpS	Subcomponent	Application Specific Integrated Circuit	More formally SIDECAR ASIC. Electronics used for reading out NIR camera. 
+ASIC	SpS	Subcomponent	Application Specific Integrated Circuit	More formally SIDECAR ASIC. Electronics used for reading out NIR camera.
 BBC	FOCCoS	Subcomponent	Big Black Cable	Protective tubes for optical fibers at Cable C and B.
 BCB	PFI	Subcomponent	Bulkhead Connector Box	The PFI connector box accommodated to the cable wrapper (CWA). The power, network and coolant from Subaru are induced at this box. ASIAA has a responsibility for its development.
 BCU	SpS	Subcomponent	Blue Camera Unit	One of the three camera units of Spectrograph Modules which images the bluest spectra, ranging from 380 nm to 650 nm. LAM and JHU have a responsibility for its development.
@@ -46,7 +46,7 @@ ETC	SPT	misc	Exposure Time Calculator	Software to calculate exposure time at a g
 ETH	PFI	Subcomponent	Ethernet Hub	Ethernet Hub switch accommodated in Auxiliary Power/Control Electronics (APC) box.
 ETS	Software	General	Exposure Targeting Software	Software to allocate fibers to a provided target list. MPA has a responsibility for its development.
 FAA	PFI/FOCCoS	Subcomponent	Fiber Arm Assembly	Assembly for Cable C, PFI. FAA connects science fiber with microlens and fiber positioner Cobra.
-FBS	PFI	Subcomponent	Fiducial Fiber Beam Splitter	Optics element for fiducial fiber illuminator. FBS is used to reflect LED light into fiducial fibers, and to transmit light from fiducial fibers to their viewing camera. 
+FBS	PFI	Subcomponent	Fiducial Fiber Beam Splitter	Optics element for fiducial fiber illuminator. FBS is used to reflect LED light into fiducial fibers, and to transmit light from fiducial fibers to their viewing camera.
 FCA	SpS	Subcomponent	Fiber Cable A Assembly	SpS assembly of fiber slit and connectors with Cable B.
 fcc	ICS	Actor	Field Center Camera	Software to control field center camera of PFI. ASIAA has a responsibility for its development.
 FEL	PFI	Subcomponent	Field Element	PFI component. In order to have the similar optical path to HSC, a glass plate of 54 mm thick is accommodated at the bottom of PFI.
@@ -108,7 +108,7 @@ peb	ICS	Actor	PFI Electronic Box interface	Software to control power supply and 
 PFI	PFS	Subsystem	Prime Focus Instrument	PFS instrument installed to the Subaru Prime Focus positioning fibers on astronomical objects. PFI has not only fibers and their positioners on the focal plane, but also a variety of cameras for field acquisition and guiding, viewing fiducial fibers and small region at field center. ASIAA, CIT, JPL and LNA have a responsibility for its development.
 PFS	General	General	Prime Focus Spectrograph	This project.
 PFU	Subaru	Subcomponent	Prime Focus Unit	General name for Subaru-mounting modules for the instrument at prime focus. For PFS, POpt2 is the case.
-PGR	SpS	Subcomponent	Parking Guiding Rails	Guide rails used for SpS Camera Unit integration tool (CIT). 
+PGR	SpS	Subcomponent	Parking Guiding Rails	Guide rails used for SpS Camera Unit integration tool (CIT).
 PMA	PFI	Subcomponent	Positioner Module Assembly	An assembly of fiber (Cable C), microlens, fiber positioner and driver boards. One module is designed to accommodate 57 fibers. PMA is also called 'Cobra module'. JPL, CIT and LNA has a responsibility for is development.
 PMC	PFI	Subcomponent	Positioner Master Controller	Device to control driver boards of cobra positioners.
 PO	General	Organization	(PFS) Project Office	Group made-up from members at IPMU and NAOJ to manage the PFS project.
@@ -153,13 +153,13 @@ STO	FOCCoS/PFI	Subcomponent	Segment Tubes Outside PFI	Polymer tubes populating f
 STS	Subaru	Archive	Subaru Telemetry System	Internal service for telemetry of Subaru instruments.
 SuNSS	PFS	Instrument	SUbaru Night Sky Spectrograph	Instrument system mounted on the Subaru telescope. Used to measure the spatial and temporal variations of the sky.
 TCM	FOCCoS/PFI	Subcomponent	Tower Connector Male	Male Connector between cable B and C. TCM is used on the Cable C (PFI) side.
-TCS	Subaru	Operation	Telescope Control System	Computing system to control Subaru Telescope. TCS has hierarchy structure. 
+TCS	Subaru	Operation	Telescope Control System	Computing system to control Subaru Telescope. TCS has hierarchy structure.
 TEM	PFI	Subcomponent	Telemetry Monitor	PFI telemetry system, Temperature, humidity, flow rate and sound are monitored. ASIAA has a responsibility for its development.
 TSC	Subaru	Operation	Telescope Supervise Computer	Computers which supervise the whole computers controlling telescope such as movement, mirror support, environment.
 TUE	Subaru	Facility	Top-End Unit Exchanger	Mechanism to exchange the optics (prime focus instrument and secondary mirrors) at top ring of Subaru telescope.
 TUE-IR	Subaru	Facility	Top-End Unit Exchanger IR-side	The floor name of the dome building which used to be used for IR4.
 UFC	PFI	Subcomponent	USB to Fiber Convertor	Device used for AG cameras. It converts USB signal from AG cameras to fiber signal from cable wrapper (hand hence from Subaru). It is accommodated in Auxiliary Power/control Electronics (APC).
 ULS	PFI	Subcomponent	Upper/Lower Link structure	Structure to connect the cable wrapper assembly (CWA) and the instrument rotator. ULS also accommodates three electronic boxes (PRE-A, PRE-B, and APC).
-VAC-SS	SpS	Subcomponent	Vacuum control Sub-System	SpS control system infrastructure to handle pumping devices of camera units. VAC-SS is a sub-system of Vacuum and Cryogenic Control System (VCCS). 
+VAC-SS	SpS	Subcomponent	Vacuum control Sub-System	SpS control system infrastructure to handle pumping devices of camera units. VAC-SS is a sub-system of Vacuum and Cryogenic Control System (VCCS).
 VCCS	SpS	Subcomponent	Vacuum and Cryogenic Control System	SpS control system infrastructure. VCCS controls vacuum and cryogenic devices. camera unit, and is accommodated to entrance unit control rack (ENU rack). JHU and PU have a responsibility of its preparation.
 WFC	Subaru	Instrument	Wide Field Corrector	Corrector lens for Subaru prime focus. Total F ratio if F/2.8, and FoV is approximately 1.5 degree in diameter. PFS shares WFC with HSC.
