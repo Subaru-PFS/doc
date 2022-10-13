@@ -38,6 +38,7 @@ Details for each section is described below.
 | 03 | Kiyoto Yabe |
 | 04 | Yuki Moritani |
 | 05 | Keigo Nakamura |
+| 06 | Kota Hayashi |
 
 #### Durham
 
