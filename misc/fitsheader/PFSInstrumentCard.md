@@ -1,4 +1,4 @@
-## PFS Instrument FITS cards, from ``ics_actorkeys`` 1.6.26 etc.
+## PFS Instrument FITS cards, from ``ics_actorkeys`` 1.7.19 etc.
 Name | Longname | Type | Format | pFormat | Units | Actor | Keyword | Comment | Enum
 ---- | -------- | ---- | ------ | ----- | ----- | ------- | ------- | ------- | ----
 ``W_4CDRNS`` | ``W_4CDRNS`` | ``float`` | ``%-15G`` | ``%0.4f`` | ``V`` |  |  | ``CellDrain setting`` | 
@@ -78,8 +78,8 @@ Name | Longname | Type | Format | pFormat | Units | Actor | Keyword | Comment | 
 ``W_COFR12`` | ``W_ADC_REFERENCE_OFFSET_AMP12`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``mV`` |  ``ccd`` | ``offsets_reference`` | ``CCD1 amp2 reference offset`` | 
 ``W_COFR13`` | ``W_ADC_REFERENCE_OFFSET_AMP13`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``mV`` |  ``ccd`` | ``offsets_reference`` | ``CCD1 amp3 reference offset`` | 
 ``W_CPAMPT`` | ``W_CCD_PREAMP_TEMP`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``K`` |  ``ccd`` | ``ccdtemps`` | ``preamp temperature`` | 
-``W_CRLGHT`` | ``W_SCR_ROOMLIGHTS`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``scr`` | ``scrlights`` | ``State of ceiling lights`` | {'on', 'off', 'unknown'}
-``W_CRLOOP`` | ``W_SCR_CONTROL_LOOP_STATE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``scr`` | ``scrloop`` | ``Clean room operational state`` | {'on', 'off', 'unknown'}
+``W_CRLGHT`` | ``W_SCR_ROOMLIGHTS`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``scr`` | ``scrlights`` | ``State of ceiling lights`` | {'unknown', 'off', 'on'}
+``W_CRLOOP`` | ``W_SCR_CONTROL_LOOP_STATE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``scr`` | ``scrloop`` | ``Clean room operational state`` | {'unknown', 'off', 'on'}
 ``W_CRSETP`` | ``W_SCR_CONTROL_SETPOINT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``degC`` |  ``scr`` | ``scrloop`` | ``Clean room setpoint temperature`` | 
 ``W_CRTEMP`` | ``W_SCR_CONTROL_TEMP`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``degC`` |  ``scr`` | ``scrloop`` | ``Clean room air temperature`` | 
 ``W_CRWACT`` | ``W_CCD_ACTIVE_ROWS`` | ``int`` | ``%10d`` | ``%10d`` | ``-`` |  ``ccd`` | ``geometry`` | ``active rows`` | 
@@ -113,14 +113,14 @@ Name | Longname | Type | Format | pFormat | Units | Actor | Keyword | Comment | 
 ``W_DTHDEC`` | ``W_DTHDEC`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``arcsec`` |  ``gen2`` | ``teldither`` | ``Cumulative Dec dither offset`` | 
 ``W_DTHPA`` | ``W_DTHPA`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``arcsec`` |  ``gen2`` | ``teldither`` | ``Cumulative posAngle dither offset`` | 
 ``W_DTHRA`` | ``W_DTHRA`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``arcsec`` |  ``gen2`` | ``teldither`` | ``Cumulative RA dither offset`` | 
-``W_ENBIAS`` | ``W_ENU_BIA_STATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``bia`` | ``bia current state`` | {'on', 'undef', 'off'}
-``W_ENBSHM`` | ``W_ENU_BIASHA_MODE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``biashamode`` | ``biasha operation mode`` | {'operation', 'simulation'}
-``W_ENBSHS`` | ``W_ENU_BIASHA_STATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``biashafsm`` | ``biasha operational state-machine`` | {'LOADED', 'none', 'ONLINE', 'OFF'}
-``W_ENBSHT`` | ``W_ENU_BIASHA_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``biashafsm`` | ``biasha action state-machine`` | {'EXPOSING', 'FAILED', 'BUSY', 'LOADING', 'OPENBLUE', 'IDLE', 'none', 'OPENRED', 'BIA', 'INITIALISING'}
-``W_ENFCAM`` | ``W_ENU_FCA_MODE`` | ``str`` |  | ``%-8s`` | ``mV`` |  ``enu`` | ``slitmode`` | ``fca operation mode`` | {'operation', 'simulation'}
+``W_ENBIAS`` | ``W_ENU_BIA_STATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``bia`` | ``bia current state`` | {'off', 'undef', 'on'}
+``W_ENBSHM`` | ``W_ENU_BIASHA_MODE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``biashamode`` | ``biasha operation mode`` | {'simulation', 'operation'}
+``W_ENBSHS`` | ``W_ENU_BIASHA_STATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``biashafsm`` | ``biasha operational state-machine`` | {'LOADED', 'none', 'OFF', 'ONLINE'}
+``W_ENBSHT`` | ``W_ENU_BIASHA_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``biashafsm`` | ``biasha action state-machine`` | {'none', 'BIA', 'BUSY', 'LOADING', 'OPENBLUE', 'IDLE', 'OPENRED', 'EXPOSING', 'INITIALISING', 'FAILED'}
+``W_ENFCAM`` | ``W_ENU_FCA_MODE`` | ``str`` |  | ``%-8s`` | ``mV`` |  ``enu`` | ``slitmode`` | ``fca operation mode`` | {'simulation', 'operation'}
 ``W_ENFCAP`` | ``W_ENU_FCA_POSITION`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``slitposition`` | ``FCA position`` | 
-``W_ENFCAS`` | ``W_ENU_FCA_STATE`` | ``str`` |  | ``%-8s`` | ``mV`` |  ``enu`` | ``slitfsm`` | ``slit-hexapod operational state-machine`` | {'LOADED', 'none', 'ONLINE', 'OFF'}
-``W_ENFCAT`` | ``W_ENU_FCA_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``mV`` |  ``enu`` | ``slitfsm`` | ``slit-hexapod action state-machine`` | {'FAILED', 'SLIDING', 'LOADING', 'SHUTDOWN', 'IDLE', 'none', 'MOVING', 'INITIALISING'}
+``W_ENFCAS`` | ``W_ENU_FCA_STATE`` | ``str`` |  | ``%-8s`` | ``mV`` |  ``enu`` | ``slitfsm`` | ``slit-hexapod operational state-machine`` | {'LOADED', 'none', 'OFF', 'ONLINE'}
+``W_ENFCAT`` | ``W_ENU_FCA_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``mV`` |  ``enu`` | ``slitfsm`` | ``slit-hexapod action state-machine`` | {'none', 'LOADING', 'MOVING', 'SLIDING', 'SHUTDOWN', 'IDLE', 'INITIALISING', 'FAILED'}
 ``W_ENFCAU`` | ``W_ENU_FCA_ROLL`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``deg`` |  ``enu`` | ``slit`` | ``FCA ROLL angle`` | 
 ``W_ENFCAV`` | ``W_ENU_FCA_PITCH`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``deg`` |  ``enu`` | ``slit`` | ``FCA PITCH angle`` | 
 ``W_ENFCAW`` | ``W_ENU_FCA_YAW`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``deg`` |  ``enu`` | ``slit`` | ``FCA YAW angle`` | 
@@ -129,22 +129,22 @@ Name | Longname | Type | Format | pFormat | Units | Actor | Keyword | Comment | 
 ``W_ENFCAZ`` | ``W_ENU_FCA_FIBERS`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``mm`` |  ``enu`` | ``slit`` | ``FCA_Z position, wrt fibers axis (+ towards low fiber id)`` | 
 ``W_ENIARG`` | ``W_ENIARG`` | ``bool`` |  |  | ``-`` |  |  |  ``Ar lamp (IIS) state``
 ``W_ENIHGA`` | ``W_ENIHGA`` | ``bool`` |  |  | ``-`` |  |  |  ``HgAr lamp (IIS) state``
-``W_ENIISM`` | ``W_ENU_IIS_MODE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``iismode`` | ``IIS operation mode`` | {'operation', 'simulation'}
-``W_ENIISS`` | ``W_ENU_IIS_STATE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``iisfsm`` | ``iis operational state-machine`` | {'LOADED', 'none', 'ONLINE', 'OFF'}
-``W_ENIIST`` | ``W_ENU_IIS_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``iisfsm`` | ``iis action state-machine`` | {'FAILED', 'LOADING', 'IDLE', 'none', 'INITIALISING', 'WARMING'}
+``W_ENIISM`` | ``W_ENU_IIS_MODE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``iismode`` | ``IIS operation mode`` | {'simulation', 'operation'}
+``W_ENIISS`` | ``W_ENU_IIS_STATE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``iisfsm`` | ``iis operational state-machine`` | {'LOADED', 'none', 'OFF', 'ONLINE'}
+``W_ENIIST`` | ``W_ENU_IIS_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``iisfsm`` | ``iis action state-machine`` | {'none', 'LOADING', 'IDLE', 'WARMING', 'INITIALISING', 'FAILED'}
 ``W_ENIKRY`` | ``W_ENIKRY`` | ``bool`` |  |  | ``-`` |  |  |  ``Kr lamp (IIS) state``
 ``W_ENINEO`` | ``W_ENINEO`` | ``bool`` |  |  | ``-`` |  |  |  ``Ne lamp (IIS) state``
 ``W_ENIQTH`` | ``W_ENIQTH`` | ``bool`` |  |  | ``-`` |  |  |  ``quartz lamp (IIS) state``
-``W_ENPDUM`` | ``W_ENU_PDU_MODE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``pdumode`` | ``pdu operation mode`` | {'operation', 'simulation'}
-``W_ENPDUS`` | ``W_ENU_PDU_STATE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``pdufsm`` | ``pdu operational state-machine`` | {'LOADED', 'none', 'ONLINE', 'OFF'}
-``W_ENPDUT`` | ``W_ENU_PDU_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``pdufsm`` | ``pdu action state-machine`` | {'FAILED', 'LOADING', 'SWITCHING', 'IDLE', 'none', 'INITIALISING'}
-``W_ENRDAM`` | ``W_ENU_RDA_MODE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``rexmmode`` | ``rda operation mode`` | {'operation', 'simulation'}
-``W_ENRDAS`` | ``W_ENU_RDA_STATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``rexmfsm`` | ``rexm operational state-machine`` | {'LOADED', 'none', 'ONLINE', 'OFF'}
-``W_ENRDAT`` | ``W_ENU_RDA_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``rexmfsm`` | ``rexm action state-machine`` | {'SAFESTOP', 'FAILED', 'LOADING', 'IDLE', 'none', 'MOVING', 'INITIALISING'}
-``W_ENSHUT`` | ``W_ENU_SHUTTERS_POSITION`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``shutters`` | ``shutters current position`` | {'close', 'openred', 'openblue', 'undef', 'open'}
-``W_ENTMPM`` | ``W_ENU_TEMP_MODE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``tempsmode`` | ``temps operation mode`` | {'operation', 'simulation'}
-``W_ENTMPS`` | ``W_ENU_TEMP_STATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``tempsfsm`` | ``temps controller operational state-machine`` | {'LOADED', 'none', 'ONLINE', 'OFF'}
-``W_ENTMPT`` | ``W_ENU_TEMP_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``tempsfsm`` | ``temps controller action state-machine`` | {'FAILED', 'LOADING', 'IDLE', 'none', 'INITIALISING'}
+``W_ENPDUM`` | ``W_ENU_PDU_MODE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``pdumode`` | ``pdu operation mode`` | {'simulation', 'operation'}
+``W_ENPDUS`` | ``W_ENU_PDU_STATE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``pdufsm`` | ``pdu operational state-machine`` | {'LOADED', 'none', 'OFF', 'ONLINE'}
+``W_ENPDUT`` | ``W_ENU_PDU_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``degC`` |  ``enu`` | ``pdufsm`` | ``pdu action state-machine`` | {'none', 'SWITCHING', 'LOADING', 'IDLE', 'INITIALISING', 'FAILED'}
+``W_ENRDAM`` | ``W_ENU_RDA_MODE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``rexmmode`` | ``rda operation mode`` | {'simulation', 'operation'}
+``W_ENRDAS`` | ``W_ENU_RDA_STATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``rexmfsm`` | ``rexm operational state-machine`` | {'LOADED', 'none', 'OFF', 'ONLINE'}
+``W_ENRDAT`` | ``W_ENU_RDA_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``rexmfsm`` | ``rexm action state-machine`` | {'none', 'SAFESTOP', 'LOADING', 'MOVING', 'IDLE', 'INITIALISING', 'FAILED'}
+``W_ENSHUT`` | ``W_ENU_SHUTTERS_POSITION`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``shutters`` | ``shutters current position`` | {'open', 'openblue', 'openred', 'undef', 'close'}
+``W_ENTMPM`` | ``W_ENU_TEMP_MODE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``tempsmode`` | ``temps operation mode`` | {'simulation', 'operation'}
+``W_ENTMPS`` | ``W_ENU_TEMP_STATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``tempsfsm`` | ``temps controller operational state-machine`` | {'LOADED', 'none', 'OFF', 'ONLINE'}
+``W_ENTMPT`` | ``W_ENU_TEMP_SUBSTATE`` | ``str`` |  | ``%-8s`` | ``deg`` |  ``enu`` | ``tempsfsm`` | ``temps controller action state-machine`` | {'none', 'LOADING', 'IDLE', 'INITIALISING', 'FAILED'}
 ``W_ETMP1`` | ``W_MOTOR_RDA`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``degC`` |  ``enu`` | ``temps1`` | ``MOTOR_RDA`` | 
 ``W_ETMP10`` | ``W_COLLIMATOR_FRAME_TOP`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``degC`` |  ``enu`` | ``temps1`` | ``COLLIMATOR_FRAME_TOP`` | 
 ``W_ETMP11`` | ``W_BENCH_LEFT_TOP`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``degC`` |  ``enu`` | ``temps2`` | ``BENCH_LEFT_TOP`` | 
@@ -226,11 +226,25 @@ Name | Longname | Type | Format | pFormat | Units | Actor | Keyword | Comment | 
 ``W_H4PTCH`` | ``W_H4PTCH`` | ``bool`` |  |  | ``-`` |  |  | ``PHDU has been patched`` | 
 ``W_H4RAMP`` | ``W_H4RAMP`` | ``int`` | ``%10d`` | ``10d`` | ``-`` |  |  | ``the current ramp number`` | 
 ``W_H4READ`` | ``W_H4READ`` | ``int`` | ``%10d`` | ``10d`` | ``-`` |  |  | ``the current read number`` | 
+``W_IISARG`` | ``W_IISARG`` | ``bool`` |  |  | ``-`` |  |  |  ``Argon lamp (central IIS) state``
+``W_IISHE`` | ``W_IISHE`` | ``bool`` |  |  | ``-`` |  |  |  ``Helium lamp (central IIS) state``
+``W_IISHGA`` | ``W_IISHGA`` | ``bool`` |  |  | ``-`` |  |  |  ``HgAr lamp (central IIS) state``
+``W_IISHYD`` | ``W_IISHYD`` | ``bool`` |  |  | ``-`` |  |  |  ``Hydrogen lamp (central IIS) state``
+``W_IISKRY`` | ``W_IISKRY`` | ``bool`` |  |  | ``-`` |  |  |  ``Krtpron lamp (central IIS) state``
+``W_IISNEO`` | ``W_IISNEO`` | ``bool`` |  |  | ``-`` |  |  |  ``Neon lamp (central IIS) state``
+``W_IISQTH`` | ``W_IISQTH`` | ``bool`` |  |  | ``-`` |  |  |  ``Halogen lamp (central IIS) state``
 ``W_ILARGT`` | ``W_ILARGT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``Ar lamp (IIS) on time``
 ``W_ILHGAT`` | ``W_ILHGAT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``HgAr lamp (IIS) on time``
 ``W_ILKRYT`` | ``W_ILKRYT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``Kr lamp (IIS) on time``
 ``W_ILNEOT`` | ``W_ILNEOT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``Ne lamp (IIS) on time``
 ``W_ILQTHT`` | ``W_ILQTHT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``quartz lammp (IIS) on time``
+``W_ISARGT`` | ``W_ISARGT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``Argon lamp (central IIS) on time``
+``W_ISHET`` | ``W_ISHET`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``Helium lamp (central IIS) on time``
+``W_ISHGAT`` | ``W_ISHGAT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``HgAr lamp (central IIS) on time``
+``W_ISHYDT`` | ``W_ISHYDT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``Hydrogen lamp (central IIS) on time``
+``W_ISKRYT`` | ``W_ISKRYT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``Krypton lamp (central IIS) on time``
+``W_ISNEOT`` | ``W_ISNEOT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``Neon lamp (central IIS) on time``
+``W_ISQTHT`` | ``W_ISQTHT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``s`` |  |  |  ``Halogen lammp (central IIS) on time``
 ``W_LGTSRC`` | ``W_LGTSRC`` | ``str`` |  | ``%-8s`` | ``-`` |  |  | ``Light source for each SpS module``
 ``W_M2OFF1`` | ``W_GEN2_M2_XOFFSET`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``mm`` |  ``gen2`` | ``pfuoffset`` | ``M2 X offset`` | 
 ``W_M2OFF2`` | ``W_GEN2_M2_YOFFSET`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``mm`` |  ``gen2`` | ``pfuoffset`` | ``M2 Y offset`` | 
@@ -262,6 +276,7 @@ Name | Longname | Type | Format | pFormat | Units | Actor | Keyword | Comment | 
 ``W_RVHXHL`` | ``W_HXHAL_VERSION`` | ``str`` |  | ``%-8s`` | ``V`` |  ``hx`` | ``version_hxhal`` | ``hxhal version`` | 
 ``W_RVICUT`` | ``W_ICS_UTILS_VERSION`` | ``str`` |  | ``%-8s`` | ``-`` |  ``mcs`` | ``version_ics_utils`` | ``ics_utils version`` | 
 ``W_RVIIC`` | ``W_IICACTOR_VERSION`` | ``str`` |  | ``%-8s`` | ``-`` |  ``iic`` | ``version`` | ``IIC actor version`` | 
+``W_RVIIS`` | ``W_IISACTOR_VERSION`` | ``str`` |  | ``%-8s`` | ``-`` |  ``iis`` | ``version`` | ``iis actor version`` | 
 ``W_RVMCS`` | ``W_MCSACTOR_VERSION`` | ``str`` |  | ``%-8s`` | ``-`` |  ``mcs`` | ``version`` | ``MCS actor version`` | 
 ``W_RVPFID`` | ``W_PFS_INSTDATA_VERSION`` | ``str`` |  | ``%-8s`` | ``-`` |  ``mcs`` | ``version_pfs_instdata`` | ``pfs_instdata version`` | 
 ``W_RVPFIL`` | ``W_PFILAMPSACTOR_VERSION`` | ``str`` |  | ``%-8s`` | ``Gal/min`` |  ``pfilamps`` | ``version`` | ``pfilamps actor version`` | 
@@ -305,7 +320,7 @@ Name | Longname | Type | Format | pFormat | Units | Actor | Keyword | Comment | 
 ``W_TFFPOS`` | ``W_GEN2_FLATFIELD_SCREEN_POSITION`` | ``str`` |  | ``%-8s`` | ``m`` |  ``gen2`` | ``topscreenpos`` | ``name of known position`` | 
 ``W_TFFSFP`` | ``W_GEN2_FLATFIELD_SCREEN_FRONT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``m`` |  ``gen2`` | ``topscreenpos`` | ``front edge of FF screen`` | 
 ``W_TFFSRP`` | ``W_GEN2_FLATFIELD_SCREEN_REAR`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``m`` |  ``gen2`` | ``topscreenpos`` | ``rear edge of FF screen`` | 
-``W_TSHUTR`` | ``W_GEN2_DOME_SHUTTER_POS`` | ``str`` |  | ``%-8s`` | ``mm`` |  ``gen2`` | ``domeshutter`` | ``position of the dome shutters`` | {'open', 'closed', 'unknown'}
+``W_TSHUTR`` | ``W_GEN2_DOME_SHUTTER_POS`` | ``str`` |  | ``%-8s`` | ``mm`` |  ``gen2`` | ``domeshutter`` | ``position of the dome shutters`` | {'open', 'unknown', 'closed'}
 ``W_VISIT`` | ``W_VISIT`` | ``int`` | ``%10d`` | ``10d`` | ``-`` |  |  | ``PFS exposure visit number`` | 
 ``W_VISIT0`` | ``W_VISIT0`` | ``int`` | ``%10d`` | ``10d`` | ``-`` |  |  | ``Cobra convergence visit``
 ``W_XCL1PW`` | ``W_XCU_COOLER1_POWER`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``W`` |  ``xcu`` | ``coolertemps`` | ``Cooler1 power`` | 
@@ -316,8 +331,8 @@ Name | Longname | Type | Format | pFormat | Units | Actor | Keyword | Comment | 
 ``W_XCL2RJ`` | ``W_XCU_COOLER2_REJECT_TEMP`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``degC`` |  ``xcu`` | ``cooler2temps`` | ``Cooler2 reject temperature`` | 
 ``W_XCL2ST`` | ``W_XCU_COOLER2_SETPOINT`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``K`` |  ``xcu`` | ``cooler2temps`` | ``Cooler2 setpoint`` | 
 ``W_XCL2TP`` | ``W_XCU_COOLER2_TIP_TEMP`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``K`` |  ``xcu`` | ``cooler2temps`` | ``Cooler2 tip temperature`` | 
-``W_XCOOL1`` | ``W_XCU_COOLER1_STATE`` | ``str`` |  | ``%-8s`` | ``ms`` |  ``xcu`` | ``coolerloop`` | ``Cooler1 control loop state`` | {'ON', 'POWER', 'OFF'}
-``W_XCOOL2`` | ``W_XCU_COOLER2_STATE`` | ``str`` |  | ``%-8s`` | ``ms`` |  ``xcu`` | ``cooler2loop`` | ``Cooler2 control loop state`` | {'ON', 'POWER', 'OFF'}
+``W_XCOOL1`` | ``W_XCU_COOLER1_STATE`` | ``str`` |  | ``%-8s`` | ``ms`` |  ``xcu`` | ``coolerloop`` | ``Cooler1 control loop state`` | {'ON', 'OFF', 'POWER'}
+``W_XCOOL2`` | ``W_XCU_COOLER2_STATE`` | ``str`` |  | ``%-8s`` | ``ms`` |  ``xcu`` | ``cooler2loop`` | ``Cooler2 control loop state`` | {'ON', 'OFF', 'POWER'}
 ``W_XH1ENA`` | ``W_XCU_ASIC_HEATER_ENABLED`` | ``int`` | ``%10d`` | ``%10d`` | ``-`` |  ``xcu`` | ``heaters`` | ``asic heater enabled`` | 
 ``W_XH1FRA`` | ``W_XCU_ASIC_HEATER_FRACTION`` | ``float`` | ``%-15G`` | ``%0.3f`` | ``-`` |  ``xcu`` | ``heaters`` | ``frac power to asic heater: 0..1`` | 
 ``W_XH2ENA`` | ``W_XCU_CCD_HEATER_ENABLED`` | ``int`` | ``%10d`` | ``%10d`` | ``-`` |  ``xcu`` | ``heaters`` | ``ccd heater enabled`` | 
